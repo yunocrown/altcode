@@ -1,0 +1,332 @@
+.signinpageinitial-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-blueviolet);
+  width: 42.94rem;
+  height: 52.25rem;
+}
+.signinpageinitial-item {
+  position: absolute;
+  top: 3.06rem;
+  left: 5.56rem;
+  border-radius: var(--br-8xs);
+  border: 2px solid var(--color-gray-600);
+  box-sizing: border-box;
+  width: 74.19rem;
+  height: 37.88rem;
+}
+.buildmyflow44 {
+  position: absolute;
+  top: 4.31rem;
+  left: 8.13rem;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.05em;
+  line-height: 3.59rem;
+  display: flex;
+  align-items: center;
+  width: 8.19rem;
+  height: 1.06rem;
+}
+.signinpageinitial-inner {
+  position: absolute;
+  top: 11.5rem;
+  left: 6.69rem;
+  width: 27.63rem;
+  height: 26rem;
+}
+.initial-image {
+  content: url('./public/group-2081.svg');
+}
+.updated-image {
+  content: url('./public/group-208.svg');
+}
+.sign-in2,
+.welcome-back1 {
+  position: absolute;
+  top: 6.69rem;
+  left: 58.44rem;
+  font-size: var(--font-size-8xl);
+  letter-spacing: 0.05em;
+  line-height: 3.59rem;
+  display: flex;
+  align-items: center;
+  width: 7.75rem;
+  height: 1.63rem;
+}
+.welcome-back1 {
+  top: 9.19rem;
+  left: 57.31rem;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  width: 9.94rem;
+}
+.signinpageinitial-child1 {
+  position: absolute;
+  top: 15.19rem;
+  left: 48.31rem;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--color-dimgray-200);
+  box-sizing: border-box;
+  width: 27.94rem;
+  height: 3.63rem;
+  background-color: var(--color-gray-1000);
+}
+input.signinpageinitial-child1 {
+  outline: none;
+  color: aliceblue;
+}
+.group-child1258 {
+  position: absolute;
+  top: 0.44rem;
+  left: 0;
+  background-color: var(--color-gray-1000);
+  width: 14.81rem;
+  height: 0.69rem;
+}
+input.group-child1259 {
+  outline: none;
+  color: aliceblue;
+}
+.enter-your-email3 {
+  position: absolute;
+  top: 0;
+  left: 0.31rem;
+  letter-spacing: 0.05em;
+  line-height: 3.59rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  width: 14.5rem;
+  height: 1rem;
+}
+.rectangle-parent144 {
+  position: absolute;
+  top: 16.44rem;
+  left: 49.38rem;
+  width: 14.81rem;
+  height: 1.13rem;
+  cursor: pointer;
+}
+.group-child1259 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--color-dimgray-200);
+  box-sizing: border-box;
+  width: 27.94rem;
+  height: 3.63rem;
+  background-color: var(--color-gray-1000);
+}
+.group-child1260 {
+  position: absolute;
+  top: 0.44rem;
+  left: 0;
+  background-color: var(--color-gray-1000);
+  width: 9.56rem;
+  height: 0.69rem;
+}
+.enter-your-password3 {
+  position: absolute;
+  top: 0;
+  left: 0.31rem;
+  letter-spacing: 0.05em;
+  line-height: 3.59rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  width: 9.06rem;
+  height: 1rem;
+}
+.rectangle-parent146 {
+  position: absolute;
+  top: 1.13rem;
+  left: 1.38rem;
+  width: 9.56rem;
+  height: 1.13rem;
+  cursor: pointer;
+}
+.vector-icon117 {
+  position: absolute;
+  height: 34.48%;
+  width: 5.59%;
+  top: 32.76%;
+  right: 5.15%;
+  bottom: 32.76%;
+  left: 89.26%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rectangle-parent145 {
+  position: absolute;
+  top: 21.5rem;
+  left: 48.31rem;
+  width: 27.94rem;
+  height: 3.63rem;
+}
+.group-child1261 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-10xs);
+  border: 1px solid var(--color-dimgray-200);
+  box-sizing: border-box;
+  width: 1.06rem;
+  height: 1.06rem;
+}
+input.group-child1261{
+  background-color: var(--color-gray-1000);
+}
+.remember-me3 {
+  position: absolute;
+  top: 0;
+  left: 1.69rem;
+  letter-spacing: 0.05em;
+  line-height: 3.59rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  width: 6.31rem;
+  height: 1rem;
+}
+.rectangle-parent147 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rem;
+  height: 1.06rem;
+}
+.forgot-password1 {
+  position: absolute;
+  top: 0;
+  left: 20.19rem;
+  letter-spacing: 0.05em;
+  line-height: 3.59rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  width: 7.38rem;
+  height: 1rem;
+}
+.group-parent73 {
+  position: absolute;
+  top: 25.81rem;
+  left: 48.81rem;
+  width: 27.56rem;
+  height: 1.06rem;
+}
+.group-child1262 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-dimgray-200);
+  width: 11.56rem;
+  height: 3.13rem;
+}
+.sign-in3 {
+  position: absolute;
+  top: 1.06rem;
+  left: 4rem;
+  line-height: 3.59rem;
+  display: flex;
+  align-items: center;
+  width: 3.56rem;
+  height: 1rem;
+}
+.rectangle-parent148 {
+  position: absolute;
+  top: 28.06rem;
+  left: 57.88rem;
+  width: 11.56rem;
+  height: 3.13rem;
+  cursor: pointer;
+  font-size: var(--font-size-mini);
+}
+.continue-with3,
+.dont-have-a1,
+.github3,
+.google7 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.dont-have-a1 {
+  top: 39.5rem;
+  left: 57.94rem;
+  line-height: 3.59rem;
+  width: 12.44rem;
+  height: 1rem;
+  cursor: pointer;
+}
+.continue-with3,
+.github3,
+.google7 {
+  font-weight: 300;
+  justify-content: center;
+  height: 0.69rem;
+}
+.continue-with3 {
+  top: 33.63rem;
+  left: 60.38rem;
+  font-size: var(--font-size-2xs);
+  letter-spacing: 0.05em;
+  line-height: 1rem;
+  text-align: center;
+  width: 7.06rem;
+}
+.github3,
+.google7 {
+  line-height: 3.59rem;
+  width: 3.56rem;
+}
+.google7 {
+  top: 1.63rem;
+  left: 0;
+}
+.github3 {
+  top: 1.69rem;
+  left: 5.25rem;
+}
+.vector-icon118,
+.vector-icon119 {
+  position: absolute;
+  height: 61.09%;
+  width: 16.07%;
+  top: 0;
+  right: 71.17%;
+  bottom: 38.91%;
+  left: 12.77%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon119 {
+  height: 59.66%;
+  width: 16.49%;
+  right: 11.88%;
+  bottom: 40.34%;
+  left: 71.63%;
+}
+.group3 {
+  position: absolute;
+  top: 35.31rem;
+  left: 59.25rem;
+  width: 8.81rem;
+  height: 2.38rem;
+  text-align: center;
+  font-size: var(--font-size-2xs);
+}
+.signinpageinitial {
+  position: relative;
+  background-color: var(--color-gray-1000);
+  width: 100%;
+  height: 45.94rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-lexend-deca);
+}

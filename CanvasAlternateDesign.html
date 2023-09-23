@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./CanvasAlternateDesign.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend Deca:wght@200;300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="canvas-alternate-design">
+      <div class="canvas-alternate-design-child"></div>
+      <div class="canvas1">Canvas</div>
+      <div class="canvas-alternate-design-item"></div>
+      <div class="rectangle-parent149">
+        <div class="slider-container">
+          <img class="rectangle-icon" alt="" src="./public/rectangle-48@2x.png" />
+          <img class="group-child1263" alt="" src="./public/rectangle-46@2x.png" />
+          <img class="group-child1264" alt="" src="./public/rectangle-47@2x.png" />
+          <img class="group-child1265" src="./public/rectangle-472@2x.png" alt="">
+        </div>
+      </div>
+      <div class="buildmyflow45">Altcode</div>
+      <img
+        class="canvas-alternate-design-inner"
+        alt=""
+        src="./public/group-205.svg"
+        id="group"
+      />
+
+      <div class="canvas-alternate-design-child1"></div>
+      <img
+        class="canvas-alternate-design-child2"
+        alt=""
+        src="./public/group-204.svg"
+        id="group1"
+      />
+
+      <span class="settings">Settings</span>
+      <span class="docs">Docs</span>
+      <span class="blogs">Blogs</span>
+      <span class="builder">Builder</span>
+    </div>
+
+    <script>
+      var group = document.getElementById("group");
+      var settings = document.querySelector(".settings");
+      var blogs = document.querySelector(".blogs");
+      var docs = document.querySelector(".docs");
+      var builder = document.querySelector(".builder");
+
+      if (group) {
+        group.addEventListener("click", function (e) {
+          var img1 = document.querySelector(".group-child1263");
+          var img2 = document.querySelector(".group-child1264");
+          var img3 = document.querySelector(".rectangle-icon");
+          var img4 = document.querySelector(".group-child1265");
+
+          var tempSrc = img4.src;
+          img4.src = img3.src;
+          img3.src = img2.src;
+          img2.src = img1.src;
+          img1.src = tempSrc;
+
+          var tempText = settings.textContent;
+          settings.textContent = blogs.textContent;
+          blogs.textContent = docs.textContent;
+          docs.textContent = builder.textContent;
+          builder.textContent = tempText;
+        });
+      }
+
+      var group1 = document.getElementById("group1");
+      var settings = document.querySelector(".settings");
+      var blogs = document.querySelector(".blogs");
+      var docs = document.querySelector(".docs");
+      var builder = document.querySelector(".builder");
+      if (group1) {
+        group1.addEventListener("click", function (e) {
+          var img1 = document.querySelector(".group-child1263");
+          var img2 = document.querySelector(".group-child1264");
+          var img3 = document.querySelector(".rectangle-icon");
+          var img4 = document.querySelector(".group-child1265");
+
+          var tempSrc = img1.src;
+          img1.src = img2.src;
+          img2.src = img3.src;
+          img3.src = img4.src;
+          img4.src = tempSrc;
+          
+          var tempText = docs.textContent;
+          docs.textContent = blogs.textContent;
+          blogs.textContent = settings.textContent;
+          settings.textContent = builder.textContent;
+          builder.textContent = tempText;
+
+          builder.style.display = "none";
+          img4.style.display = "none";
+        });
+
+        function setOnclickToBuilderText() {
+  var targetNode = document.body; // You can target a specific element if needed
+
+  // Create a MutationObserver to watch for changes in the DOM
+  var observer = new MutationObserver(function (mutationsList, observer) {
+    for (var mutation of mutationsList) {
+      if (mutation.type === "childList" || mutation.type === "characterData") {
+        // Recursively search for elements with the text "Builder" and set onclick
+        setOnclickToBuilderTextInElement(targetNode);
+      }
+    }
+  });
+
+  // Start observing the DOM
+  observer.observe(targetNode, { childList: true, subtree: true });
+}
+
+function setOnclickToBuilderTextInElement(element) {
+  if (element.nodeType === Node.ELEMENT_NODE) {
+    if (element.textContent.trim() === "Builder") {
+      element.style.cursor = "pointer";
+      element.onclick = function () {
+        window.location.href = "./Dashboard.html"
+      };
+    }
+    for (var i = 0; i < element.childNodes.length; i++) {
+      setOnclickToBuilderTextInElement(element.childNodes[i]);
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  setOnclickToBuilderText();
+});
+
+
+
+}
+
+      </script>
+  </body>
+</html>
