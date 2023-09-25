@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/bin/node-18 /usr/bin/yarn add firebase
+
+PATH: 
+  /home/yuno/.detaspace/bin:/home/yuno/.detaspace/bin:/home/yuno/.detaspace/bin:/home/yuno/.local/bin:/home/yuno/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect EHOSTUNREACH 2606:4700:90c3:80e2:e40c:535:6810:23:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1495:16)
+
+npm manifest: 
+  {
+    "name": "altcode",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "start": "parcel ./*.html ",
+      "build": "parcel build ./*.html  --dist-dir ./build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "parcel": "^2.7.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

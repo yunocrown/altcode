@@ -83,9 +83,10 @@ input.signuppageinitial-child1 {
   top: 0;
   left: 0;
   border-radius: var(--br-8xs);
-  background-color: var(--color-dimgray-200);
+  background-color: var(--color-blueviolet);
   width: 11.56rem;
   height: 3.13rem;
+  border: none;
 }
 .sign-up3 {
   position: absolute;
@@ -107,6 +108,19 @@ input.signuppageinitial-child1 {
   height: 3.13rem;
   cursor: pointer;
   font-size: var(--font-size-mini);
+}
+.rectangle-parent135 {
+  background-color: white ;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: var(--font-lexend-deca);
+  color: black;
+  font-weight: var(--font-size-xl);
+}
+.rectangle-parent135:hover {
+  background-color: var(--color-blueviolet);
+  color: aliceblue;
 }
 .already-have-a1 {
   top: 38.56rem;
