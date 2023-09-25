@@ -730,7 +730,17 @@
 .ImageIcon,
 .LabelIcon,
 .LinearProgressbarIcon,
-.ListpickerIcon {
+.ListpickerIcon,
+.NotifierIcon,
+.RatingBarIcon,
+.SliderIcon,
+.SnackbarIcon,
+.SpinnerIcon,
+.SpotlightIcon,
+.StateProgressBarIcon,
+.SwitchIcon,
+.TextBoxIcon,
+.TimePickerIcon {
     position: absolute;
     top: 0.3rem;
     left: 0.95rem;
@@ -746,7 +756,17 @@
 .ImageTxt,
 .LabelTxt,
 .LinearProgressbarTxt,
-.ListpickerTxt {
+.ListpickerTxt,
+.NotifierTxt,
+.RatingBarTxt,
+.SliderTxt,
+.SnackbarTxt,
+.SpinnerTxt,
+.SpotlightTxt,
+.StateProgressBarTxt,
+.SwitchTxt,
+.TextBoxTxt,
+.TimePickerTxt {
     position: absolute;
     width: 10rem;
     height: fit-content;
@@ -767,7 +787,17 @@
 .Image,
 .Label,
 .LinearProgressbar,
-.Listpicker {
+.Listpicker,
+.Notifier,
+.RatingBar,
+.Slider,
+.Snackbar,
+.Spinner,
+.Spotlight,
+.StateProgressBar,
+.Switch,
+.TextBox,
+.TimePicker {
     position: absolute;
     top: 0.5rem;
     height: 2.4rem;
@@ -804,6 +834,36 @@
 .Listpicker {
     top: 27.5rem;
 }
+.Notifier {
+    top: 30.5rem;
+}
+.RatingBar {
+    top: 33.5rem;
+}
+.Slider {
+    top: 36.5rem;
+}
+.Snackbar {
+    top: 39.5rem;
+}
+.Spinner {
+    top: 42.5rem;
+}
+.Spotlight {
+    top: 45.5rem;
+}
+.StateProgressBar {
+    top: 48.5rem;
+}
+.Switch {
+    top: 51.5rem;
+}
+.TextBox {
+    top: 54.5rem;
+}
+.TimePicker {
+    top: 57.5rem;
+}
 .lightbulb-button,
 .lighbulb-checkbox,
 .lightbulbcircularprog,
@@ -813,7 +873,17 @@
 .lightbulbImage,
 .lightbulbLabel,
 .lightbulbLinearProgressbar,
-.lightbulbListpicker {
+.lightbulbListpicker,
+.lightbulbNotifier,
+.lightbulbRatingBar,
+.lightbulbSlider,
+.lightbulbSnackbar,
+.lightbulbSpinner,
+.lightbulbSpotlight,
+.lightbulbStateProgressBar,
+.lightbulbSwitch,
+.lightbulbTextBox,
+.lightbulbTimePicker {
     position: absolute;
     top: 0.5rem;
     left: 13rem;
