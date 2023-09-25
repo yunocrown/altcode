@@ -28,6 +28,9 @@
   transform-origin: 0 0;
   cursor: pointer;
 }
+.user-interface-inner:hover {
+  height: 14.81rem;
+}
 .user-interface-child1,
 .user-interface-child2 {
   position: absolute;

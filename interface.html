@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./interface.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend Deca:wght@200;300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="interface">
+      <nav class="navbar"></nav>
+      <nav class="secondarynavbar"></nav>
+      <nav class="thirdnavbar"></nav>
+      <img class="screenVisiblity" src="./public/vector.svg" alt="">
+      <span class="logoName">Altcode</span>
+      <span class="versionName">v1.0 - Flutter 3.10.4</span>
+      <div class="blockLine"></div>
+      <nav class="optionDetails">
+        <span class="option1">Project</span>
+        <span class="option2">Test</span>
+        <span class="option3">Export</span>
+        <span class="option4">Help</span>
+      </nav>
+      <div class="planStatus"></div>
+      <span class="planTxt">Free</span>
+      <img src="./public/-icon-people-community1.svg" alt="" class="communityIcon">
+      <img src="./public/-icon-read-the-docs.svg" alt="" class="docsIcon">
+      <img src="./public/-icon-donate.svg" alt="" class="donationIcon">
+      <img src="./public/-icon-user-avatar-filled.svg" alt="" class="profileIcon">
+      <span class="projectName">BUILDMYFLOW</span>
+      <div class="dropdown">
+        <button class="screenTxt">Screens</button>
+        <div class="dropdown-content">
+            <a href="#">Screen 1</a>
+            <a href="#">Screen 2</a>
+            <a href="#">Screen 3</a>
+        </div>
+      </div>
+      <div class="componentSection">
+        <div class="allcomponents">
+          <button class="componentTxt">Components</button>
+          <div class="component-content">
+            <a href="#">All components</a>
+            <a href="#">Screen 2</a>
+            <a href="#">Screen 3</a>          
+          </div>
+        </div>
+      </div>
+      <div class="copyScreen">
+        <button class="copyscreenBtn">Copy Screen</button>
+        <img src="./public/group-221.svg" alt="" class="copyIcon">
+      </div>
+      <div class="removeScreen">
+        <button class="removeScreenBtn">Remove Screen</button>
+        <img src="./public/group-220.svg" alt="" class="removeIcon">
+      </div>
+      <div class="addScreen">
+        <button class="addScreenBtn">Add Screen</button>
+        <img src="./public/group-2201.svg" alt="" class="addIcon">
+      </div>
+      <div class="secondarynavbtn">
+        <img src="./public/group5.svg" alt="" class="assetsIcon">
+        <img src="./public/group.svg" alt="" class="settingIcon">
+        <button class="designBtn">Designer</button>
+        <button class="blocksBtn">Blocks</button>
+      </div>
+      <div class="paletteSection">
+        <span class="paletteTxt">Palette</span>
+        <img src="./public/vector2.svg" alt="" class="searchIcon">
+      </div>
+      <div class="viewerSection">
+        <div class="viewerTxt">Viewer</div>
+        <div class="screenSection">
+          <div class="allscreens">
+            <button class="allscreenTxt">Samsung Galaxy S9</button>
+            <img src="./public/group3.svg" alt="" class="deviceIcon">
+            <div class="screen-content">
+              <a href="#">All components</a>
+              <a href="#">Screen 2</a>
+              <a href="#">Screen 3</a>          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stationaryIcons" id="stationaryIcons">
+        <div class="userInterface" id="userInterface">
+          <img src="./public/screenshot-monitor.svg" alt="" class="userinterfaceIcon" id="userinterfaceIcon">
+          <span class="userinterfaceTxt" id="userinterfaceTxt">User Interface</span>
+        </div>
+      </div>
+      <div class="draggableScreen" id="draggableScreen">
+        <div class="button" draggable="true" id="draggableButton">
+          <img src="./public/radio-button-checked.svg" alt="" class="buttonIcon">
+          <span class="buttonTxt" id="buttonTxt">Button</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulb-button" id="lightbulb">
+        </div>
+        <div class="checkbox" draggable="true" id="draggablecheckbox">
+          <img src="./public/check-box.svg" alt="" class="checkboxIcon">
+          <span class="checkboxTxt" id="checkboxTxt">Checkbox</span>
+          <img src="./public/lightbulb.svg" alt="" class="lighbulb-checkbox" id="lightbulbcheckbox">
+        </div> 
+        <div class="circularProgress" draggable="true" id="draggablecircularprog">
+          <img src="./public/donut-large.svg" alt="" class="circularprogIcon">
+          <span class="circularprogTxt">Circular Progress</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbcircularprog" id="lightbulbcircularprog">
+        </div> 
+        <div class="customProgress" draggable="true" id="draggablecustomprog">
+          <img src="./public/model-training.svg" alt="" class="customeprogIcon">
+          <span class="customprogTxt">Custom Progress</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbcustomprog" id="lightbulbcustomprog">
+        </div>
+        <div class="datePicker" draggable="true" id="draggabledatePicker">
+          <img src="./public/calendar-view-day.svg" alt="" class="datePickerIcon">
+          <span class="datePickerTxt">Date Picker</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbdatePicker" id="lightbulbdatePicker">
+        </div>
+        <div class="floatingActionbutton" draggable="true" id="draggablefloatingActionbutton">
+          <img src="./public/add-circle.svg" alt="" class="floatingActionbuttonIcon">
+          <span class="floatingActionbuttonTxt">Floating Action Button</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbfloatingActionbutton" id="lightbulbfloatingActionbutton">
+        </div>        
+      </div>
+    </div>
+    <script>
+        var sideIcons = document.getElementById("stationaryIcons");
+        var dragScreen = document.getElementById("draggableScreen");
+        var lightbulb = document.getElementById("lightbulb");
+        var userinterfaceTxt = document.getElementById("userinterfaceTxt");
+        var buttonTxt = document.getElementById("buttonTxt");
+        var userInterface = document.getElementById("userInterface");
+        sideIcons.addEventListener("mouseover", function() {
+          sideIcons.style.width = "14.81rem";
+          dragScreen.style.width = "3.69rem";
+          dragScreen.style.left = "14.6rem";
+          userinterfaceTxt.style.display = "flex";
+          userInterface.style.width = "14.00rem";
+          buttonTxt.style.display = "none";
+          lightbulb.style.display = "none";
+        });
+        sideIcons.addEventListener("mouseout", function() {
+          sideIcons.style.width = "3.69rem";
+          dragScreen.style.width = "14.81rem";
+          dragScreen.style.left = "3.52rem";
+          userinterfaceTxt.style.display = "none";
+          buttonTxt.style.display = "flex";
+          userInterface.style.width = "4.5rem";
+          lightbulb.style.display = "16.63rem";
+        });
+
+        var screenTxt = document.querySelector(".screenTxt");
+        var dropdownContent = document.querySelector(".dropdown-content");
+        dropdownContent.addEventListener("click", function(event) {
+            if (event.target.tagName === "A") {
+                screenTxt.textContent = event.target.textContent;
+            }
+        });
+
+        var componentTxt = document.querySelector(".componentTxt");
+        var componentContent = document.querySelector(".component-content");
+        componentContent.addEventListener("click", function(event) {
+            if (event.target.tagName === "A") {
+                componentTxt.textContent = event.target.textContent;
+            }
+        });
+
+        var allscreenTxt = document.querySelector(".allscreenTxt");
+        var screenContent = document.querySelector(".screen-content");
+        screenContent.addEventListener("click", function(event) {
+            if (event.target.tagName === "A") {
+                allscreenTxt.textContent = event.target.textContent;
+            }
+        });
+
+        var draggableButton = document.getElementById("draggableButton");
+        draggableButton.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggableButton.style.backgroundColor = "var(--color-gray-900)";
+          draggableButton.style.border = "1px solid var(--color-dimgray-200)";
+          draggableButton.style.width = "13.5rem";
+          lightbulb.style.display = "none";
+        });    
+        draggableButton.addEventListener("dragend", function(event) {
+          draggableButton.style.backgroundColor = "none";
+          draggableButton.style.border = "none";
+          lightbulb.style.display = "flex";
+        });
+
+        var draggablecheckbox = document.getElementById("draggablecheckbox");
+        var lightbulbcheckbox = document.getElementById("lightbulbcheckbox");
+        draggablecheckbox.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggablecheckbox.style.backgroundColor = "var(--color-gray-900)";
+          draggablecheckbox.style.border = "1px solid var(--color-dimgray-200)";
+          draggablecheckbox.style.width = "13.5rem";
+          lightbulbcheckbox.style.display = "none";
+        });    
+        draggablecheckbox.addEventListener("dragend", function(event) {
+          draggablecheckbox.style.backgroundColor = "none";
+          draggablecheckbox.style.border = "none";
+          lightbulbcheckbox.style.display = "flex";
+        });
+
+        var draggablecircularprog = document.getElementById("draggablecircularprog");
+        var lightbulbcircularprog = document.getElementById("lightbulbcircularprog");
+        draggablecircularprog.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggablecircularprog.style.backgroundColor = "var(--color-gray-900)";
+          draggablecircularprog.style.border = "1px solid var(--color-dimgray-200)";
+          draggablecircularprog.style.width = "13.5rem";
+          lightbulbcircularprog.style.display = "none";
+        });    
+        draggablecircularprog.addEventListener("dragend", function(event) {
+          draggablecircularprog.style.backgroundColor = "none";
+          draggablecircularprog.style.border = "none";
+          lightbulbcircularprog.style.display = "flex";
+        });
+        
+        var draggablecustomprog = document.getElementById("draggablecustomprog");
+        var lightbulbcustomprog = document.getElementById("lightbulbcustomprog");
+        draggablecustomprog.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggablecustomprog.style.backgroundColor = "var(--color-gray-900)";
+          draggablecustomprog.style.border = "1px solid var(--color-dimgray-200)";
+          draggablecustomprog.style.width = "13.5rem";
+          lightbulbcustomprog.style.display = "none";
+        });    
+        draggablecustomprog.addEventListener("dragend", function(event) {
+          draggablecustomprog.style.backgroundColor = "none";
+          draggablecustomprog.style.border = "none";
+          lightbulbcustomprog.style.display = "flex";
+        });
+
+        var draggabledatePicker = document.getElementById("draggabledatePicker");
+        var lightbulbdatePicker = document.getElementById("lightbulbdatePicker");
+        draggabledatePicker.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggabledatePicker.style.backgroundColor = "var(--color-gray-900)";
+          draggabledatePicker.style.border = "1px solid var(--color-dimgray-200)";
+          draggabledatePicker.style.width = "13.5rem";
+          lightbulbdatePicker.style.display = "none";
+        });    
+        draggabledatePicker.addEventListener("dragend", function(event) {
+          draggabledatePicker.style.backgroundColor = "none";
+          draggabledatePicker.style.border = "none";
+          lightbulbdatePicker.style.display = "flex";
+        });
+        
+        var draggablefloatingActionbutton = document.getElementById("draggablefloatingActionbutton");
+        var lightbulbfloatingActionbutton = document.getElementById("lightbulbfloatingActionbutton");
+        draggablefloatingActionbutton.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggablefloatingActionbutton.style.backgroundColor = "var(--color-gray-900)";
+          draggablefloatingActionbutton.style.border = "1px solid var(--color-dimgray-200)";
+          draggablefloatingActionbutton.style.width = "13.5rem";
+          lightbulbfloatingActionbutton.style.display = "none";
+        });    
+        draggablefloatingActionbutton.addEventListener("dragend", function(event) {
+          draggablefloatingActionbutton.style.backgroundColor = "none";
+          draggablefloatingActionbutton.style.border = "none";
+          lightbulbfloatingActionbutton.style.display = "flex";
+        });
+    </script>
+  </body>

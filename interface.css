@@ -1,0 +1,791 @@
+*{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.html,
+.body {
+    width: 100%;
+    height: 100%;
+}
+.interface {
+  position: relative;
+  background-color: var(--color-gray-700);
+  width: 100%;
+  height: 83.31rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-lexend-deca);
+}
+.navbar,
+.sideIcons,
+.secondarynavbar {
+    position: absolute;
+    background-color: var(--color-gray-900);
+    border: 1px solid var(--color-dimgray-200);
+    box-sizing: border-box;
+}
+.navbar {
+    top: 0;
+    left: -0.06rem;
+    width: 85.5rem;
+    height: 2.88rem;
+}
+.sideIcons,
+.secondarynavbar {
+    top: 2.81rem;
+    left: -0.12rem;
+    width: 85.56rem;
+    height: 3.13rem;
+}
+.sideIcons {
+    top: 9.25rem;
+    left: -0.06rem;
+    width: 3.69rem;
+    height: 100%;
+    cursor: pointer;
+}
+.sideIcons:hover {
+    height: 14.81rem;
+}
+.userinterfaceIcon,
+.layoutIcon {
+    position: absolute;
+    top: 0.5rem;
+    left: 2.06rem;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.layoutIcon {
+    top: 4.65rem;
+}
+.expandIcon,
+.expandIcon1 {
+    position: absolute;
+    top: 33.5rem;
+    left: 16.5rem;
+    border-radius: var(--br-81xl);
+    width: 4.5rem;
+    height: 2.69rem;
+}
+.expandIcon1 {
+    left: 46.69rem;
+    width: 4.94rem;
+}
+.draggedIcons,
+.componentDetails {
+    position: absolute;
+    top: 83.31rem;
+    left: 3.56rem;
+    background-color: var(--color-gray-900);
+    border: 1px solid var(--color-dimgray-200);
+    box-sizing: border-box;
+    width: 77.45rem;
+    height: 14.75rem;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+.componentDetails {
+    left: 49.38rem;
+    width: 77.38rem;
+    height: 18.38rem;
+}
+.expandIcon2 {
+    position: absolute;
+    top: 29rem;
+    left: 64.88rem;
+    border-radius: var(--br-81xl);
+    width: 4.94rem;
+    height: 2.69rem;
+}
+.sideProperties,
+.thirdnavbar {
+    position: absolute;
+    background-color: var(--color-gray-900);
+    border: 1px solid var(--color-dimgray-200);
+    box-sizing: border-box;
+}
+.sideProperties {
+    top: 83.31rem;
+    left: 67.69rem;
+    width: 77.44rem;
+    height: 17.75rem;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+.thirdnavbar {
+    top: 5.88rem;
+    left: -0.19rem;
+    width: 85.63rem;
+    height: 3.44rem;
+}
+.screenVisiblity {
+    position: absolute;
+    height: 1.28%;
+    width: 1.68%;
+    top: 8.4%;
+    right: 44.8%;
+    bottom: 90.32%;
+    left: 53.51%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.logoName,
+.versionName {
+    position: absolute;
+    top: 0.88rem;
+    left: 4.38rem;
+    font-size: var(--font-size-mid);
+    line-height: 3.59rem;
+    display: flex;
+    align-items: center;
+    width: 7.44rem;
+    height: 1.06rem;
+}
+.versionName {
+    top: 1.1rem;
+    left: 8.6rem;
+    font-size: var(--font-size-smi);
+    color: var(--color-dimgray-100);
+    width: 9rem;
+    height: 0.94rem;
+}
+.blockLine {
+    position: absolute;
+    top: 0.44rem;
+    left: 17.5rem;
+    border-right: 2px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 0.13rem;
+    height: 2.13rem;
+}
+.optionDetails {
+    position: absolute;
+    left: 20rem;
+    width: 14rem;
+    height: 1.75rem;
+    top: 0.58rem;
+    line-height: 3.59rem;
+    display: flex;
+    align-items: center; 
+}
+.option1, 
+.option2,
+.option3,
+.option4 {
+    position: absolute;
+    top: 0;
+    line-height: 3.59rem;
+    display: flex;
+    align-items: center;
+}
+.option1 {
+    width: 3.88rem;
+}
+.option2 {
+    left: 4.5rem;
+    width: 2.38rem;
+    height: 1.75rem;
+}
+.option3 {
+    left: 7.38rem;
+    width: 3.88rem;
+}
+.option4 {
+    left: 11.25rem;
+    width: 2.81rem;
+}
+.planStatus {
+    position: absolute;
+    top: 0.69rem;
+    left: 68.5rem;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--color-dimgray-200);
+    box-sizing: border-box;
+    width: 4.13rem;
+    height: 1.5rem;
+}
+.planTxt {
+    position: absolute;
+    top: 0.94rem;
+    left: 69.81rem;
+    font-size: var(--font-size-xs);
+    line-height: 3.59rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    width: 2.13rem;
+    height: 0.94rem;
+}
+.communityIcon,
+.docsIcon,
+.donationIcon,
+.profileIcon {
+    position: absolute;
+    height: 1.58%;
+    width: 1.54%;
+    top: 0.83%;
+    right: 12.15%;
+    bottom: 97.6%;
+    left: 86.31%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.docsIcon,
+.donationIcon,
+.profileIcon {
+    height: 1.5%;
+    width: 1.1%;
+    top: 0.9%;
+    right: 9%;
+    left: 89.9%;
+}
+.donationIcon,
+.profileIcon {
+    height: 1.51%;
+    width: 1.46%;
+    top: 0.83%;
+    right: 5.42%;
+    bottom: 97.67%;
+    left: 93.12%;
+}
+.profileIcon {
+    height: 1.58%;
+    width: 1.54%;
+    right: 1.76%;
+    bottom: 97.6%;
+    left: 96.71%;
+}
+.screenSelector {
+    position: absolute;
+    top: 3.44rem;
+    left: 12.94rem;
+    border-radius: var(--br-11xs);
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 5.38rem;
+    height: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--padding-5xs) 0 var(--padding-6xs);
+    align-items: center;
+    justify-content: flex-end;
+    font-size: var(--font-size-xs);
+}
+.projectName,
+.screenTxt {
+    line-height: 3.59rem;
+    display: flex;
+    align-items: center; 
+}
+.projectName {
+    position: absolute;
+    top: 2.94rem;
+    left: 1.19rem;
+    font-size: var(--font-size-mid);
+    width: 8.75rem;
+    height: 2.69rem;
+}
+.screenTxt {
+    position: absolute;
+    width: 4.44rem;
+    height: 1.75rem;
+    background-color: var(--color-gray-900);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    left: 1rem;
+}
+.dropdown {
+    position: absolute;
+    top: 3.44rem;
+    left: 10.94rem;
+    border-radius: var(--br-11xs);
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 6.38rem;
+    height: 1.95rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--padding-5xs) 0 var(--padding-6xs);
+    align-items: center;
+    justify-content: flex-end;
+    font-size: var(--font-size-xs);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-dimgray-100);
+    min-width: 6.28rem;
+    top: 1.91rem;
+    left: 0.1rem;
+}
+.dropdown-content a {
+    color:aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.dropdown-content a:hover {
+    background-color: var(--color-darkslategray);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.allcomponents {
+    position: absolute;
+    top: 0.74rem;
+    left: 1rem;
+    border-radius: var(--br-11xs);
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 8.75rem;
+    height: 1.78rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.42rem;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--gap-sm);
+    font-size: var(--font-size-xs);
+}
+.componentTxt {
+    position: absolute;
+    width: 8.44rem;
+    height: 1.4rem;
+    background-color: var(--color-gray-900);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    left: 0rem;
+    top: 0.2rem;
+    justify-content: center;
+}
+.component-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-dimgray-100);
+    min-width: 6.28rem;
+    top: 1.75rem;
+    left: 0.1rem;
+}
+.component-content a {
+    color:aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.component-content a:hover {
+    background-color: var(--color-darkslategray);
+}
+.allcomponents:hover .component-content {
+    display: block;
+}
+.componentSection {
+    position: absolute;
+    top: 5.86rem;
+    left: 49.38rem;
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 18.35rem;
+    height: 3.48rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.copyScreen {
+    position: absolute;
+    top: 3.44rem;
+    left: 26.56rem;
+    border-radius: var(--br-11xs);
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 8.61rem;
+    height: 1.95rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--padding-7xs) var(--padding-6xs);
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-11xs);
+    font-size: var(--font-size-xs);
+}
+.copyscreenBtn {
+    position: absolute;
+    width: 7.24rem;
+    height: 1.4rem;
+    background-color: var(--color-gray-900);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    left: 0rem;
+    top: 0.3rem;
+    justify-content: center;
+}
+.copyIcon {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: 7.0rem;
+    top: 0.3rem;
+}
+.removeScreen {
+    position: absolute;
+    top: 3.44rem;
+    left: 35.53rem;
+    border-radius: var(--br-11xs);
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 8.61rem;
+    height: 1.95rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--padding-7xs) var(--padding-6xs);
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-11xs);
+    font-size: var(--font-size-xs);
+}
+.removeScreenBtn{
+    position: absolute;
+    width: 7.24rem;
+    height: 1.4rem;
+    background-color: var(--color-gray-900);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    left: 0rem;
+    top: 0.3rem;
+    justify-content: center;
+}
+.removeIcon {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: 7.2rem;
+    top: 0.3rem;
+}
+.addScreen {
+    position: absolute;
+    top: 3.44rem;
+    left: 17.63rem;
+    border-radius: var(--br-11xs);
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 8.61rem;
+    height: 1.95rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--padding-7xs) var(--padding-6xs);
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-11xs);
+    font-size: var(--font-size-xs);
+}
+.addScreenBtn {
+    position: absolute;
+    width: 7.24rem;
+    height: 1.4rem;
+    background-color: var(--color-gray-900);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    left: 0rem;
+    top: 0.3rem;
+    justify-content: center;
+}
+.addIcon {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: 6.6rem;
+    top: 0.3rem;
+}
+.secondarynavbtn {
+    position: absolute;
+    top: 3.5rem;
+    left: 65.38rem;
+    width: 18.13rem;
+    height: 1.75rem;
+    font-size: var(--font-size-xs);
+}
+.assetsIcon {
+    position: absolute;
+    height: 83.04%;
+    width: 8.03%;
+    top: 10.71%;
+    right: 91.97%;
+    bottom: 6.25%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.settingIcon {
+    position: absolute;
+    height: 81.29%;
+    width: 7.84%;
+    top: 10.71%;
+    right: 72.85%;
+    bottom: 7.99%;
+    left: 19.31%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.designBtn,
+.blocksBtn {
+    position: absolute;
+    top: 0;
+    left: 13.06rem;
+    border-radius: var(--br-10xs);
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 5.06rem;
+    height: 1.75rem;
+    color: aliceblue;
+    font-family: var(--font-lexend-deca);
+}
+.designBtn {
+    left: 6.81rem;
+    background-color: var(--color-slategray-200);
+    cursor: pointer;
+}
+.blocksBtn {
+    background-color: var(--color-gray-900);
+    cursor: pointer;
+}
+.paletteTxt {
+    position: absolute;
+    top: 0.8rem;
+    left: 1.38rem;
+    font-size: var(--font-size-mini);
+    line-height: 3.59rem;
+    display: flex;
+    align-items: center;
+    width: 4.69rem;
+    height: 1.5rem;
+}
+.paletteSection {
+    position: absolute;
+    top: 5.86rem;
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 18.3rem;
+    height: 3.48rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.searchIcon {
+    position: absolute;
+    height: 1rem;
+    width: 1.6rem;
+    left: 15rem;
+}
+.viewerSection {
+    position: absolute;
+    top: 5.86rem;
+    left: 18.24rem;
+    border: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 31.2rem;
+    height: 3.48rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.viewerTxt {
+    position: absolute;
+    top: 0.8rem;
+    left: 1.38rem;
+    font-size: var(--font-size-mini);
+    line-height: 3.59rem;
+    display: flex;
+    align-items: center;
+    width: 4.69rem;
+    height: 1.5rem;
+}
+.screenSection {
+    position: absolute;
+    left: 9rem;
+    border: 1px solid var(--color-dimgray-200);
+    box-sizing: border-box;
+    width: 13.19rem;
+    height: 2.13rem;
+    font-size: var(--font-size-xs);
+}
+.allscreens {
+    position: absolute;
+    top: 0.13rem;
+    left: 1rem;
+    border-radius: var(--br-11xs);
+    box-sizing: border-box;
+    width: 10.8rem;
+    height: 1.78rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.42rem;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--gap-sm);
+    font-size: var(--font-size-xs);
+}
+.allscreenTxt {
+    position: absolute;
+    width: 9.44rem;
+    height: 1.75rem;
+    background-color: var(--color-gray-900);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    left: 1.99rem;
+    top: 0rem;
+    align-items: center;
+    font-family: var(--font-lexend-deca);
+}
+.screen-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-dimgray-100);
+    width: 8.28rem;
+    top: 1.75rem;
+    left: 2.1rem;
+}
+.screen-content a {
+    color:aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.screen-content a:hover {
+    background-color: var(--color-darkslategray);
+}
+.allscreens:hover .screen-content {
+    display: block;
+}
+.deviceIcon{
+    position: absolute;
+    height: 1rem;
+    width: 1.6rem;
+    left: 0rem;
+}
+.stationaryIcons {
+    position: absolute;
+    top: 9.3rem;
+    width: 3.69rem;
+    height: 100%;
+    background-color: var(--color-gray-900);
+    border: 1px solid var(--color-dimgray-200);
+}
+.userInterface {
+    position: absolute;
+    top: 1rem;
+    left: -1.02rem;
+    border-radius: var(--br-81xl);
+    background-color: var(--color-darkslategray);
+    width: 4.5rem;
+    height: 2.69rem;
+}
+.userinterfaceTxt {
+    display: none;
+    position: absolute;
+    width: 8rem;
+    height: fit-content;
+    top: 0.6rem;
+    left: 4.5rem;
+    text-align: left;
+    font-size: var(--font-size-mid);
+    color: var(--color-white);
+    font-family: var(--font-lexend-deca);
+}
+.draggableScreen {
+    position: absolute;
+    top: 9.3rem;
+    left: 3.6rem;
+    width: 14.69rem;
+    height: 100%;
+    background-color: var(--color-gray-900);
+    border: 1px solid var(--color-dimgray-200);
+}
+.buttonIcon,
+.checkboxIcon,
+.circularprogIcon,
+.customeprogIcon,
+.datePickerIcon {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.95rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.buttonTxt,
+.checkboxTxt,
+.circularprogTxt,
+.customprogTxt,
+.datePickerTxt {
+    position: absolute;
+    width: 8rem;
+    height: fit-content;
+    top: 0.4rem;
+    left: 3.5rem;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+    font-family: var(--font-lexend-deca);
+}
+.button,
+.checkbox,
+.circularProgress,
+.customProgress,
+.datePicker {
+    position: absolute;
+    top: 0.5rem;
+    height: 2.4rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+.checkbox,
+.circularProgress,
+.datePicker {
+    top: 3.5rem;
+}
+.circularProgress,
+.customProgress,
+.datePicker {
+    top: 6.5rem;
+}
+.customProgress,
+.datePicker {
+    top: 9.5rem;
+}
+.datePicker{ 
+    top: 12.5rem;
+}
+.lightbulb-button,
+.lighbulb-checkbox,
+.lightbulbcircularprog,
+.lightbulbcustomprog,
+.lightbulbdatePicker {
+    position: absolute;
+    top: 0.5rem;
+    left: 12.6rem;
+    width: 0.81rem;
+    height: 1.5rem;
+}
