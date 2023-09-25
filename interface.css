@@ -725,7 +725,12 @@
 .checkboxIcon,
 .circularprogIcon,
 .customeprogIcon,
-.datePickerIcon {
+.datePickerIcon,
+.floatingActionbuttonIcon,
+.ImageIcon,
+.LabelIcon,
+.LinearProgressbarIcon,
+.ListpickerIcon {
     position: absolute;
     top: 0.3rem;
     left: 0.95rem;
@@ -736,22 +741,33 @@
 .checkboxTxt,
 .circularprogTxt,
 .customprogTxt,
-.datePickerTxt {
+.datePickerTxt,
+.floatingActionbuttonTxt,
+.ImageTxt,
+.LabelTxt,
+.LinearProgressbarTxt,
+.ListpickerTxt {
     position: absolute;
-    width: 8rem;
+    width: 10rem;
     height: fit-content;
-    top: 0.4rem;
-    left: 3.5rem;
+    top: 0.5rem;
+    left: 3.0rem;
     text-align: left;
     font-size: var(--font-size-sm);
     color: var(--color-white);
     font-family: var(--font-lexend-deca);
+    font-weight: 400;
 }
 .button,
 .checkbox,
 .circularProgress,
 .customProgress,
-.datePicker {
+.datePicker,
+.floatingActionbutton,
+.Image,
+.Label,
+.LinearProgressbar,
+.Listpicker {
     position: absolute;
     top: 0.5rem;
     height: 2.4rem;
@@ -761,31 +777,46 @@
     align-content: center;
     cursor: pointer;
 }
-.checkbox,
-.circularProgress,
-.datePicker {
+.checkbox {
     top: 3.5rem;
 }
-.circularProgress,
-.customProgress,
-.datePicker {
+.circularProgress {
     top: 6.5rem;
 }
-.customProgress,
-.datePicker {
+.customProgress {
     top: 9.5rem;
 }
-.datePicker{ 
+.datePicker { 
     top: 12.5rem;
+}
+.floatingActionbutton {
+    top: 15.5rem;
+}
+.Image {
+    top: 18.5rem;
+}
+.Label {
+    top: 21.5rem;
+}
+.LinearProgressbar {
+    top: 24.5rem;
+}
+.Listpicker {
+    top: 27.5rem;
 }
 .lightbulb-button,
 .lighbulb-checkbox,
 .lightbulbcircularprog,
 .lightbulbcustomprog,
-.lightbulbdatePicker {
+.lightbulbdatePicker,
+.lightbulbfloatingActionbutton,
+.lightbulbImage,
+.lightbulbLabel,
+.lightbulbLinearProgressbar,
+.lightbulbListpicker {
     position: absolute;
     top: 0.5rem;
-    left: 12.6rem;
+    left: 13rem;
     width: 0.81rem;
     height: 1.5rem;
 }

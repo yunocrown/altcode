@@ -139,15 +139,37 @@
           <img src="./public/add-circle.svg" alt="" class="floatingActionbuttonIcon">
           <span class="floatingActionbuttonTxt">Floating Action Button</span>
           <img src="./public/lightbulb.svg" alt="" class="lightbulbfloatingActionbutton" id="lightbulbfloatingActionbutton">
-        </div>        
+        </div>
+        <div class="Image" draggable="true" id="draggableImage">
+          <img src="./public/art-track.svg" alt="" class="ImageIcon">
+          <span class="ImageTxt">Image</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbImage" id="lightbulbImage">
+        </div>
+        <div class="Label" draggable="true" id="draggableLabel">
+          <img src="./public/label.svg" alt="" class="LabelIcon">
+          <span class="LabelTxt">Label</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbLabel" id="lightbulbLabel">
+        </div>
+        <div class="LinearProgressbar" draggable="true" id="draggableLinearProgressbar">
+          <img src="./public/pending.svg" alt="" class="LinearProgressbarIcon">
+          <span class="LinearProgressbarTxt">Linear Progressbar</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbLinearProgressbar" id="lightbulbLinearProgressbar">
+        </div>
+        <div class="Listpicker" draggable="true" id="draggableListpicker">
+          <img src="./public/checklist.svg" alt="" class="ListpickerIcon">
+          <span class="ListpickerTxt">List Picker</span>
+          <img src="./public/lightbulb.svg" alt="" class="lightbulbListpicker" id="lightbulbListpicker">
+        </div>                 
       </div>
     </div>
     <script>
         var sideIcons = document.getElementById("stationaryIcons");
         var dragScreen = document.getElementById("draggableScreen");
         var lightbulb = document.getElementById("lightbulb");
+        var lightbulbcheckbox = document.getElementById("lightbulbcheckbox");
         var userinterfaceTxt = document.getElementById("userinterfaceTxt");
         var buttonTxt = document.getElementById("buttonTxt");
+        var checkboxTxt = document.getElementById("checkboxTxt");
         var userInterface = document.getElementById("userInterface");
         sideIcons.addEventListener("mouseover", function() {
           sideIcons.style.width = "14.81rem";
@@ -156,7 +178,9 @@
           userinterfaceTxt.style.display = "flex";
           userInterface.style.width = "14.00rem";
           buttonTxt.style.display = "none";
+          checkboxTxt.style.display = "none";
           lightbulb.style.display = "none";
+          lightbulbcheckbox.style.display = "none";
         });
         sideIcons.addEventListener("mouseout", function() {
           sideIcons.style.width = "3.69rem";
@@ -164,8 +188,10 @@
           dragScreen.style.left = "3.52rem";
           userinterfaceTxt.style.display = "none";
           buttonTxt.style.display = "flex";
+          checkboxTxt.style.display = "flex";
           userInterface.style.width = "4.5rem";
-          lightbulb.style.display = "16.63rem";
+          lightbulb.style.display = "flex";
+          lightbulbcheckbox.style.display = "flex";
         });
 
         var screenTxt = document.querySelector(".screenTxt");
@@ -279,6 +305,66 @@
           draggablefloatingActionbutton.style.backgroundColor = "none";
           draggablefloatingActionbutton.style.border = "none";
           lightbulbfloatingActionbutton.style.display = "flex";
+        });
+
+        var draggableImage = document.getElementById("draggableImage");
+        var lightbulbImage = document.getElementById("lightbulbImage");
+        draggableImage.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggableImage.style.backgroundColor = "var(--color-gray-900)";
+          draggableImage.style.border = "1px solid var(--color-dimgray-200)";
+          draggableImage.style.width = "13.5rem";
+          lightbulbImage.style.display = "none";
+        });    
+        draggableImage.addEventListener("dragend", function(event) {
+          draggableImage.style.backgroundColor = "none";
+          draggableImage.style.border = "none";
+          lightbulbImage.style.display = "flex";
+        });
+
+        var draggableLabel= document.getElementById("draggableLabel");
+        var lightbulbLabel = document.getElementById("lightbulbLabel");
+        draggableLabel.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggableLabel.style.backgroundColor = "var(--color-gray-900)";
+          draggableLabel.style.border = "1px solid var(--color-dimgray-200)";
+          draggableLabel.style.width = "13.5rem";
+          lightbulbLabel.style.display = "none";
+        });    
+        draggableLabel.addEventListener("dragend", function(event) {
+          draggableLabel.style.backgroundColor = "none";
+          draggableLabel.style.border = "none";
+          lightbulbLabel.style.display = "flex";
+        });
+
+        var draggableLinearProgressbar= document.getElementById("draggableLinearProgressbar");
+        var lightbulbLinearProgressbar = document.getElementById("lightbulbLinearProgressbar");
+        draggableLinearProgressbar.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggableLinearProgressbar.style.backgroundColor = "var(--color-gray-900)";
+          draggableLinearProgressbar.style.border = "1px solid var(--color-dimgray-200)";
+          draggableLinearProgressbar.style.width = "13.5rem";
+          lightbulbLinearProgressbar.style.display = "none";
+        });    
+        draggableLinearProgressbar.addEventListener("dragend", function(event) {
+          draggableLinearProgressbar.style.backgroundColor = "none";
+          draggableLinearProgressbar.style.border = "none";
+          lightbulbLinearProgressbar.style.display = "flex";
+        });
+        
+        var draggableListpicker= document.getElementById("draggableListpicker");
+        var lightbulbListpicker = document.getElementById("lightbulbListpicker");
+        draggableListpicker.addEventListener("dragstart", function(event) {
+          event.dataTransfer.setData("text/plain", event.target.id);
+          draggableListpicker.style.backgroundColor = "var(--color-gray-900)";
+          draggableListpicker.style.border = "1px solid var(--color-dimgray-200)";
+          draggableListpicker.style.width = "13.5rem";
+          lightbulbListpicker.style.display = "none";
+        });    
+        draggableListpicker.addEventListener("dragend", function(event) {
+          draggableListpicker.style.backgroundColor = "none";
+          draggableListpicker.style.border = "none";
+          lightbulbListpicker.style.display = "flex";
         });
     </script>
   </body>
