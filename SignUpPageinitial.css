@@ -273,8 +273,8 @@ input.group-child1251 {
 .vector-icon112,
 .vector-icon113 {
   position: absolute;
-  height: 61.09%;
-  width: 16.07%;
+  height: 62.09%;
+  width: 17.07%;
   top: 0;
   right: 71.17%;
   bottom: 38.91%;
@@ -282,6 +282,17 @@ input.group-child1251 {
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+}
+.vector-icon112 {
+  background-color:transparent;
+  border: none;
+  outline: none;
+}
+.vector-icon112-child {
+  position: absolute;
+  height: 61.09%;
+  width: 16.07%;
+  cursor: pointer;
 }
 .vector-icon113 {
   height: 59.66%;

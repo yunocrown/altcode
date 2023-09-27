@@ -721,52 +721,14 @@
     background-color: var(--color-gray-900);
     border: 1px solid var(--color-dimgray-200);
 }
-.buttonIcon,
-.checkboxIcon,
-.circularprogIcon,
-.customeprogIcon,
-.datePickerIcon,
-.floatingActionbuttonIcon,
-.ImageIcon,
-.LabelIcon,
-.LinearProgressbarIcon,
-.ListpickerIcon,
-.NotifierIcon,
-.RatingBarIcon,
-.SliderIcon,
-.SnackbarIcon,
-.SpinnerIcon,
-.SpotlightIcon,
-.StateProgressBarIcon,
-.SwitchIcon,
-.TextBoxIcon,
-.TimePickerIcon {
+.buttonIcon {
     position: absolute;
     top: 0.3rem;
     left: 0.95rem;
     width: 1.5rem;
     height: 1.5rem;
 }
-.buttonTxt,
-.checkboxTxt,
-.circularprogTxt,
-.customprogTxt,
-.datePickerTxt,
-.floatingActionbuttonTxt,
-.ImageTxt,
-.LabelTxt,
-.LinearProgressbarTxt,
-.ListpickerTxt,
-.NotifierTxt,
-.RatingBarTxt,
-.SliderTxt,
-.SnackbarTxt,
-.SpinnerTxt,
-.SpotlightTxt,
-.StateProgressBarTxt,
-.SwitchTxt,
-.TextBoxTxt,
-.TimePickerTxt {
+.buttonTxt {
     position: absolute;
     width: 10rem;
     height: fit-content;
@@ -864,26 +826,7 @@
 .TimePicker {
     top: 57.5rem;
 }
-.lightbulb-button,
-.lighbulb-checkbox,
-.lightbulbcircularprog,
-.lightbulbcustomprog,
-.lightbulbdatePicker,
-.lightbulbfloatingActionbutton,
-.lightbulbImage,
-.lightbulbLabel,
-.lightbulbLinearProgressbar,
-.lightbulbListpicker,
-.lightbulbNotifier,
-.lightbulbRatingBar,
-.lightbulbSlider,
-.lightbulbSnackbar,
-.lightbulbSpinner,
-.lightbulbSpotlight,
-.lightbulbStateProgressBar,
-.lightbulbSwitch,
-.lightbulbTextBox,
-.lightbulbTimePicker {
+.lightbulb {
     position: absolute;
     top: 0.5rem;
     left: 13rem;
