@@ -282,6 +282,7 @@ input.group-child1251 {
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+  cursor: pointer;
 }
 .vector-icon112 {
   background-color:transparent;
