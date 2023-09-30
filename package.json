@@ -12,6 +12,7 @@
     "parcel": "^2.7.0"
   },
   "dependencies": {
+    "@angular/router": "^16.2.6",
     "firebase": "^10.4.0"
   }
 }

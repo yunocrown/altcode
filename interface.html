@@ -65,6 +65,8 @@
             <a href="#">Screen 2</a>
             <a href="#">Screen 3</a>          
           </div>
+          <img class="edit" src="./public/vector1.svg" alt="" >
+          <img src="./public/group6.svg" alt="" class="del">
         </div>
       </div>
       <div class="copyScreen">
@@ -104,159 +106,251 @@
         </div>
       </div>
       <div class="stationaryIcons" id="stationaryIcons">
-        <div class="userInterface" id="userInterface">
-          <img src="./public/screenshot-monitor.svg" alt="" class="userinterfaceIcon" id="userinterfaceIcon">
-          <span class="userinterfaceTxt" id="userinterfaceTxt">User Interface</span>
-        </div>
+        <ul class="displayIcons">
+          <details class="userInterface">
+            <summary class="userInterfaceContent">
+              <img src="./public/screenshot-monitor.svg" alt="" class="userInterfaceIcon">
+              <!-- <span>User Interface</span> -->
+            </summary>
+            <!-- <p>sfgfrh</p> -->
+          </details>
+          <details class="layout">
+            <summary class="userInterfaceContent">
+              <img src="./public/vector3.svg" alt="" class="userInterfaceIcon">
+              <!-- <span> Layout</span> -->
+            </summary>
+            <ul class="layoutContent">
+              <a href="#">
+                <img src="./public/browse1.svg" alt="" class="layoutContentIcon">
+                General
+              </a>
+              <a href="#">
+                <img src="./public/event-list1.svg" alt="" class="layoutContentIcon">
+                List
+              </a>
+              <a href="#">
+                <img src="./public/swap-vert1.svg" alt="" class="layoutContentIcon">
+                Navigation
+              </a>
+              <a href="#">
+                <img src="./public/capture1.svg" alt="" class="layoutContentIcon">
+                Views
+              </a>
+            </ul>
+          </details>
+          <details class="media">
+            <summary class="userInterfaceContent">
+              <img src="./public/camera.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="drawingAnimation">
+            <summary class="userInterfaceContent">
+              <img src="./public/palette.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="maps">
+            <summary class="userInterfaceContent">
+              <img src="./public/group4.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="sensors">
+            <summary class="userInterfaceContent">
+              <img src="./public/assistant-navigation.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="socials">
+            <summary class="userInterfaceContent">
+              <img src="./public/connect-without-contact.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="storage">
+            <summary class="userInterfaceContent">
+              <img src="./public/backup.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="utilities">
+            <summary class="userInterfaceContent">
+              <img src="./public/cases.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="dynamic">
+            <summary class="userInterfaceContent">
+              <img src="./public/code2.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="connectivity">
+            <summary class="userInterfaceContent">
+              <img src="./public/hub.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="google">
+            <summary class="userInterfaceContent">
+              <img src="./public/vector4.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+          <details class="monetization">
+            <summary class="userInterfaceContent">
+              <img src="./public/monetization-on.svg" alt="" class="userInterfaceIcon">
+            </summary>
+            <ul class="layoutContent">
+              <a href="#">
+                <img src="./public/shopping-cart.svg" alt="" class="layoutContentIcon">
+                General
+              </a>
+              <a href="#">
+                <img src="./public/manga.svg" alt="" class="layoutContentIcon">
+                Advertisement
+              </a>
+            </ul>
+          </details>
+          <details class="extensions">
+            <summary class="userInterfaceContent">
+              <img src="./public/send-time-extension.svg" alt="" class="userInterfaceIcon">
+            </summary>
+          </details>
+        </ul>
       </div>
-      <div class="draggableScreen" id="draggableScreen">
-        <div class="button" draggable="true" id="draggableButton">
+      <ul class="draggableScreen" id="draggableScreen">
+        <a class="button" draggable="true" id="draggableButton">
           <img src="./public/radio-button-checked.svg" alt="" class="buttonIcon">
           <span class="buttonTxt" id="buttonTxt">Button</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="checkbox" draggable="true" id="draggablecheckbox">
+        </a>
+        <a class="checkbox" draggable="true" id="draggableCheckbox">
           <img src="./public/check-box.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Checkbox</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div> 
-        <div class="circularProgress" draggable="true" id="draggablecircularprog">
+          <span class="buttonTxt" id="buttonTxt">Checkbox</span>          
+        </a> 
+        <a class="circularProgress" draggable="true" id="draggablecircularprog">
           <img src="./public/donut-large.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Circular Progress</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div> 
-        <div class="customProgress" draggable="true" id="draggablecustomprog">
+          <span class="buttonTxt" id="buttonTxt">Circular Progress</span>         
+        </a> 
+        <a class="customProgress" draggable="true" id="draggablecustomprog">
           <img src="./public/model-training.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Custom Progress</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="datePicker" draggable="true" id="draggabledatePicker">
+          <span class="buttonTxt" id="buttonTxt">Custom Progress</span>          
+        </a>
+        <a class="datePicker" draggable="true" id="draggabledatePicker">
           <img src="./public/calendar-view-day.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Date Picker</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="floatingActionbutton" draggable="true" id="draggablefloatingActionbutton">
+          <span class="buttonTxt" id="buttonTxt">Date Picker</span>    
+        </a>
+        <a class="floatingActionbutton" draggable="true" id="draggablefloatingActionbutton">
           <img src="./public/add-circle.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Floating Action Button</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Image" draggable="true" id="draggableImage">
+          <span class="buttonTxt" id="buttonTxt">Floating Action Button</span>         
+        </a>
+        <a class="Image" draggable="true" id="draggableImage">
           <img src="./public/art-track.svg" alt="" class="buttonIcon">
           <span class="buttonTxt" id="buttonTxt">Image</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Label" draggable="true" id="draggableLabel">
+        </a>
+        <a class="Label" draggable="true" id="draggableLabel">
           <img src="./public/label.svg" alt="" class="buttonIcon">
           <span class="buttonTxt" id="buttonTxt">Label</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="LinearProgressbar" draggable="true" id="draggableLinearProgressbar">
+        </a>
+        <a class="LinearProgressbar" draggable="true" id="draggableLinearProgressbar">
           <img src="./public/pending.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Linear Progressbar</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Listpicker" draggable="true" id="draggableListpicker">
+          <span class="buttonTxt" id="buttonTxt">Linear Progressbar</span>         
+        </a>
+        <a class="Listpicker" draggable="true" id="draggableListpicker">
           <img src="./public/checklist.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">List Picker</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Notifier" draggable="true" id="draggableNotifier">
+          <span class="buttonTxt" id="buttonTxt">List Picker</span>         
+        </a>
+        <a class="Notifier" draggable="true" id="draggableNotifier">
           <img src="./public/notifications-active.svg" alt="" class="buttonIcon">
           <span class="buttonTxt" id="buttonTxt">Notifier</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="RatingBar" draggable="true" id="draggableRatingBar">
+        </a>
+        <a class="RatingBar" draggable="true" id="draggableRatingBar">
           <img src="./public/star-half.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Rating Bar</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Slider" draggable="true" id="draggableSlider">
+          <span class="buttonTxt" id="buttonTxt">Rating Bar</span>     
+        </a>
+        <a class="Slider" draggable="true" id="draggableSlider">
           <img src="./public/sliders.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Slider</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Snackbar" draggable="true" id="draggableSnackbar">
+          <span class="buttonTxt" id="buttonTxt">Slider</span>   
+        </a>
+        <a class="Snackbar" draggable="true" id="draggableSnackbar">
           <img src="./public/dns.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Snackbar</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Spinner" draggable="true" id="draggableSpinner">
+          <span class="buttonTxt" id="buttonTxt">Snackbar</span>        
+        </a>
+        <a class="Spinner" draggable="true" id="draggableSpinner">
           <img src="./public/expand-circle-down.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Spinner</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="Spotlight" draggable="true" id="draggableSpotlight">
+          <span class="buttonTxt" id="buttonTxt">Spinner</span>   
+        </a>
+        <a class="Spotlight" draggable="true" id="draggableSpotlight">
           <img src="./public/highlight.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Spotlight</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>
-        <div class="StateProgressBar" draggable="true" id="draggableStateProgressBar">
+          <span class="buttonTxt" id="buttonTxt">Spotlight</span>      
+        </a>
+        <a class="StateProgressBar" draggable="true" id="draggableStateProgressBar">
           <img src="./public/done-all.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">State Progress Bar</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div> 
-        <div class="Switch" draggable="true" id="draggableSwitch">
+          <span class="buttonTxt" id="buttonTxt">State Progress Bar</span>        
+        </a> 
+        <a class="Switch" draggable="true" id="draggableSwitch">
           <img src="./public/toggle-on.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Switch</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>  
-        <div class="TextBox" draggable="true" id="draggableTextBox">
+          <span class="buttonTxt" id="buttonTxt">Switch</span>   
+        </a>  
+        <a class="TextBox" draggable="true" id="draggableTextBox">
           <img src="./public/border-color.svg" alt="" class="buttonIcon">
-          <span class="buttonTxt" id="buttonTxt">Text Box</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div> 
-        <div class="TimePicker" draggable="true" id="draggableTimePicker">
+          <span class="buttonTxt" id="buttonTxt">Text Box</span>     
+        </a> 
+        <a class="TimePicker" draggable="true" id="draggableTimePicker">
           <img src="./public/calendar-clock.svg" alt="" class="buttonIcon">
           <span class="buttonTxt" id="buttonTxt">Time Picker</span>
-          <img src="./public/lightbulb.svg" alt="" class="lightbulb" id="lightbulb">
-        </div>                           
+        </a>              
+      </ul>
+      <div class="canvas">
+        <img src="./public/Frame 233.png" alt="" class="screen">
+        <div class="drop-target" id="drop-target"></div>
+      </div>
+      <div class="componentClass">
+        <!-- component Screen-->
+      </div>
+      <div class="screenProperties">
+        <div class="commonproperties">Common Properties</div>
+        <div class="aboutScreen">
+          <input type="text" name="" id="" class="aboutScreenTxt">
+          <label class="label">About Screen</label>
+        </div>
+        <div class="colorpicker">
+          <label class="colorpickerlabel">About Screen Background colour</label>
+          <input type="color" name="" id="" class="color">
+          <label class="hexcolor">#00000</label>
+        </div>
+        <div class="aboutScreentitle">
+          <input type="text" name="" id="" class="screenlabelTxt">
+          <label class="screenlabel">About Screen Title</label>
+        </div>
       </div>
     </div>
     <script>
         var sideIcons = document.getElementById("stationaryIcons");
         var dragScreen = document.getElementById("draggableScreen");
-        var lightbulb = document.getElementsByClassName("lightbulb");
-        var userinterfaceTxt = document.getElementById("userinterfaceTxt");
-        var buttonTxt = document.getElementsByClassName("buttonTxt");
-        var userInterface = document.getElementById("userInterface");
+        // var userinterfaceTxt = document.getElementById("userinterfaceTxt");
+        var buttonTxt = document.querySelectorAll(".buttonTxt");
+        // var userInterface = document.getElementById("userInterface");
+        // var layout = document.getElementById("layoutIcon");
+
+        // var expandIcon = document.getElementById("expandIcon");
+        // var layoutContent = document.getElementById("layoutContent");
+        // layout.addEventListener("click", function () {
+        //     layoutContent.style.display = "initial";
+        // });
+
         sideIcons.addEventListener("mouseover", function() {
           sideIcons.style.width = "14.81rem";
           dragScreen.style.width = "3.69rem";
           dragScreen.style.left = "14.6rem";
-          userinterfaceTxt.style.display = "flex";
-          userInterface.style.width = "14.00rem";
-          
-          if (document.getElementsByClassName('buttonTxt').length > 0) {
-            for (var i = 0; i < buttonTxt.length; i++) {
-              buttonTxt[i].style.display = "none";
-            }
+          // userinterfaceTxt.style.display = "flex";
+          // userInterface.style.width = "14.00rem";
+          // layout.style.width = "14.00rem";
+          for (let i = 0; i < buttonTxt.length; i++) {
+            buttonTxt[i].style.display = 'none';
           }
-          if (document.getElementsByClassName('lightbulb').length > 0) {
-            for (var i = 0; i < lightbulb.length; i++) {
-              lightbulb[i].style.display = "none";
-            }
-          }
-
-
         });
         sideIcons.addEventListener("mouseout", function() {
           sideIcons.style.width = "3.69rem";
           dragScreen.style.width = "14.81rem";
           dragScreen.style.left = "3.52rem";
-          userinterfaceTxt.style.display = "none";
-          userInterface.style.width = "4.5rem";
-          
-          if (document.getElementsByClassName('buttonTxt').length > 0) {  
-          for (var i = 0; i < buttonTxt.length; i++) {
-              buttonTxt[i].style.display = "flex";
-            }
+          // userinterfaceTxt.style.display = "none";
+          // userInterface.style.width = "4.5rem";
+          // layout.style.width = "4.5rem";
+          for (let i = 0; i < buttonTxt.length; i++) {
+            buttonTxt[i].style.display = 'flex';
           }
-          if (document.getElementsByClassName('lightbulb').length > 0) {
-            for (var i = 0; i < lightbulb.length; i++) {
-              lightbulb[i].style.display = "flex";
-            }
-          }
-
         });
 
         var screenTxt = document.querySelector(".screenTxt");
@@ -283,279 +377,104 @@
             }
         });
 
-        var draggableButton = document.getElementById("draggableButton");
-        var lightbulb = document.getElementById("lightbulb");
-        draggableButton.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id)
-          draggableButton.style.border = "1px solid var(--color-dimgray-200)";
-          draggableButton.style.width = "13.5rem";
-          lightbulb.style.display = "none";
-        });    
-        draggableButton.addEventListener("dragend", function(event) {
-          draggableButton.style.backgroundColor = "none";
-          draggableButton.style.border = "none";
-          lightbulb.style.display = "flex";
-        });
+        // var layoutTxt = document.getElementById("layoutTxt");
+        // var layoutContent = document.querySelector(".layoutContent");
+        // var layoutSwappableIcon = document.getElementById("layoutSwappableIcon");
+        // layoutContent.addEventListener("click", function() {
+        //   if (event.target.tagName === "A") {
+        //     layoutTxt.textContent = event.target.textContent;
+        //     var layoutContentIcon = event.target.querySelector(".layoutContentIcon");
+        //     if(layoutSwappableIcon) {
+        //       layoutSwappableIcon.src = layoutContentIcon.src;
+        //     }
+        //   }
+        // });
 
-        var draggablecheckbox = document.getElementById("draggablecheckbox");
-        var lightbulb = document.getElementById("lightbulb");
-        draggablecheckbox.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggablecheckbox.style.border = "1px solid var(--color-dimgray-200)";
-          draggablecheckbox.style.width = "13.5rem";
-          lightbulb.style.display = "none";
-        });    
-        draggablecheckbox.addEventListener("dragend", function(event) {
-          draggablecheckbox.style.backgroundColor = "none";
-          draggablecheckbox.style.border = "none";
-          lightbulb.style.display = "flex";
-        });
+        const listItems = document.querySelectorAll("#draggableScreen a");
+        const target = document.querySelector("#drop-target");
+        for (const listItem of listItems) {
+          listItem.addEventListener("dragstart", dragStart);
+        }
 
-        var draggablecircularprog = document.getElementById("draggablecircularprog");
-        var lightbulbcircularprog = document.getElementById("lightbulbcircularprog");
-        draggablecircularprog.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-      
-          draggablecircularprog.style.border = "1px solid var(--color-dimgray-200)";
-          draggablecircularprog.style.width = "13.5rem";
-          lightbulbcircularprog.style.display = "none";
-        });    
-        draggablecircularprog.addEventListener("dragend", function(event) {
-          draggablecircularprog.style.backgroundColor = "none";
-          draggablecircularprog.style.border = "none";
-          lightbulbcircularprog.style.display = "flex";
-        });
+        target.addEventListener("dragover", dragOver);
+        target.addEventListener("drop", drop);
+
+        function dragStart(event) {
+          const copyElement = event.target.cloneNode(true);
+          event.dataTransfer.setData("text/plain", copyElement.id);
+          copyElement.classList.add("cloned-element");
+          console.log(copyElement.id)
+        }
+
+        function dragOver(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+          event.preventDefault();
+          const draggableElementId = event.dataTransfer.getData("text/plain");
+          const draggableElement = document.getElementById(draggableElementId);
+          if (draggableElement) {
+            const copyElement = draggableElement.cloneNode(true);
+            target.appendChild(copyElement);
+            console.log('Element dropped');
+          } else {
+            console.error("Element with ID " + draggableElementId + " not found.");
+          }
+        }
         
-        var draggablecustomprog = document.getElementById("draggablecustomprog");
-        var lightbulbcustomprog = document.getElementById("lightbulbcustomprog");
-        draggablecustomprog.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-  
-          draggablecustomprog.style.border = "1px solid var(--color-dimgray-200)";
-          draggablecustomprog.style.width = "13.5rem";
-          lightbulbcustomprog.style.display = "none";
-        });    
-        draggablecustomprog.addEventListener("dragend", function(event) {
-          draggablecustomprog.style.backgroundColor = "none";
-          draggablecustomprog.style.border = "none";
-          lightbulbcustomprog.style.display = "flex";
+        var aboutScreenTxt = document.querySelector(".aboutScreenTxt");
+        var label = document.querySelector(".label");
+        aboutScreenTxt.addEventListener("click", function() {
+          label.style.top = "-10px";
+          label.style.fontSize = "var(--font-size-2sx)";
+          label.style.backgroundColor = "var(--color-gray-900)";
         });
 
-        var draggabledatePicker = document.getElementById("draggabledatePicker");
-        var lightbulbdatePicker = document.getElementById("lightbulbdatePicker");
-        draggabledatePicker.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-  
-          draggabledatePicker.style.border = "1px solid var(--color-dimgray-200)";
-          draggabledatePicker.style.width = "13.5rem";
-          lightbulbdatePicker.style.display = "none";
-        });    
-        draggabledatePicker.addEventListener("dragend", function(event) {
-          draggabledatePicker.style.backgroundColor = "none";
-          draggabledatePicker.style.border = "none";
-          lightbulbdatePicker.style.display = "flex";
+        var screenlabelTxt = document.querySelector(".screenlabelTxt");
+        var screenlabel = document.querySelector(".screenlabel");
+        screenlabelTxt.addEventListener("click" , function() {
+          screenlabel.style.fontSize = "var(--font-size-2sx)";
+          screenlabel.style.backgroundColor = "var(--color-gray-900)";
+          screenlabel.style.top = "-10px";
+        })
+
+        const colorPicker = document.querySelector(".color");
+        const hexcolortext = document.querySelector(".hexcolor");
+        colorPicker.addEventListener("change", function() {
+          const hexColor = this.value;
+          target.style.backgroundColor = hexColor;
+          hexcolortext.textContent = hexColor;
         });
-        
-        var draggablefloatingActionbutton = document.getElementById("draggablefloatingActionbutton");
-        var lightbulbfloatingActionbutton = document.getElementById("lightbulbfloatingActionbutton");
-        draggablefloatingActionbutton.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          dragga
-          draggablefloatingActionbutton.style.border = "1px solid var(--color-dimgray-200)";
-          draggablefloatingActionbutton.style.width = "13.5rem";
-          lightbulbfloatingActionbutton.style.display = "none";
-        });    
-        draggablefloatingActionbutton.addEventListener("dragend", function(event) {
-          draggablefloatingActionbutton.style.backgroundColor = "none";
-          draggablefloatingActionbutton.style.border = "none";
-          lightbulbfloatingActionbutton.style.display = "flex";
+        hexcolortext.addEventListener("click", function() {
+          colorPicker.click();
         });
 
-        var draggableImage = document.getElementById("draggableImage");
-        var lightbulbImage = document.getElementById("lightbulbImage");
-        draggableImage.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id)
-          draggableImage.style.border = "1px solid var(--color-dimgray-200)";
-          draggableImage.style.width = "13.5rem";
-          lightbulbImage.style.display = "none";
-        });    
-        draggableImage.addEventListener("dragend", function(event) {
-          draggableImage.style.backgroundColor = "none";
-          draggableImage.style.border = "none";
-          lightbulbImage.style.display = "flex";
-        });
-
-        var draggableLabel= document.getElementById("draggableLabel");
-        var lightbulbLabel = document.getElementById("lightbulbLabel");
-        draggableLabel.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableLabel.style.border = "1px solid var(--color-dimgray-200)";
-          draggableLabel.style.width = "13.5rem";
-          lightbulbLabel.style.display = "none";
-        });    
-        draggableLabel.addEventListener("dragend", function(event) {
-          draggableLabel.style.backgroundColor = "none";
-          draggableLabel.style.border = "none";
-          lightbulbLabel.style.display = "flex";
-        });
-
-        var draggableLinearProgressbar= document.getElementById("draggableLinearProgressbar");
-        var lightbulbLinearProgressbar = document.getElementById("lightbulbLinearProgressbar");
-        draggableLinearProgressbar.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableLinearProgressbar.style.border = "1px solid var(--color-dimgray-200)";
-          draggableLinearProgressbar.style.width = "13.5rem";
-          lightbulbLinearProgressbar.style.display = "none";
-        });    
-        draggableLinearProgressbar.addEventListener("dragend", function(event) {
-          draggableLinearProgressbar.style.backgroundColor = "none";
-          draggableLinearProgressbar.style.border = "none";
-          lightbulbLinearProgressbar.style.display = "flex";
-        });
-        
         var draggableListpicker= document.getElementById("draggableListpicker");
-        var lightbulbListpicker = document.getElementById("lightbulbListpicker");
         draggableListpicker.addEventListener("dragstart", function(event) {
           event.dataTransfer.setData("text/plain", event.target.id);
+          draggableListpicker.style.backgroundColor = "var(--color-gray-900)";
           draggableListpicker.style.border = "1px solid var(--color-dimgray-200)";
           draggableListpicker.style.width = "13.5rem";
-          lightbulbListpicker.style.display = "none";
         });    
         draggableListpicker.addEventListener("dragend", function(event) {
-          draggableListpicker.style.backgroundColor = "none";
+          event.dataTransfer.setData("text/plain", event.target.id);
           draggableListpicker.style.border = "none";
-          lightbulbListpicker.style.display = "flex";
+          draggableListpicker.style.backgroundColor = "none";
         });
 
-        var draggableNotifier= document.getElementById("draggableNotifier");
-        var lightbulbNotifier = document.getElementById("lightbulbNotifier");
-        draggableNotifier.addEventListener("dragstart", function(event) {
+        var draggableButton= document.getElementById("draggableButton");
+        draggableButton.addEventListener("dragstart", function(event) {
           event.dataTransfer.setData("text/plain", event.target.id);
-          draggableNotifier.style.border = "1px solid var(--color-dimgray-200)";
-          draggableNotifier.style.width = "13.5rem";
-          lightbulbNotifier.style.display = "none";
+          draggableButton.style.backgroundColor = "var(--color-gray-900)";
+          draggableButton.style.border = "1px solid var(--color-dimgray-200)";
+          draggableButton.style.width = "13.5rem";
         });    
-        draggableNotifier.addEventListener("dragend", function(event) {
-          draggableNotifier.style.backgroundColor = "none";
-          draggableNotifier.style.border = "none";
-          lightbulbNotifier.style.display = "flex";
-        });
-        
-        var draggableRatingBar= document.getElementById("draggableRatingBar");
-        var lightbulbRatingBar = document.getElementById("lightbulbRatingBar");
-        draggableRatingBar.addEventListener("dragstart", function(event) {
+        draggableButton.addEventListener("dragend", function(event) {
           event.dataTransfer.setData("text/plain", event.target.id);
-          draggableRatingBar.style.border = "1px solid var(--color-dimgray-200)";
-          draggableRatingBar.style.width = "13.5rem";
-          lightbulbRatingBar.style.display = "none";
-        });    
-        draggableRatingBar.addEventListener("dragend", function(event) {
-          draggableRatingBar.style.border = "none";
-          lightbulbRatingBar.style.display = "flex";
+          draggableButton.style.border = "none";
+          draggableButton.style.backgroundColor = "none";
         });
-        
-        var draggableSlider= document.getElementById("draggableSlider");
-        var lightbulbSlider = document.getElementById("lightbulbSlider");
-        draggableSlider.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableSlider.style.border = "1px solid var(--color-dimgray-200)";
-          draggableSlider.style.width = "13.5rem";
-          lightbulbSlider.style.display = "none";
-        });    
-        draggableSlider.addEventListener("dragend", function(event) {
-          draggableSlider.style.border = "none";
-          lightbulbSlider.style.display = "flex";
-        });
-        
-        var draggableSnackbar= document.getElementById("draggableSnackbar");
-        var lightbulbSnackbar = document.getElementById("lightbulbSnackbar");
-        draggableSnackbar.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableSnackbar.style.border = "1px solid var(--color-dimgray-200)";
-          draggableSnackbar.style.width = "13.5rem";
-          lightbulbSnackbar.style.display = "none";
-        });    
-        draggableSnackbar.addEventListener("dragend", function(event) {
-          draggableSnackbar.style.border = "none";
-          lightbulbSnackbar.style.display = "flex";
-        });
-        
-        var draggableSpinner= document.getElementById("draggableSpinner");
-        var lightbulbSpinner = document.getElementById("lightbulbSpinner");
-        draggableSpinner.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableSpinner.style.border = "1px solid var(--color-dimgray-200)";
-          draggableSpinner.style.width = "13.5rem";
-          lightbulbSpinner.style.display = "none";
-        });    
-        draggableSpinner.addEventListener("dragend", function(event) {
-          draggableSpinner.style.border = "none";
-          lightbulbSpinner.style.display = "flex";
-        });
-        
-        var draggableSpotlight= document.getElementById("draggableSpotlight");
-        var lightbulbSpotlight = document.getElementById("lightbulbSpotlight");
-        draggableSpotlight.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableSpotlight.style.border = "1px solid var(--color-dimgray-200)";
-          draggableSpotlight.style.width = "13.5rem";
-          lightbulbSpotlight.style.display = "none";
-        });    
-        draggableSpotlight.addEventListener("dragend", function(event) {
-          draggableSpotlight.style.border = "none";
-          lightbulbSpotlight.style.display = "flex";
-        });
-        
-        var draggableStateProgressBar= document.getElementById("draggableStateProgressBar");
-        var lightbulbStateProgressBar = document.getElementById("lightbulbStateProgressBar");
-        draggableStateProgressBar.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableStateProgressBar.style.border = "1px solid var(--color-dimgray-200)";
-          draggableStateProgressBar.style.width = "13.5rem";
-          lightbulbStateProgressBar.style.display = "none";
-        });    
-        draggableStateProgressBar.addEventListener("dragend", function(event) {
-          draggableStateProgressBar.style.border = "none";
-          lightbulbStateProgressBar.style.display = "flex";
-        });
-        
-        var draggableSwitch= document.getElementById("draggableSwitch");
-        var lightbulbSwitch = document.getElementById("lightbulbSwitch");
-        draggableSwitch.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableSwitch.style.border = "1px solid var(--color-dimgray-200)";
-          draggableSwitch.style.width = "13.5rem";
-          lightbulbSwitch.style.display = "none";
-        });    
-        draggableSwitch.addEventListener("dragend", function(event) {
-          draggableSwitch.style.border = "none";
-          lightbulbSwitch.style.display = "flex";
-        });
-        
-        var draggableTextBox= document.getElementById("draggableTextBox");
-        var lightbulbTextBox = document.getElementById("lightbulbTextBox");
-        draggableTextBox.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableTextBox.style.border = "1px solid var(--color-dimgray-200)";
-          draggableTextBox.style.width = "13.5rem";
-          lightbulbTextBox.style.display = "none";
-        });    
-        draggableTextBox.addEventListener("dragend", function(event) {
-          draggableTextBox.style.border = "none";
-          lightbulbTextBox.style.display = "flex";
-        });
-        
-        var draggableTimePicker= document.getElementById("draggableTimePicker");
-        var lightbulbTimePicker = document.getElementById("lightbulb");
-        draggableTimePicker.addEventListener("dragstart", function(event) {
-          event.dataTransfer.setData("text/plain", event.target.id);
-          draggableTimePicker.style.border = "1px solid var(--color-dimgray-200)";
-          draggableTimePicker.style.width = "13.5rem";
-          lightbulbTimePicker.style.display = "none";
-        });    
-        draggableTimePicker.addEventListener("dragend", function(event) {
-          draggableTimePicker.style.border = "none";
-          lightbulbTimePicker.style.display = "flex";
-        });
+
     </script>
   </body>
