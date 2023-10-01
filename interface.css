@@ -320,7 +320,9 @@
     justify-content: flex-end;
     font-size: var(--font-size-xs);
 }
-.dropdown-content {
+.dropdown-content,
+.align-content,
+.alignvertical-content {
     display: none;
     position: absolute;
     background-color: var(--color-dimgray-100);
@@ -328,17 +330,30 @@
     top: 1.91rem;
     left: 0.1rem;
 }
-.dropdown-content a {
+.dropdown-content a,
+.align-content button,
+.alignvertical-content button {
     color:aliceblue;
     padding: 12px 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
+    font-size: var(--font-size-smi);
 }
-.dropdown-content a:hover {
+.align-content button 
+.alignvertical-content button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.dropdown-content a:hover,
+.align-content button:hover,
+.alignvertical-content button:hover {
     background-color: var(--color-darkslategray);
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.alignHorizontal:hover .align-content,
+.alignvertical:hover .alignvertical-content {
     display: block;
 }
 .allcomponents {
@@ -523,6 +538,14 @@
     height: 1.75rem;
     font-size: var(--font-size-xs);
 }
+.assets {
+    background-color: transparent;
+    width: 9%;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 .assetsIcon {
     position: absolute;
     height: 83.04%;
@@ -655,7 +678,21 @@
     color: aliceblue;
     display: flex;
     left: 1.99rem;
-    top: 0rem;
+    top: -5%;
+    align-items: center;
+    font-family: var(--font-lexend-deca);
+}
+.alignscreenTxt {
+    position: absolute;
+    width: 9.44rem;
+    height: 1.75rem;
+    background-color: var(--color-gray-900);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    left: 1.99rem;
+    top: 6%;
     align-items: center;
     font-family: var(--font-lexend-deca);
 }
@@ -694,78 +731,6 @@
     background-color: var(--color-gray-900);
     border: 1px solid var(--color-dimgray-200);
 }
-/* .userInterface,
-.layoutIcon,
-.media {
-    position: relative;
-    top: 0.4%;
-    left: -1.02rem;
-    width: 4.5rem;
-    height: 2.69rem;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-} */
-/* .layoutIcon {
-    top: 1.4%;
-}
-.media {
-    top: 2.4%;
-}
-.expandIcon {
-    position: absolute;
-    top: 32%;
-    width: fit-content;
-    height: fit-content;
-    left: 101%;
-}
-.layoutContentIcon {
-    position: relative;
-    width: 1.3rem;
-    height: 1.3rem;
-    margin: 2px 2px 2px 2px;
-}
-.layoutIcon:hover ,
-.userInterface:hover {
-    border-radius: var(--br-81xl);
-    background-color: var(--color-darkslategray);
-} */
-/* .layoutContent {
-    display: none;
-    position: absolute;
-    width: 6%;
-    top: 2.55rem;
-    left: 2.1rem;
-}
-.layoutContent a {
-    font-family: var(--font-lexend-deca);
-    color: aliceblue;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.layoutContent a:hover {
-    width: 9rem;
-    border-radius: var(--br-81xl);
-    background-color: var(--color-darkslategray);
-}
-.layoutIcon:hover .layoutContent {
-    display: block;
-}
-.userinterfaceTxt {
-    display: none;
-    position: absolute;
-    width: 8rem;
-    height: fit-content;
-    top: 0.6rem;
-    left: 4.5rem;
-    text-align: left;
-    font-size: var(--font-size-mid);
-    color: var(--color-white);
-    font-family: var(--font-lexend-deca);
-} */
 .draggableScreen {
     position: absolute;
     top: 10.01%;
@@ -816,7 +781,7 @@
 .TextBox,
 .TimePicker {
     position: absolute;
-    top: 0.5rem;
+    /* top: 0.5rem; */
     height: 2.4rem;
     width: 12rem;
     display: flex;
@@ -901,6 +866,8 @@
     margin: 52px 0px 0px 8.4px;
     height: 90%;
     border-radius: 33px;
+    display: flex;
+    align-items: center;
 }
 .componentClass {
     position: absolute;
@@ -1076,7 +1043,11 @@
 }
 .aboutScreen,
 .colorpicker,
-.aboutScreentitle {
+.aboutScreentitle,
+.alignHorizontal,
+.alignvertical,
+.bgcolorpicker,
+.bgImage {
     border: 1px solid var(--color-dimgray-200);
     position: relative;
     border-radius: 5px;
@@ -1090,6 +1061,18 @@
 .aboutScreentitle {
     top: 7.7%;
 }
+.alignHorizontal {
+    top: 9.7%;
+}
+.alignvertical {
+    top: 11.7%;
+}
+.bgcolorpicker {
+    top: 13.7%;
+}
+.bgImage {
+    top: 15.7%;
+}
 .label,
 .screenlabel{
     position: absolute;
@@ -1101,7 +1084,9 @@
     color: #fff;
     transition: all 0.5s ease-in-out;
 }
-.colorpickerlabel {
+.imagelabel,
+.colorpickerlabel,
+.alignTxt {
     position: absolute;
     top: -9px;
     left: 18px;
@@ -1138,4 +1123,92 @@
     top: 7px;
     left: 9px;
     font-family: var(--font-lexend-deca);
+}
+.uploadingContent {
+    display: none;
+    position: absolute;
+    background-color: var(--color-white);
+    width: 50%;
+    height: 40%;
+    margin: 6% 25% 12% 25%;
+    border-radius: 1%;
+}
+.assetsTxt {
+    position: relative;
+    font-family: var(--font-lexend-deca);
+    color: var(--color-darkslategray);
+    margin: 4% 4%;
+    font-size: var(--font-size-mini);
+    width: fit-content;
+    height: fit-content;
+}
+.informationBlock {
+    position: inherit;
+    background-color: #c9e9ff;
+    width: 45%;
+    height: 23%;
+    border-radius: 1%;
+    margin: 16% 5%;
+    top: 0px;
+}
+.informationBlockTxt,
+.informationBlockTxtLink {
+    font-family: var(--font-lexend-deca);
+    font-size: var(--font-size-sm);
+    color: var(--color-darkslategray);
+    font-weight: 400;
+    margin: 13px;
+    text-align: initial;
+    width: auto;
+    height: fit-content;
+}
+.informationBlockTxtLink {
+    position: relative;
+    top: 2%;
+    color: blueviolet;
+    font-weight: 300;
+}
+.preview {
+    background-color: #c9e9ff;
+    position: absolute;
+    width: 43%;
+    height: 57.5%;
+    left: 53%;
+    top: 12%;
+    border-radius: 2%;
+    border-style: dashed;
+    border-color: black;
+    object-fit: contain;
+}
+.previewTxt {
+    position: relative;
+    font-family: var(--font-lexend-deca);
+    left: 63%;
+    width: fit-content;
+    color: blueviolet;
+    font-size: var(--gap-sm);
+    height: fit-content;
+    top: 54%;
+}
+.AssetsUpload {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 14px;
+    top: 0.55px;
+}
+.AssetsUploadBtn {
+    position: relative;
+    width: 43%;
+    height: 25%;
+    left: 53%;
+    top: 15px;
+    color: blueviolet;
+    border-color: blueviolet;
+    cursor: pointer;
+}
+.AssetsUploadBtn:hover {
+    color: #c9e9ff;
+    border-color: #c9e9ff;
+    background-color: cadetblue;
 }

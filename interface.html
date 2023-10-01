@@ -82,7 +82,9 @@
         <img src="./public/group-2201.svg" alt="" class="addIcon">
       </div>
       <div class="secondarynavbtn">
-        <img src="./public/group5.svg" alt="" class="assetsIcon">
+        <button class="assets">
+          <img src="./public/group5.svg" alt="" class="assetsIcon">
+        </button>
         <img src="./public/group.svg" alt="" class="settingIcon">
         <button class="designBtn">Designer</button>
         <button class="blocksBtn">Blocks</button>
@@ -301,22 +303,87 @@
       </div>
       <div class="screenProperties">
         <div class="commonproperties">Common Properties</div>
+
+        <!-- aboutscreen -->
         <div class="aboutScreen">
           <input type="text" name="" id="" class="aboutScreenTxt">
           <label class="label">About Screen</label>
         </div>
+
+      <!-- aboutscreen Colorpicker -->
         <div class="colorpicker">
           <label class="colorpickerlabel">About Screen Background colour</label>
           <input type="color" name="" id="" class="color">
           <label class="hexcolor">#00000</label>
         </div>
+
+
+      <!--  aboutscreen title   -->
         <div class="aboutScreentitle">
           <input type="text" name="" id="" class="screenlabelTxt">
           <label class="screenlabel">About Screen Title</label>
         </div>
+
+      <!-- horizontal alignment   -->
+        <div class="alignHorizontal">
+          <button class="alignscreenTxt" id="center" data-id="alignScreentxt">Center</button>
+          <label class="alignTxt">Align Horizontal</label>
+          <div class="align-content">
+            <button href="#" id="left" data-id="left">Left</button>
+            <button href="#" id="center" data-id="center">Center</button>
+            <button href="#" id="right" data-id="right">Right</button>          
+          </div>
+        </div>
+      
+      <!-- vertical alignment -->
+        <div class="alignvertical">
+          <button class="alignscreenTxt" id="center" data-id="alignScreentxt">Center</button>
+          <label class="alignTxt">Align Verical</label>
+          <div class="alignvertical-content">
+            <button href="#" id="left" data-id="left">Top</button>
+            <button href="#" id="center" data-id="center">Center</button>
+            <button href="#" id="right" data-id="right">Bottom</button>          
+          </div>
+        </div>
+
+        <!-- backgroundScreen colorpicker -->
+        <div class="bgcolorpicker">
+          <label class="colorpickerlabel">Background colour</label>
+          <input type="color" name="" id="" class="color">
+          <label class="hexcolor">#00000</label>
+        </div>
+
+        <!-- backgroundImage -->
+        <div class="bgImage">
+          <label class="imagelabel">Background Image</label>
+
+        </div>
+      </div>
+      <div class="uploadingContent" id="uploadingContent">
+        <label class="assetsTxt">Assets Manager</label>
+        <div class="informationBlock">
+          <p class="informationBlockTxt">
+            You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using 0MB in this project.
+          </p>
+          <a href="#" class="informationBlockTxtLink">upgrade to premium</a>
+        </div>
+        <img class="preview" id="preview >
+            <p class="previewTxt">click on a file to preview</p>
+        </img>
+        <button class="AssetsUploadBtn">
+          <input type="file" class="AssetsUpload" id="file-input" accept="image/*" multiple>
+        </button>
       </div>
     </div>
+    <script type="module" src="./uploadContent.js"></script>
     <script>
+        const assets = document.querySelector(".assets");
+        const uploadingContent = document.querySelector(".uploadingContent");
+        assets.addEventListener("click" , () => {
+          uploadingContent.style.display = "grid";
+        })
+
+
         var sideIcons = document.getElementById("stationaryIcons");
         var dragScreen = document.getElementById("draggableScreen");
         // var userinterfaceTxt = document.getElementById("userinterfaceTxt");
@@ -361,6 +428,16 @@
             }
         });
 
+        var alignScreenTxt = document.getElementById("center");
+        var alignContent = document.querySelector(".align-content");
+        alignContent.addEventListener("click" , function(event) {
+          if (event.target.tagName === "BUTTON") {
+            var clickedButton = event.target.textContent;
+            var currentButtonText = alignScreenTxt.textContent; 
+            alignScreenTxt.textContent = clickedButton;
+          }
+        });
+
         var componentTxt = document.querySelector(".componentTxt");
         var componentContent = document.querySelector(".component-content");
         componentContent.addEventListener("click", function(event) {
@@ -389,12 +466,49 @@
         //     }
         //   }
         // });
+        
+        const AssetsUploadBtn = document.querySelector(".AssetsUploadBtn");
+        const inputValue = document.querySelector('.AssetsUpload');
+        const preview = document.querySelector(".preview");
+        inputValue.addEventListener('change', ()=> {
+            const reader = new FileReader();
+            reader.onload = () => {
+              preview.src = reader.result;
+              localStorage.setItem('inputValue', inputValue.value);
+            };
+            reader.readAsDataURL(inputValue.files[0]);
+        });
+        AssetsUploadBtn.addEventListener('click', async () => {
+          const inputValue = localStorage.getItem('inputValue');
+          const formData = new FormData();
+          formData.append('file', inputValue);
+          const response = await axios.post('/upload', formData);
+        });
+
 
         const listItems = document.querySelectorAll("#draggableScreen a");
         const target = document.querySelector("#drop-target");
         for (const listItem of listItems) {
           listItem.addEventListener("dragstart", dragStart);
         }
+
+        const centerButton = document.querySelector("#center");
+        var Target = document.getElementById("drop-target");
+        centerButton.addEventListener("click", function() {
+          console.log("centered")
+            Target.style.justifyItems = "center";
+        });
+
+        const leftButton = document.querySelector("#left");
+        leftButton.addEventListener("click", function() {
+          Target.style.justifyItems = "flex-start";
+          console.log("lefted")
+        });
+
+        const rightButton = document.querySelector("#right");
+        rightButton.addEventListener("click", function() {
+          Target.style.justifyItems = "flex-end";
+        });
 
         target.addEventListener("dragover", dragOver);
         target.addEventListener("drop", drop);
@@ -417,6 +531,10 @@
           if (draggableElement) {
             const copyElement = draggableElement.cloneNode(true);
             target.appendChild(copyElement);
+            const ulElement = copyElement.closest("a");
+            ulElement.style.backgroundColor = "red";
+            ulElement.style.padding = "10px";
+
             console.log('Element dropped');
           } else {
             console.error("Element with ID " + draggableElementId + " not found.");
@@ -475,6 +593,5 @@
           draggableButton.style.border = "none";
           draggableButton.style.backgroundColor = "none";
         });
-
     </script>
   </body>
