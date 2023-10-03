@@ -26,6 +26,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" 
+    />
   </head>
   <body>
     <div class="interface">
@@ -112,7 +116,7 @@
           <details class="userInterface">
             <summary class="userInterfaceContent">
               <img src="./public/screenshot-monitor.svg" alt="" class="userInterfaceIcon">
-              <!-- <span>User Interface</span> -->
+              <span class="userInterfaceContentTxt">User Interface</span>
             </summary>
             <!-- <p>sfgfrh</p> -->
           </details>
@@ -361,26 +365,38 @@
       </div>
       <div class="uploadingContent" id="uploadingContent">
         <label class="assetsTxt">Assets Manager</label>
+        <img src="./public/close.svg" alt="" class="close">
         <div class="informationBlock">
           <p class="informationBlockTxt">
             You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using 0MB in this project.
           </p>
           <a href="#" class="informationBlockTxtLink">upgrade to premium</a>
         </div>
-        <img class="preview" id="preview >
+        <img class="preview" id="preview" >
             <p class="previewTxt">click on a file to preview</p>
         </img>
         <button class="AssetsUploadBtn">
           <input type="file" class="AssetsUpload" id="file-input" accept="image/*" multiple>
         </button>
+        <div class="uploadedfiles">
+          <ul class="imagesUploaded">
+            <div class="box">
+              <img src="" alt="Image">
+              <p class="text"></p>
+            </div>            
+          </ul>
+        </div>
       </div>
     </div>
-    <script type="module" src="./uploadContent.js"></script>
     <script>
         const assets = document.querySelector(".assets");
+        const closeIcon = document.querySelector(".close");
         const uploadingContent = document.querySelector(".uploadingContent");
         assets.addEventListener("click" , () => {
           uploadingContent.style.display = "grid";
+        });
+        closeIcon.addEventListener("click", () => {
+          uploadingContent.style.display = "none";
         })
 
 
@@ -470,19 +486,29 @@
         const AssetsUploadBtn = document.querySelector(".AssetsUploadBtn");
         const inputValue = document.querySelector('.AssetsUpload');
         const preview = document.querySelector(".preview");
-        inputValue.addEventListener('change', ()=> {
-            const reader = new FileReader();
-            reader.onload = () => {
-              preview.src = reader.result;
-              localStorage.setItem('inputValue', inputValue.value);
-            };
-            reader.readAsDataURL(inputValue.files[0]);
-        });
-        AssetsUploadBtn.addEventListener('click', async () => {
-          const inputValue = localStorage.getItem('inputValue');
-          const formData = new FormData();
-          formData.append('file', inputValue);
-          const response = await axios.post('/upload', formData);
+        const imagesUploaded = document.querySelector('.imagesUploaded');
+        const box = document.querySelector(".box");
+        box.style.display = "none";
+        const previewTxt = document.querySelector(".previewTxt");
+        inputValue.addEventListener('change', () => {
+          const fileInput = document.querySelector('.AssetsUpload');
+          const files = fileInput.files;
+          for (let i = 0; i < files.length; i++) {
+            const file = files[i];   
+            const listItem = document.createElement('li', 'list-element');
+            const box = document.createElement('div');
+            box.classList.add('box', 'new-box');
+            const imageElement = document.createElement('img');
+            imageElement.src = URL.createObjectURL(file);
+            imageElement.alt = 'Image';
+            const textElement = document.createElement('p');
+            textElement.classList.add('text');
+            textElement.textContent = file.name;
+            box.appendChild(imageElement);
+            box.appendChild(textElement);
+            listItem.appendChild(box);
+            imagesUploaded.appendChild(listItem);
+          }
         });
 
 
@@ -594,4 +620,6 @@
           draggableButton.style.backgroundColor = "none";
         });
     </script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./uploadContent.js"></script> -->
   </body>

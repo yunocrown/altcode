@@ -1181,7 +1181,7 @@
     object-fit: contain;
 }
 .previewTxt {
-    position: relative;
+    position: absolute;
     font-family: var(--font-lexend-deca);
     left: 63%;
     width: fit-content;
@@ -1195,14 +1195,14 @@
     height: fit-content;
     position: absolute;
     left: 14px;
-    top: 0.55px;
+    top: 6.55px;
 }
 .AssetsUploadBtn {
-    position: relative;
+    position: absolute;
     width: 43%;
-    height: 25%;
+    height: 7%;
     left: 53%;
-    top: 15px;
+    margin-top: 58%;
     color: blueviolet;
     border-color: blueviolet;
     cursor: pointer;
@@ -1211,4 +1211,59 @@
     color: #c9e9ff;
     border-color: #c9e9ff;
     background-color: cadetblue;
+}
+.close {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 93%;
+    top: 4%;
+    cursor: pointer;
+}
+.uploadedfiles {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 48%;
+    height: 46%;
+    margin-top: 38%;
+    margin-left: 2%;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 96%;
+    height: 24%;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    left: 2%;
+    top: 3%;
+    position: absolute;
+}
+.box img {
+  width: fit-content;
+  height: 53%;
+  position: absolute;
+  left: 2%;
+}
+.box .text {
+    margin-top: 10px;
+    color: #69008d;
+    left: 0%;
+    position: relative;
+    width: 85%;
+    height: fit-content;
+}
+.imagesUploaded {
+    list-style-type: none;
+}
+.new-box {
+    margin-bottom: 20px;
+}
+.userInterfaceContentTxt {
+    font-family: var(--font-lexend-deca);
+    font-size: var(--font-size-mini);
+    position: absolute;
+    font-weight: 400;
 }
