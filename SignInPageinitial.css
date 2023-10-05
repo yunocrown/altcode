@@ -226,12 +226,13 @@ input.group-child1261{
   position: absolute;
   top: 0;
   left: 0;
-  color: white;
-  font-size: 1.25rem;
+  color: black;
+  font-size: 1rem;
   border-radius: var(--br-8xs);
   background-color: white;
   width: 11.56rem;
   height: 3.13rem;
+  font-weight: 500;
 }
 .sign-in3 {
   position: absolute;
@@ -247,6 +248,7 @@ input.group-child1261{
 
 .group-child1262:hover {
   background-color: #5138ee;
+  color: white;
 }
 .rectangle-parent148 {
   position: absolute;

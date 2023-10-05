@@ -44,7 +44,7 @@ document.getElementById("google").addEventListener('click', (e) => {
     });
   })
 
-  function signup_auth()  {
+ {
 document.getElementById("submitButton").addEventListener("click", function() {
     var email = document.getElementById("emailInput").value;
     var password = document.getElementById("passwordInput").value;
