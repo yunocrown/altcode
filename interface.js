@@ -1,37 +1,39 @@
+        const userinterfaceButton = document.querySelector(".userInterface");
+        const layoutButton = document.querySelector(".layout");
+        const mediaButton = document.querySelector(".media");
+        const drawingButton = document.querySelector(".drawingAnimation");
+        const mapsButton = document.querySelector(".maps");
+        const sensorsButton = document.querySelector(".sensors");
+        const socialButton = document.querySelector(".social");
+        const utilitiesButton = document.querySelector(".utilities");
+        const dynamicButton = document.querySelector(".dynamic");
+        const connectivityButton = document.querySelector(".connectivity");
+        const googleButton = document.querySelector(".google");
+        const monetizationButton = document.querySelector(".monetization");
+        const extensionButton = document.querySelector(".extensions");
+
+        if(layoutButton.hovered === true) {
+          layoutButton.open = true;
+        }
 
         const assets = document.querySelector(".assets");
         const closeIcon = document.querySelector(".close");
         const uploadingContent = document.querySelector(".uploadingContent");
         assets.addEventListener("click" , () => {
-            
           uploadingContent.style.display = "grid";
         });
         closeIcon.addEventListener("click", () => {
           uploadingContent.style.display = "none";
         })
 
-
-
         var sideIcons = document.getElementById("stationaryIcons");
         var dragScreen = document.getElementById("draggableScreen");
-        // var userinterfaceTxt = document.getElementById("userinterfaceTxt");
         var buttonTxt = document.querySelectorAll(".buttonTxt");
-        // var userInterface = document.getElementById("userInterface");
-        // var layout = document.getElementById("layoutIcon");
-
-        // var expandIcon = document.getElementById("expandIcon");
-        // var layoutContent = document.getElementById("layoutContent");
-        // layout.addEventListener("click", function () {
-        //     layoutContent.style.display = "initial";
-        // });
 
         sideIcons.addEventListener("mouseover", function() {
           sideIcons.style.width = "14.81rem";
           dragScreen.style.width = "3.69rem";
           dragScreen.style.left = "14.6rem";
-          // userinterfaceTxt.style.display = "flex";
-          // userInterface.style.width = "14.00rem";
-          // layout.style.width = "14.00rem";
           for (let i = 0; i < buttonTxt.length; i++) {
             buttonTxt[i].style.display = 'none';
           }
@@ -40,9 +42,6 @@
           sideIcons.style.width = "3.69rem";
           dragScreen.style.width = "14.81rem";
           dragScreen.style.left = "3.52rem";
-          // userinterfaceTxt.style.display = "none";
-          // userInterface.style.width = "4.5rem";
-          // layout.style.width = "4.5rem";
           for (let i = 0; i < buttonTxt.length; i++) {
             buttonTxt[i].style.display = 'flex';
           }
