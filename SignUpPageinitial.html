@@ -36,17 +36,24 @@
       <div class="buildmyflow42">Altcode</div>
       <b class="sign-up2">Sign Up</b>
       <div class="hey-there1">Hey there!</div>
-      <div class="signuppageinitial-child1"></div>
+      <!-- <div class="signuppageinitial-child1"></div> -->
       <div class="remember-me1">Remember Me</div>
       <button class="rectangle-parent135" id="submitButton">SignUp</button>
       <div class="already-have-a1" id="alreadyHaveA">
         Already have a Account? SignIn
       </div>
-      <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder=""></input>
+      <!-- <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder=""></input>
       <div class="rectangle-parent136" id="groupContainer1">
         <div class="group-child1250"></div>
-        <div class="enter-your-email1">Enter your Email Id or username</div>
-      </div>
+        <div class="enter-your-email1 rectangle-parent136">Enter your Email Id or username</div>
+      </div> -->
+      
+      <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder="">
+    <div class="rectangle-parent136" id="groupContainer1">
+      <div class="enter-your-email1">Enter your Email Id or username</div>
+    </div>
+    </input>
+    
       <div class="rectangle-parent137">
         <input id="passwordInput" class="group-child1251" type="password" placeholder=""></input>
         <div class="rectangle-parent138" id="groupContainer2">
@@ -66,19 +73,35 @@
     </div> 
   </body>
   <script>
-      const rectangleParent = document.querySelector('.rectangle-parent136');
-      const imageElement = document.querySelector('.signuppageinitial-item');
-      rectangleParent.addEventListener('click', function() {
-        rectangleParent.style.top = '14.63rem';
-        imageElement.classList.toggle('updated-image');
-      });
+      // const rectangleParent = document.querySelector('.rectangle-parent136');
+      // const imageElement = document.querySelector('.signuppageinitial-item');
+      // rectangleParent.addEventListener('click', function() {
+      //   rectangleParent.style.top = '14.63rem';
+      //   imageElement.classList.toggle('updated-image');
+      // });
 
-      const rectangleParent1 = document.querySelector('.rectangle-parent138');
-      const imageElement1 = document.querySelector('.signuppageinitial-item');
-      rectangleParent1.addEventListener('click', function() {
-        rectangleParent1.style.top = '-0.6rem';
-        imageElement1.classList.toggle('updated-image');
-      });
+      // const rectangleParent1 = document.querySelector('.rectangle-parent138');
+      // const imageElement1 = document.querySelector('.signuppageinitial-item');
+      // rectangleParent1.addEventListener('click', function() {
+      //   rectangleParent1.style.top = '-0.6rem';
+      //   imageElement1.classList.toggle('updated-image');
+      // });
+
+      const text = document.querySelector('.rectangle-parent136');
+  const rectangleParent = document.querySelector('.signuppageinitial-child1');
+  const imageElement = document.querySelector('.signuppageinitial-item');
+  rectangleParent.addEventListener('click', function () {
+    text.style.top = '14.63rem';
+    imageElement.classList.toggle('updated-image');
+  });
+
+  const rectangleParent1 = document.querySelector('.rectangle-parent137');
+  const password_text = document.querySelector('.rectangle-parent138');
+  const imageElement1 = document.querySelector('.signuppageinitial-item');
+  rectangleParent1.addEventListener('click', function () {
+    password_text.style.top = '-0.6rem';
+    imageElement1.classList.toggle('updated-image');
+  });
       
       const passwordInput = document.getElementById('passwordInput');
       const showPasswordIcon = document.getElementById('showPasswordIcon');

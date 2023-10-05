@@ -1,121 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./SignInPageinitial.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lexend Deca:wght@200;300;400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
-    />
-  </head>
-  <body>
-    <div class="signinpageinitial">
-      <div class="signinpageinitial-child"></div>
-      <div class="signinpageinitial-item"></div>
-      <div class="buildmyflow44">Altcode</div>
-      <img class="signinpageinitial-inner initial-image" alt="" src="./public/group-2081.svg"/>
-      <b class="sign-in2">Sign In</b>
-      <div class="welcome-back1">Welcome Back</div>
-      <input id="emailInput" class="signinpageinitial-child1" type="email" placeholder=""></input>
-      <div class="rectangle-parent144" id="groupContainer">
-        <div class="group-child1258"></div>
-        <div class="enter-your-email3">Enter your Email Id or username</div>
-      </div>
-      <div class="rectangle-parent145">
-        <input id="passwordInput" class="group-child1259" type="password" placeholder=""></input>
-        <div class="rectangle-parent146" id="groupContainer1">
-          <div class="group-child1260"></div>
-          <div class="enter-your-password3">Enter your password</div>
-        </div>
-        <img id="showPasswordIcon" class="vector-icon117" alt="" src="./public/vector14.svg" />
-      </div>
-      <div class="group-parent73">
-        <div class="rectangle-parent147">
-          <input class="group-child1261" type="checkbox"></input>
-          <div class="remember-me3">Remember Me</div>
-        </div>
-        <button class="forgot-password1"> Forgot Password? </button>
-      </div>
-      <div class="rectangle-parent148" id="groupContainer5">
-        <button class="group-child1262" id="signinbutton">Sign in</button>
-        <!-- <div class="sign-in3"></div>  -->
-      </div>
-      <div class="dont-have-a1" id="dontHaveA">
-        Don’t Have a Account? SignUp
-      </div>
-      <div class="continue-with3">Continue with</div>
-      <div class="group3">
-        <div class="google7" >Google</div>
-        <img class="vector-icon118" alt="" src="./public/vector15.svg" />
-        
-        <div class="github3">GitHub</div>
-        <img class="vector-icon119" alt="" src="./public/vector13.svg" />
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./SignInPageinitial.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lexend Deca:wght@200;300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" />
+</head>
+
+<body>
+  <div class="signinpageinitial">
+    <!-- <div class="signinpageinitial-child"></div> -->
+    <div class="signinpageinitial-item"></div>
+    <div class="buildmyflow44">Altcode</div>
+    <img class="signinpageinitial-inner initial-image" alt="" src="./public/group-2081.svg" />
+    <b class="sign-in2">Sign In</b>
+    <div class="welcome-back1">Welcome Back</div>
+    <input id="emailInput" class="signinpageinitial-child1" type="email" placeholder=""></input>
+    <div class="rectangle-parent144" id="groupContainer">
+      <div class="group-child1258"></div>
+      <div class="enter-your-email3">Enter your Email Id or username</div>
     </div>
+    <div class="rectangle-parent145">
+      <input id="passwordInput" class="group-child1259" type="password" placeholder=""></input>
+      <div class="rectangle-parent146" id="groupContainer1">
+        <div class="group-child1260"></div>
+        <div class="enter-your-password3">Enter your password</div>
+      </div>
+      <img id="showPasswordIcon" class="vector-icon117" alt="" src="./public/vector14.svg" />
+    </div>
+    <div class="group-parent73">
+      <div class="rectangle-parent147">
+        <input class="group-child1261" type="checkbox"></input>
+        <div class="remember-me3">Remember Me</div>
+      </div>
+      <button class="forgot-password1"> Forgot Password? </button>
+    </div>
+    <div class="rectangle-parent148" id="groupContainer5">
+      <button class="group-child1262" id="signinbutton">Sign in</button>
+      <!-- <div class="sign-in3"></div>  -->
+    </div>
+    <div class="dont-have-a1" id="dontHaveA">
+      Don’t Have a Account? SignUp
+    </div>
+    <div class="continue-with3">Continue with</div>
+    <div class="group3">
+      <div class="google7">Google</div>
+      <img class="vector-icon118" alt="" src="./public/vector15.svg" />
 
-    <script>
-      const rectangleParent = document.querySelector('.rectangle-parent144');
-      const imageElement = document.querySelector('.signinpageinitial-inner');
-      rectangleParent.addEventListener('click', function() {
-        rectangleParent.style.top = '14.63rem';
-        imageElement.classList.toggle('updated-image');
-      });
+      <div class="github3">GitHub</div>
+      <img class="vector-icon119" alt="" src="./public/vector13.svg" />
+    </div>
+  </div>
 
-      const rectangleParent1 = document.querySelector('.rectangle-parent146');
-      const imageElement1 = document.querySelector('.signinpageinitial-inner');
-      rectangleParent1.addEventListener('click', function() {
-        rectangleParent1.style.top = '-0.6rem';
-        imageElement1.classList.toggle('updated-image');
-      });
+  <script>
+    
+      const rectangleParent = document.querySelector('.signinpageinitial-child1');
+      const text = document.querySelector('.rectangle-parent144');
+    const imageElement = document.querySelector('.signinpageinitial-inner');
+    rectangleParent.addEventListener('click', function () {
+      text.style.top = '14.63rem';
+      imageElement.classList.toggle('updated-image');
+    });
 
-      const forgotpassword = document.querySelector(".forgot-password1");
-      forgotpassword.addEventListener("click", (e) => {
-        window.location.href = "./interface.html";
-      })
-      // var groupContainer5 = document.getElementById("groupContainer5");
-      // if (groupContainer5) {
-      //   groupContainer5.addEventListener("click", function (e) {
-      //     window.location.href = "./CanvasAlternateDesign.html"
-      //   });
-      // }
+    const password_text = document.querySelector('.rectangle-parent146');
+    const rectangleParent1 = document.querySelector('.rectangle-parent145');
+    const imageElement1 = document.querySelector('.signinpageinitial-inner');
+    rectangleParent1.addEventListener('click', function () {
+      password_text.style.top = '-0.6rem';
+      imageElement1.classList.toggle('updated-image');
+    });
 
-      const passwordInput = document.getElementById('passwordInput');
-      const showPasswordIcon = document.getElementById('showPasswordIcon');
-      showPasswordIcon.addEventListener('click', function() {
+    const forgotpassword = document.querySelector(".forgot-password1");
+    forgotpassword.addEventListener("click", (e) => {
+      window.location.href = "./interface.html";
+    })
+    // var groupContainer5 = document.getElementById("groupContainer5");
+    // if (groupContainer5) {
+    //   groupContainer5.addEventListener("click", function (e) {
+    //     window.location.href = "./CanvasAlternateDesign.html"
+    //   });
+    // }
+
+    const passwordInput = document.getElementById('passwordInput');
+    const showPasswordIcon = document.getElementById('showPasswordIcon');
+    showPasswordIcon.addEventListener('click', function () {
       if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
       } else {
         passwordInput.type = 'password';
       }
+    });
+
+    var dontHaveA = document.getElementById("dontHaveA");
+    if (dontHaveA) {
+      dontHaveA.addEventListener("click", function (e) {
+        window.location.href = "./SignUpPageinitial.html";
       });
+    }
+  </script>
 
-      var dontHaveA = document.getElementById("dontHaveA");
-      if (dontHaveA) {
-        dontHaveA.addEventListener("click", function (e) {
-          window.location.href = "./SignUpPageinitial.html";
-        });
-      }
-      </script>
+</body>
+<script type="module" src="signin.js"></script>
 
-  </body>
-  <script type = "module" src="signin.js"></script>
 </html>
