@@ -102,6 +102,7 @@
         const box = document.querySelector(".box");
         box.style.display = "none";
         const previewTxt = document.querySelector(".previewTxt");
+        
         inputValue.addEventListener('change', () => {
           const fileInput = document.querySelector('.AssetsUpload');
           const files = fileInput.files;
