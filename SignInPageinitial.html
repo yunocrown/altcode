@@ -53,10 +53,10 @@
           <input class="group-child1261" type="checkbox"></input>
           <div class="remember-me3">Remember Me</div>
         </div>
-        <div class="forgot-password1">Forgot Password?</div>
+        <button class="forgot-password1"> Forgot Password? </button>
       </div>
       <div class="rectangle-parent148" id="groupContainer5">
-        <button class="group-child1262" id = "signinbutton" value="signin">Sign in</button>
+        <div class="group-child1262"></div>
         <!-- <div class="sign-in3">Sign in</div> -->
       </div>
       <div class="dont-have-a1" id="dontHaveA">
@@ -64,10 +64,10 @@
       </div>
       <div class="continue-with3">Continue with</div>
       <div class="group3">
-        <div class="google7">Google</div>
-        <div class="github3">GitHub</div>
+        <div class="google7" >Google</div>
         <img class="vector-icon118" alt="" src="./public/vector15.svg" />
-
+        
+        <div class="github3">GitHub</div>
         <img class="vector-icon119" alt="" src="./public/vector13.svg" />
       </div>
     </div>
@@ -87,6 +87,10 @@
         imageElement1.classList.toggle('updated-image');
       });
 
+      const forgotpassword = document.querySelector(".forgot-password1");
+      forgotpassword.addEventListener("click", (e) => {
+        window.location.href = "./interface.html";
+      })
       // var groupContainer5 = document.getElementById("groupContainer5");
       // if (groupContainer5) {
       //   groupContainer5.addEventListener("click", function (e) {

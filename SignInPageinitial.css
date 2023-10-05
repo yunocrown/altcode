@@ -13,8 +13,8 @@
   border-radius: var(--br-8xs);
   border: 2px solid var(--color-gray-600);
   box-sizing: border-box;
-  width: 74.19rem;
-  height: 37.88rem;
+  width: 83rem;
+  height: 43.5rem;
 }
 .buildmyflow44 {
   position: absolute;
@@ -207,8 +207,13 @@ input.group-child1261{
   font-weight: 200;
   display: flex;
   align-items: center;
-  width: 7.38rem;
+  width: 32%;
   height: 1rem;
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .group-parent73 {
   position: absolute;
@@ -224,7 +229,7 @@ input.group-child1261{
   color: white;
   font-size: 1.25rem;
   border-radius: var(--br-8xs);
-  background-color: var(--color-dimgray-200);
+  background-color: white;
   width: 11.56rem;
   height: 3.13rem;
 }
@@ -237,6 +242,11 @@ input.group-child1261{
   align-items: center;
   width: 3.56rem;
   height: 1rem;
+  color: black;
+}
+
+.group-child1262:hover {
+  background-color: #5138ee;
 }
 .rectangle-parent148 {
   position: absolute;
@@ -246,6 +256,7 @@ input.group-child1261{
   height: 3.13rem;
   cursor: pointer;
   font-size: var(--font-size-mini);
+  
 }
 .continue-with3,
 .dont-have-a1,
@@ -325,7 +336,7 @@ input.group-child1261{
   position: relative;
   background-color: var(--color-gray-1000);
   width: 100%;
-  height: 45.94rem;
+  height: 50rem;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-smi);
