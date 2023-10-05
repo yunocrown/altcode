@@ -56,8 +56,8 @@
         <div class="forgot-password1">Forgot Password?</div>
       </div>
       <div class="rectangle-parent148" id="groupContainer5">
-        <div class="group-child1262"></div>
-        <div class="sign-in3">Sign in</div>
+        <button class="group-child1262" id = "signinbutton" value="signin">Sign in</button>
+        <!-- <div class="sign-in3">Sign in</div> -->
       </div>
       <div class="dont-have-a1" id="dontHaveA">
         Don’t Have a Account? SignUp
@@ -87,12 +87,12 @@
         imageElement1.classList.toggle('updated-image');
       });
 
-      var groupContainer5 = document.getElementById("groupContainer5");
-      if (groupContainer5) {
-        groupContainer5.addEventListener("click", function (e) {
-          window.location.href = "./CanvasAlternateDesign.html"
-        });
-      }
+      // var groupContainer5 = document.getElementById("groupContainer5");
+      // if (groupContainer5) {
+      //   groupContainer5.addEventListener("click", function (e) {
+      //     window.location.href = "./CanvasAlternateDesign.html"
+      //   });
+      // }
 
       const passwordInput = document.getElementById('passwordInput');
       const showPasswordIcon = document.getElementById('showPasswordIcon');
@@ -111,5 +111,7 @@
         });
       }
       </script>
+
   </body>
+  <script type = "module" src="signin.js"></script>
 </html>
