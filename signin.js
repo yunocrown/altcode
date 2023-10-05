@@ -30,14 +30,10 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
         const dt = new Date();
         update(ref(database, 'user/' + user.uid),{
           last_login:dt,
-          if (groupContainer) {
-            groupContainer.addEventListener("click", function (e) {
-              window.location.href = "./CanvasAlternateDesign.html";
-            });
-          }
+          
         })
-        alert(user.email + "successfully logged in");
-         var groupContainer = document.getElementById("submitButton");
+        alert(user.email + " successfully logged in");
+        // var groupContainer = document.getElementById("submitButton");
    
     }).catch((error) => {
         const errorCode = error.code;

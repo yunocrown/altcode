@@ -37,7 +37,7 @@
       <div class="hey-there1">Hey there!</div>
       <div class="signuppageinitial-child1"></div>
       <div class="remember-me1">Remember Me</div>
-      <button class="rectangle-parent135" id="submitButton">SignUp</button>
+      <button class="rectangle-parent135" id="submitButton" onclick="signup_auth()">SignUp</button>
       <div class="already-have-a1" id="alreadyHaveA">
         Already have a Account? SignIn
       </div>
@@ -56,7 +56,7 @@
       </div>
       <div class="continue-with1">Continue with</div>
       <div class="group1">
-        <div class="google5">Google</div>
+        <div class="google5" id ="google">Google</div>
         <div class="github1">GitHub</div>
         <img class="vector-icon112" alt="" src="./public/vector8.svg" id="googleAuth"/>
         <img class="vector-icon113" alt="" src="./public/vector13.svg" />
@@ -79,13 +79,6 @@
         imageElement1.classList.toggle('updated-image');
       });
       
-      var groupContainer = document.getElementById("submitButton");
-      if (groupContainer) {
-        groupContainer.addEventListener("click", function (e) {
-          window.location.href = "./CanvasAlternateDesign.html";
-        });
-      }
-      
       const passwordInput = document.getElementById('passwordInput');
       const showPasswordIcon = document.getElementById('showPasswordIcon');
       showPasswordIcon.addEventListener('click', function() {
@@ -103,5 +96,5 @@
         });
       }
     </script>
-  <script type="module" src="signup.js"></script>
+  <script type="module" src="signup2.js"></script>
 </html>
