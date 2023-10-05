@@ -1,7 +1,8 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js';
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js';
-import { getAuth , createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
+import { getAuth , createUserWithEmailAndPassword ,GoogleAuthProvider ,signInWithPopup } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
 
+const provider = new GoogleAuthProvider();
 const firebaseConfig = {
   apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
   authDomain: "altcode-35511.firebaseapp.com",
@@ -14,10 +15,36 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const google = document.getElementById("googleAuth");
 const analytics = getAnalytics(app);
 const auth = getAuth();
 console.log(app);
 
+document.getElementById("google").addEventListener('click', (e) => {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const token = credential.accessToken;
+      // The signed-in user info.
+      const user = result.user;
+      // IdP data available using getAdditionalUserInfo(result)
+      // ...
+      alert(user.displayName);
+    }).catch((error) => {
+      // Handle Errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // The email of the user's account used.
+      const email = error.customData.email;
+      // The AuthCredential type that was used.
+      const credential = GoogleAuthProvider.credentialFromError(error);
+      alert(errorMessage);
+      // ...
+    });
+  })
+
+ {
 document.getElementById("submitButton").addEventListener("click", function() {
     var email = document.getElementById("emailInput").value;
     var password = document.getElementById("passwordInput").value;
@@ -27,6 +54,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
     .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        window.location.assign("./canvas.html")        
         alert("congratulation!! user created");
          // var groupContainer = document.getElementById("submitButton");
       // if (groupContainer) {
@@ -41,3 +69,4 @@ document.getElementById("submitButton").addEventListener("click", function() {
         alert("error");
     });
 });
+  }
