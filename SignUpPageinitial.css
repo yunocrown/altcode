@@ -15,27 +15,27 @@
 }
 .signuppageinitial-inner {
   position: absolute;
-  top: 3.06rem;
-  left: 5.56rem;
+  top: 9%;
+  left: 6%;
   border-radius: var(--br-8xs);
   border: 2px solid var(--color-gray-600);
   box-sizing: border-box;
-  width: 74.19rem;
-  height: 37.88rem;
+  width: 88%;
+  height: 80%;
 }
 .buildmyflow42,
 .hey-there1,
 .sign-up2 {
   position: absolute;
-  top: 4.31rem;
-  left: 8.13rem;
+  top: 13%;
+  left: 11%;
   font-size: var(--font-size-xl);
   letter-spacing: 0.05em;
   line-height: 3.59rem;
   display: flex;
   align-items: center;
-  width: 8.19rem;
-  height: 1.06rem;
+  width: 5.4%;
+  height: 3%;
 }
 .hey-there1,
 .sign-up2 {
