@@ -4,7 +4,7 @@ import { getAuth , signInWithPopup , GoogleAuthProvider } from 'https://www.gsta
 
 const provider = new GoogleAuthProvider();
 const firebaseConfig = {
-  apiKey: "AIzaSyD9o7eEqPqSaMaTGnPIv-A589qxtvM-J0A",
+  apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
   authDomain: "altcode-35511.firebaseapp.com",
   databaseURL: "https://altcode-35511-default-rtdb.firebaseio.com",
   projectId: "altcode-35511",
