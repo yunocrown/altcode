@@ -55,7 +55,7 @@
         </div>
         <img id="showPasswordIcon" class="vector-icon111" alt="" src="./public/vector12.svg" />
       </div>
-      <div class="continue-with1">Continue with</div>
+      <!-- <div class="continue-with1">Continue with</div> -->
       <div class="group1">
         <div class="google5" id="google">Google</div>
         <div class="github1">GitHub</div>
@@ -80,13 +80,6 @@
         imageElement1.classList.toggle('updated-image');
       });
       
-      var groupContainer = document.getElementById("submitButton");
-      if (groupContainer) {
-        groupContainer.addEventListener("click", function (e) {
-          window.location.href = "./CanvasAlternateDesign.html";
-        });
-      }
-      
       const passwordInput = document.getElementById('passwordInput');
       const showPasswordIcon = document.getElementById('showPasswordIcon');
       showPasswordIcon.addEventListener('click', function() {
@@ -104,5 +97,5 @@
         });
       }
     </script>
-  <script type="module" src="signup2.js"></script>
+  <script type="module" src="signup.js"></script>
 </html>
