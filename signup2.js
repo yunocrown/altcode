@@ -29,7 +29,7 @@ document.getElementById("google").addEventListener('click', (e) => {
       const user = result.user;
       // IdP data available using getAdditionalUserInfo(result)
       // ...
-      alert(user.displayName + "logged in successfully");
+      alert(user.displayName + " logged in successfully ");
     }).catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
@@ -38,7 +38,7 @@ document.getElementById("google").addEventListener('click', (e) => {
       const email = error.customData.email;
       // The AuthCredential type that was used.
       const credential = GoogleAuthProvider.credentialFromError(error);
-      alert(errorMessage);
+      alert("Error : Window closed by user");
       // ...
     });
   })
