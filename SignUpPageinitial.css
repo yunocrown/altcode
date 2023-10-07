@@ -27,8 +27,8 @@
 .hey-there1,
 .sign-up2 {
   position: absolute;
-  top: 13%;
-  left: 11%;
+  top: 4%;
+  left: 5%;
   font-size: var(--font-size-xl);
   letter-spacing: 0.05em;
   line-height: 3.59rem;
@@ -39,23 +39,22 @@
 }
 .hey-there1,
 .sign-up2 {
-  top: 6.69rem;
-  left: 58.44rem;
+  left: 73%;
   font-size: var(--font-size-8xl);
   width: 7.75rem;
   height: 1.63rem;
 }
 .hey-there1 {
-  top: 9rem;
-  left: 58.60rem;
+  top: 10%;
+  left: 73.4%;
   font-size: var(--font-size-xl);
   font-weight: 500;
   width: 7.94rem;
 }
 .signuppageinitial-child1 {
   position: absolute;
-  top: 15.19rem;
-  left: 48.31rem;
+  top: 34%;
+  left: 59%;
   border-radius: var(--br-8xs);
   border: 1px solid var(--color-dimgray-200);
   box-sizing: border-box;
@@ -69,8 +68,8 @@ input.signuppageinitial-child1 {
 }
 .remember-me1 {
   position: absolute;
-  top: 26.94rem;
-  left: 50.5rem;
+  top: 62%;
+  left: 61%;
   letter-spacing: 0.05em;
   line-height: 3.59rem;
   display: flex;
@@ -102,8 +101,8 @@ input.signuppageinitial-child1 {
 .already-have-a1,
 .rectangle-parent135 {
   position: absolute;
-  top: 28.38rem;
-  left: 57.88rem;
+  top: 69%;
+  left: 71%;
   width: 11.56rem;
   height: 3.13rem;
   cursor: pointer;
@@ -123,8 +122,8 @@ input.signuppageinitial-child1 {
   color: aliceblue;
 }
 .already-have-a1 {
-  top: 38.56rem;
-  left: 54.99rem;
+  top: 96%;
+  left: 69.5%;
   letter-spacing: 0.05em;
   line-height: 3.59rem;
   display: flex;
@@ -164,8 +163,8 @@ input.signuppageinitial-child1 {
 }
 .rectangle-parent136 {
   position: absolute;
-  top: 16.44rem;
-  left: 49.38rem;
+  top: 37.5%;
+  left: 61%;
   width: 14.81rem;
   height: 1.13rem;
   cursor: pointer;
@@ -233,8 +232,8 @@ input.group-child1251 {
 }
 .rectangle-parent137 {
   position: absolute;
-  top: 21.5rem;
-  left: 48.31rem;
+  top: 50%;
+  left: 59%;
   width: 27.94rem;
   height: 3.63rem;
 }
@@ -263,8 +262,13 @@ input.group-child1251 {
   width: 3.56rem;
 }
 .google5 {
-  top: 1.63rem;
-  left: 0;
+  top: -12%;
+  width: fit-content;
+  left: 38%;
+  height: fit-content;
+  font-family: var(--font-lexend-deca);
+  font-size: var(--font-size-base);
+  font-weight: 500;
 }
 .github1 {
   top: 1.69rem;
@@ -274,7 +278,8 @@ input.group-child1251 {
 .vector-icon113 {
   position: absolute;
   height: 62.09%;
-  width: 17.07%;
+  width: fit-content;
+  height: fit-content;
   top: 0;
   right: 71.17%;
   bottom: 38.91%;
@@ -288,6 +293,7 @@ input.group-child1251 {
   background-color:transparent;
   border: none;
   outline: none;
+  top: 23%;
 }
 .vector-icon112-child {
   position: absolute;
@@ -302,19 +308,29 @@ input.group-child1251 {
   bottom: 40.34%;
   left: 71.63%;
 }
-.group1,
-.or1 {
+.group1{
   position: absolute;
-  top: 34.63rem;
-  left: 59.25rem;
-  width: 8.81rem;
-  height: 2.38rem;
+  top: 86%;
+  left: 73%;
+  width: 12%;
+  height: 8%;
   text-align: center;
   font-size: var(--font-size-2xs);
+  background-color: transparent;
+  cursor: pointer;
+}
+.group1:hover {
+  border-radius: 3px;
+  background-color: var(--color-blueviolet);
 }
 .or1 {
-  top: 33rem;
-  left: 62.06rem;
+  position: absolute;
+  text-align: center;
+  font-size: var(--font-size-2xs);
+  width: 2%;
+  height: 4%;
+  top: 81%;
+  left: 76.5%;
   letter-spacing: 0.05em;
   line-height: 1rem;
   display: flex;
