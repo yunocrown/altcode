@@ -2,7 +2,6 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebas
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js';
 import { getAuth , createUserWithEmailAndPassword ,GoogleAuthProvider ,signInWithPopup } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
 
-const provider = new GoogleAuthProvider();
 const firebaseConfig = {
   apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
   authDomain: "altcode-35511.firebaseapp.com",
@@ -15,6 +14,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const provider = new GoogleAuthProvider();
 const analytics = getAnalytics(app);
 const auth = getAuth();
 console.log(app);
@@ -29,7 +29,7 @@ document.getElementById("googleAuth").addEventListener('click', (e) => {
       const user = result.user;
       // IdP data available using getAdditionalUserInfo(result)
       // ...
-      alert(user.displayName);
+      alert(user.displayName + " logged in successfully ");
     }).catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
@@ -38,7 +38,7 @@ document.getElementById("googleAuth").addEventListener('click', (e) => {
       const email = error.customData.email;
       // The AuthCredential type that was used.
       const credential = GoogleAuthProvider.credentialFromError(error);
-      alert(errorMessage);
+      alert("Error : Window closed by user");
       // ...
     });
   })
@@ -55,12 +55,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
         console.log(user);
         window.location.assign("./canvas.html")        
         alert("congratulation!! user created");
-         // var groupContainer = document.getElementById("submitButton");
-      // if (groupContainer) {
-      //   groupContainer.addEventListener("click", function (e) {
-      //     window.location.href = "./CanvasAlternateDesign.html";
-      //   });
-      // }
+         
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;

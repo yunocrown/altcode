@@ -17,7 +17,7 @@
 
 <body>
   <div class="signinpageinitial">
-    <!-- <div class="signinpageinitial-child"></div> -->
+     <div class="signinpageinitial-child"></div>
     <div class="signinpageinitial-item"></div>
     <div class="buildmyflow44">Altcode</div>
     <img class="signinpageinitial-inner initial-image" alt="" src="./public/group-2081.svg" />
@@ -53,20 +53,16 @@
     <div class="continue-with3">Continue with</div>
     <div class="group3">
       <div class="google7">Google</div>
-      <img class="vector-icon118" alt="" src="./public/vector15.svg" />
-
-      <div class="github3">GitHub</div>
-      <img class="vector-icon119" alt="" src="./public/vector13.svg" />
+      <img class="vector-icon118" id ="google" alt="" src="./public/vector15.svg" />
     </div>
   </div>
 
   <script>
-    
       const rectangleParent = document.querySelector('.signinpageinitial-child1');
       const text = document.querySelector('.rectangle-parent144');
-    const imageElement = document.querySelector('.signinpageinitial-inner');
-    rectangleParent.addEventListener('click', function () {
-      text.style.top = '14.63rem';
+      const imageElement = document.querySelector('.signinpageinitial-inner');
+      rectangleParent.addEventListener('click', function () {
+        text.style.top = '14.63rem';
       imageElement.classList.toggle('updated-image');
     });
 
