@@ -1,7 +1,48 @@
+        const userinterfaceButton = document.querySelector(".userInterface");
+        const layoutButton = document.querySelector(".layout");
+        const mediaButton = document.querySelector(".media");
+        const drawingButton = document.querySelector(".drawingAnimation");
+        const mapsButton = document.querySelector(".maps");
+        const sensorsButton = document.querySelector(".sensors");
+        const socialButton = document.querySelector(".social");
+        const utilitiesButton = document.querySelector(".utilities");
+        const dynamicButton = document.querySelector(".dynamic");
+        const connectivityButton = document.querySelector(".connectivity");
+        const googleButton = document.querySelector(".google");
+        const monetizationButton = document.querySelector(".monetization");
+        const extensionButton = document.querySelector(".extensions");
 
-const assets = document.querySelector(".assets");
-const closeIcon = document.querySelector(".close");
-const uploadingContent = document.querySelector(".uploadingContent");
+        const assets = document.querySelector(".assets");
+        const closeIcon = document.querySelector(".close");
+        const uploadingContent = document.querySelector(".uploadingContent");
+        assets.addEventListener("click" , () => {
+          uploadingContent.style.display = "grid";
+        });
+        closeIcon.addEventListener("click", () => {
+          uploadingContent.style.display = "none";
+        })
+
+        var sideIcons = document.getElementById("stationaryIcons");
+        var dragScreen = document.getElementById("draggableScreen");
+        var buttonTxt = document.querySelectorAll(".buttonTxt");
+
+        sideIcons.addEventListener("mouseover", function() {
+          sideIcons.style.width = "14.81rem";
+          dragScreen.style.width = "3.69rem";
+          dragScreen.style.left = "14.6rem";
+          for (let i = 0; i < buttonTxt.length; i++) {
+            buttonTxt[i].style.display = 'none';
+          }
+        });
+        sideIcons.addEventListener("mouseout", function() {
+          sideIcons.style.width = "3.69rem";
+          dragScreen.style.width = "14.81rem";
+          dragScreen.style.left = "3.52rem";
+          for (let i = 0; i < buttonTxt.length; i++) {
+            buttonTxt[i].style.display = 'flex';
+          }
+        });
+
 assets.addEventListener("click", () => {
 
   uploadingContent.style.display = "grid";

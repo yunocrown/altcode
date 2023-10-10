@@ -32,74 +32,74 @@
     <div class="signuppageinitial">
       <div class="signuppageinitial-child"></div>
       <img class="signuppageinitial-item initial-image" alt="" src="./public/group-2081.svg"/>
-      <div class="signuppageinitial-inner"></div>
-      <div class="buildmyflow42">Altcode</div>
-      <b class="sign-up2">Sign Up</b>
-      <div class="hey-there1">Hey there!</div>
-      <!-- <div class="signuppageinitial-child1"></div> -->
-      <div class="remember-me1">Remember Me</div>
-      <button class="rectangle-parent135" id="submitButton">SignUp</button>
-      <div class="already-have-a1" id="alreadyHaveA">
-        Already have a Account? SignIn
-      </div>
-      <!-- <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder=""></input>
-      <div class="rectangle-parent136" id="groupContainer1">
-        <div class="group-child1250"></div>
-        <div class="enter-your-email1 rectangle-parent136">Enter your Email Id or username</div>
-      </div> -->
-      
-      <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder="">
-    <div class="rectangle-parent136" id="groupContainer1">
-      <div class="enter-your-email1">Enter your Email Id or username</div>
-    </div>
-    </input>
-    
-      <div class="rectangle-parent137">
-        <input id="passwordInput" class="group-child1251" type="password" placeholder=""></input>
-        <div class="rectangle-parent138" id="groupContainer2">
-          <div class="group-child1252"></div>
-          <div class="enter-your-password1">Enter your password</div>
+      <div class="signuppageinitial-inner">
+        <div class="buildmyflow42">Altcode</div>
+        <b class="sign-up2">Sign Up</b>
+        <div class="hey-there1">Hey there!</div>
+        <!-- <div class="signuppageinitial-child1"></div> -->
+        <div class="remember-me1">Remember Me</div>
+        <button class="rectangle-parent135" id="submitButton">SignUp</button>
+        <div class="already-have-a1" id="alreadyHaveA">
+          Already have a Account? SignIn
         </div>
-        <img id="showPasswordIcon" class="vector-icon111" alt="" src="./public/vector12.svg" />
+        <!-- <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder=""></input>
+        <div class="rectangle-parent136" id="groupContainer1">
+          <div class="group-child1250"></div>
+          <div class="enter-your-email1 rectangle-parent136">Enter your Email Id or username</div>
+        </div> -->
+        
+        <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder="">
+      <div class="rectangle-parent136" id="groupContainer1">
+        <div class="enter-your-email1">Enter your Email Id or username</div>
       </div>
-      <!-- <div class="continue-with1">Continue with</div> -->
-      <div class="group1">
-        <div class="google5" id="google">Google</div>
-        <div class="github1">GitHub</div>
-        <img class="vector-icon112" alt="" src="./public/vector8.svg" id="googleAuth"/>
-        <img class="vector-icon113" alt="" src="./public/vector13.svg" />
+      </input>
+      
+        <div class="rectangle-parent137">
+          <input id="passwordInput" class="group-child1251" type="password" placeholder=""></input>
+          <div class="rectangle-parent138" id="groupContainer2">
+            <div class="group-child1252"></div>
+            <div class="enter-your-password1">Enter your password</div>
+          </div>
+          <img id="showPasswordIcon" class="vector-icon111" alt="" src="./public/vector12.svg" />
+        </div>
+        <!-- <div class="continue-with1">Continue with</div> -->
+        <div class="group1" id="googleAuth">
+          <span class="google5" id="google">Google</span>
+          <img class="vector-icon112" alt="" src="./public/vector8.svg"/>
+        </div>
+        <div class="or1">OR</div>
       </div>
-      <div class="or1">OR</div>
     </div> 
   </body>
   <script>
-      // const rectangleParent = document.querySelector('.rectangle-parent136');
-      // const imageElement = document.querySelector('.signuppageinitial-item');
-      // rectangleParent.addEventListener('click', function() {
-      //   rectangleParent.style.top = '14.63rem';
-      //   imageElement.classList.toggle('updated-image');
-      // });
-
-      // const rectangleParent1 = document.querySelector('.rectangle-parent138');
-      // const imageElement1 = document.querySelector('.signuppageinitial-item');
-      // rectangleParent1.addEventListener('click', function() {
-      //   rectangleParent1.style.top = '-0.6rem';
-      //   imageElement1.classList.toggle('updated-image');
-      // });
-
       const text = document.querySelector('.rectangle-parent136');
-  const rectangleParent = document.querySelector('.signuppageinitial-child1');
-  const imageElement = document.querySelector('.signuppageinitial-item');
-  rectangleParent.addEventListener('click', function () {
-    text.style.top = '14.63rem';
-    imageElement.classList.toggle('updated-image');
-  });
+      const rectangleParent = document.querySelector('.signuppageinitial-child1');
+      const imageElement = document.querySelector('.signuppageinitial-item');
+      rectangleParent.addEventListener('click', function () {
+        text.style.top = '32.7%';
+        text.style.backgroundColor =  "var(--color-gray-1000)";
+        text.style.transition = "all 1s";
+        imageElement.classList.toggle('updated-image');
+      });
+      text.addEventListener("click", function() {
+        text.style.top = '32.7%';
+        text.style.backgroundColor =  "var(--color-gray-1000)";
+        text.style.transition = "all 1s";
+      });
 
+      const rectangleParent4 = document.querySelector('.group-child1251');
       const rectangleParent1 = document.querySelector('.rectangle-parent138');
       const imageElement1 = document.querySelector('.signuppageinitial-item');
-      rectangleParent1.addEventListener('click', function() {
+      rectangleParent4.addEventListener('click', function() {
         rectangleParent1.style.top = '-0.6rem';
+        rectangleParent1.style.backgroundColor =  "var(--color-gray-1000)";
+        rectangleParent1.style.transition = "all 1s";
         imageElement1.classList.toggle('updated-image');
+      });
+      rectangleParent1.addEventListener("click", function() {
+        rectangleParent1.style.top = '-0.6rem';
+        rectangleParent1.style.backgroundColor =  "var(--color-gray-1000)";
+        rectangleParent1.style.transition = "all 1s";
       });
       
       var groupContainer = document.getElementById("submitButton");

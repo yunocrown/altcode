@@ -12,16 +12,14 @@
 .uploadedimg{
     height: 50px;
     width: 50px;
-    float:left;
-    margin: 0px 5px 0px 5px ;
-    /* margin-top: 5px; */
-    /* margin-left: 5px; */
+    /* float:left; */
+    margin: 7px 5px 0px 5px;
     box-sizing: border-box;
 }
 
 .uploadedtext{
-    height: 60px;
-    width: 350px;
+    height: 15%;
+    width: 100%;
     color: black;
     margin: 0;
     padding: 0;
@@ -972,6 +970,9 @@
     height: 3.8%;
     width: 70px;
     position: relative;
+    border-radius: 23px;
+}
+.userInterfaceContent:hover{ 
     background-color: var(--color-darkslategray);
     border-radius: 23px;
 }
@@ -1285,4 +1286,9 @@
     font-size: var(--font-size-mini);
     position: absolute;
     font-weight: 400;
+    width: 260%;
+    height: fit-content;
+    left: 106%;
+    top: 29.2%;
+    cursor: pointer;
 }
