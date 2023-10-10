@@ -18,11 +18,16 @@
 }
 
 .uploadedtext{
-    height: 15%;
-    width: 100%;
+    height: fit-content;
+    width: 77%;
     color: black;
     margin: 0;
     padding: 0;
+    text-align: initial;
+    left: 21%;
+    position: inherit;
+    top: 30%;
+    font-size: smaller;
 }
 .interface {
   position: relative;
@@ -750,8 +755,8 @@
 .draggableScreen {
     position: absolute;
     top: 10.01%;
-    left: 3.6rem;
-    width: 14.69rem;
+    left: 3.52rem;
+    width: 14.81rem;
     height: 100%;
     background-color: var(--color-gray-900);
     border: 1px solid var(--color-dimgray-200);
@@ -1018,6 +1023,27 @@
 .monetization[open]{
     margin-bottom: 69px;
 }
+.monetizationContent {
+    position: absolute;
+    width: 6%;
+    height: 39px;
+    /* top: 2.95rem; */
+    left: 0.1rem;
+}
+.monetizationContent a {
+    font-family: var(--font-lexend-deca);
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.monetizationContent a:hover {
+    width: 9rem;
+    border-radius: var(--br-81xl);
+    background-color: var(--color-darkslategray);
+}
 .extensions {
     top: 7.8%;
 }
@@ -1031,9 +1057,15 @@
     width: 1.3rem;
     height: 1.3rem;
     left: 31px;
-    top: 12px;
+    top: 13px;
 }
 .layoutContentIcon {
+    position: relative;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 2px 2px 2px 2px;
+}
+.monetizationContentIcon {
     position: relative;
     width: 1.3rem;
     height: 1.3rem;
@@ -1043,7 +1075,7 @@
     position: absolute;
     width: 6%;
     height: 39px;
-    top: 2.95rem;
+    /* top: 2.95rem; */
     left: 0.1rem;
 }
 .layoutContent a {
@@ -1198,6 +1230,7 @@
     border-style: dashed;
     border-color: black;
     object-fit: contain;
+    cursor: pointer;
 }
 .previewTxt {
     position: absolute;
@@ -1246,6 +1279,7 @@
     height: 46%;
     margin-top: 38%;
     margin-left: 2%;
+    overflow-y: scroll;
 }
 .box {
     display: flex;
@@ -1259,13 +1293,17 @@
     left: 2%;
     top: 3%;
     position: absolute;
+    cursor: pointer;
 }
-/* .box img {
+.box:first-child {
+    margin-top: 0;
+  }
+.box img {
   width: fit-content;
   height: 53%;
   position: absolute;
-  left: 2%;
-} */
+  left: 0%;
+}
 .box .text {
     margin-top: 10px;
     color: #69008d;
@@ -1290,4 +1328,14 @@
     left: 106%;
     top: 29.2%;
     cursor: pointer;
+}
+.material-symbols-outlined {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 24%;
+    left: 309%;
+}
+#removeIcon {
+    display: none;
 }
