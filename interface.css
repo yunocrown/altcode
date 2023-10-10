@@ -1245,6 +1245,7 @@
     height: 46%;
     margin-top: 38%;
     margin-left: 2%;
+    overflow-y: scroll;
 }
 .box {
     display: flex;
