@@ -1222,14 +1222,14 @@
 .preview {
     background-color: #c9e9ff;
     position: absolute;
-    width: 43%;
-    height: 57.5%;
-    left: 53%;
-    top: 12%;
+    width: 47%;
+    height: 44.5%;
+    left: 51%;
+    top: 20%;
     border-radius: 2%;
-    border-style: dashed;
+    border-style: solid;
     border-color: black;
-    object-fit: contain;
+    object-fit: fill;
     cursor: pointer;
 }
 .previewTxt {
@@ -1274,7 +1274,6 @@
 }
 .uploadedfiles {
     position: absolute;
-    background-color: antiquewhite;
     width: 48%;
     height: 46%;
     margin-top: 38%;

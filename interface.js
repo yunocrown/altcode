@@ -156,10 +156,9 @@ const inputValue = document.querySelector('.AssetsUpload');
 const preview = document.querySelector(".preview");
 const box = document.querySelector(".box");
 const previewTxt = document.querySelector(".previewTxt");
-
+const uploadfiles = document.querySelector('.uploadedfiles');
 inputValue.addEventListener('change', () => {
   const fileInput = document.querySelector('.AssetsUpload');
-  const uploadfiles = document.querySelector('.uploadedfiles');
   const files = fileInput.files;
 
   const existingBoxes = document.querySelectorAll('.box');
@@ -182,17 +181,17 @@ inputValue.addEventListener('change', () => {
     uploadfiles.appendChild(boxElement);
   }
 });
-const boxes = document.querySelectorAll(".box");
-for (let i = 0; i < boxes.length; i++) {
-  const box = boxes[i];
-  box.addEventListener('click', function(event) {
-    const clickedImgSrc = box.querySelector('img');
+uploadfiles.addEventListener('click', function(event) {
+  const clickedElement = event.target;
+  const boxElement = clickedElement.closest('.box');
+  if (boxElement) {
+    const clickedImgSrc = boxElement.querySelector('img');
     if (clickedImgSrc) {
       preview.src = clickedImgSrc.src;
+      previewTxt.style.display = "none";
     }
-  });
-}
-
+  }
+});
 const listItems = document.querySelectorAll("#draggableScreen a");
 const target = document.querySelector("#drop-target");
 for (const listItem of listItems) {
