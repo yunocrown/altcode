@@ -1338,3 +1338,12 @@
 #removeIcon {
     display: none;
 }
+#deleteContent {
+    position: absolute;
+    top: 92%;
+    left: 94%;
+    width: fit-content;
+    height: fit-content;
+    background: teal;
+    cursor: pointer;
+}

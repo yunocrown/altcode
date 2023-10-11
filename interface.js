@@ -150,13 +150,13 @@ monetizationContent.addEventListener("click", function(event) {
   }
 });
 
-//uploading and storing content for application
 const AssetsUploadBtn = document.querySelector(".AssetsUploadBtn");
 const inputValue = document.querySelector('.AssetsUpload');
 const preview = document.querySelector(".preview");
 const box = document.querySelector(".box");
 const previewTxt = document.querySelector(".previewTxt");
 const uploadfiles = document.querySelector('.uploadedfiles');
+
 inputValue.addEventListener('change', () => {
   const fileInput = document.querySelector('.AssetsUpload');
   const files = fileInput.files;
@@ -164,6 +164,7 @@ inputValue.addEventListener('change', () => {
   const existingBoxes = document.querySelectorAll('.box');
   const topIncrement = 60;
   const newTopValue = existingBoxes.length * topIncrement;
+
   for (let i = 0; i < files.length; i++) {
     const file = files[i];
     const boxElement = document.createElement('div');
@@ -178,9 +179,65 @@ inputValue.addEventListener('change', () => {
     boxElement.appendChild(imageElement);
     boxElement.appendChild(textElement);
     boxElement.style.top = `${newTopValue}px`;
-    uploadfiles.appendChild(boxElement);
+
+    // Check if the image size exceeds the remaining storage
+    const totalCapacity = 5 * 1024 * 1024; // 5MB
+    const usedStorage = calculateUsedStorage();
+    const remainingStorage = totalCapacity - usedStorage;
+    const imageSize = file.size;
+    const usedStorageElement = document.querySelector(".informationBlockTxt");
+    usedStorageElement.textContent = `You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using ${usedStorage/(1024*1024)}MB in this project.`;
+    console.log(remainingStorage);
+    if (imageSize > remainingStorage) {
+      alert("Image size exceeds the available storage. Please upload a smaller image.");
+    } else {
+      uploadfiles.appendChild(boxElement);
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        localStorage.setItem(file.name, event.target.result);
+      };
+      reader.readAsDataURL(file);
+    }
   }
 });
+const deleteContent = document.getElementById("deleteContent");
+deleteContent.addEventListener("click", function() {
+  // Remove the selected box from display and list
+  const selectedBoxes = document.querySelectorAll('.box.selected');
+  selectedBoxes.forEach(function(box) {
+    console.log("pressed")
+    box.remove();
+    const fileName = box.querySelector('.uploadedtext').textContent;
+    localStorage.removeItem(fileName);
+  });
+});
+
+// Add a button to remove all list items
+const removeAllButton = document.createElement('button');
+removeAllButton.textContent = 'Remove All';
+removeAllButton.addEventListener('click', function() {
+  // Remove all boxes from display and list
+  const allBoxes = document.querySelectorAll('.box');
+  allBoxes.forEach(function(box) {
+    box.remove();
+    const fileName = box.querySelector('.uploadedtext').textContent;
+    localStorage.removeItem(fileName);
+  });
+});
+
+// Append the remove all button to the page
+document.body.appendChild(removeAllButton);
+
+function calculateUsedStorage() {
+  let usedStorage = 0;
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const item = localStorage.getItem(key);
+    usedStorage += key.length + item.length * 2; // Approximate size calculation
+  }
+  return usedStorage;
+}
+
 uploadfiles.addEventListener('click', function(event) {
   const clickedElement = event.target;
   const boxElement = clickedElement.closest('.box');
