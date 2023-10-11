@@ -1,5 +1,5 @@
         const userinterfaceButton = document.querySelector(".userInterface");
-        const layoutButton = document.querySelector(".layout");
+        const layout = document.querySelector(".layout");
         const mediaButton = document.querySelector(".media");
         const drawingButton = document.querySelector(".drawingAnimation");
         const mapsButton = document.querySelector(".maps");
@@ -9,14 +9,9 @@
         const dynamicButton = document.querySelector(".dynamic");
         const connectivityButton = document.querySelector(".connectivity");
         const googleButton = document.querySelector(".google");
-        const monetizationButton = document.querySelector(".monetization");
+        const monetization = document.querySelector(".monetization");
         const extensionButton = document.querySelector(".extensions");
 
-        if(layoutButton.hovered === true) {
-          layoutButton.open = true;
-        }
-
-<<<<<<< HEAD
         const assets = document.querySelector(".assets");
         const closeIcon = document.querySelector(".close");
         const uploadingContent = document.querySelector(".uploadingContent");
@@ -47,10 +42,7 @@
             buttonTxt[i].style.display = 'flex';
           }
         });
-=======
-const assets = document.querySelector(".assets");
-const closeIcon = document.querySelector(".close");
-const uploadingContent = document.querySelector(".uploadingContent");
+
 assets.addEventListener("click", () => {
 
   uploadingContent.style.display = "grid";
@@ -78,9 +70,6 @@ sideIcons.addEventListener("mouseover", function () {
   sideIcons.style.width = "14.81rem";
   dragScreen.style.width = "3.69rem";
   dragScreen.style.left = "14.6rem";
-  // userinterfaceTxt.style.display = "flex";
-  // userInterface.style.width = "14.00rem";
-  // layout.style.width = "14.00rem";
   for (let i = 0; i < buttonTxt.length; i++) {
     buttonTxt[i].style.display = 'none';
   }
@@ -89,14 +78,10 @@ sideIcons.addEventListener("mouseout", function () {
   sideIcons.style.width = "3.69rem";
   dragScreen.style.width = "14.81rem";
   dragScreen.style.left = "3.52rem";
-  // userinterfaceTxt.style.display = "none";
-  // userInterface.style.width = "4.5rem";
-  // layout.style.width = "4.5rem";
   for (let i = 0; i < buttonTxt.length; i++) {
     buttonTxt[i].style.display = 'flex';
   }
 });
->>>>>>> 270f8f6ae165b5c67c7c77e25af0aaa0cc535fb2
 
 var screenTxt = document.querySelector(".screenTxt");
 var dropdownContent = document.querySelector(".dropdown-content");
@@ -132,78 +117,138 @@ screenContent.addEventListener("click", function (event) {
   }
 });
 
-// var layoutTxt = document.getElementById("layoutTxt");
-// var layoutContent = document.querySelector(".layoutContent");
-// var layoutSwappableIcon = document.getElementById("layoutSwappableIcon");
-// layoutContent.addEventListener("click", function() {
-//   if (event.target.tagName === "A") {
-//     layoutTxt.textContent = event.target.textContent;
-//     var layoutContentIcon = event.target.querySelector(".layoutContentIcon");
-//     if(layoutSwappableIcon) {
-//       layoutSwappableIcon.src = layoutContentIcon.src;
-//     }
-//   }
-// });
+var layoutTxt = document.getElementById("layoutTxt");
+var layoutIcon = document.getElementById("layoutIcon");
+var layoutContent = document.querySelector(".layoutContent");
 
-//uploading and storing content for application
-const AssetsUploadBtn = document.querySelector(".AssetsUploadBtn");
-const inputValue = document.querySelector('.AssetsUpload');
-const preview = document.querySelector(".preview");
-// const imagesUploaded = document.querySelector('.imagesUploaded');
-const box = document.querySelector(".box");
-// box.style.display = "none";
-const previewTxt = document.querySelector(".previewTxt");
-
-// inputValue.addEventListener('change', () => {
-//   const fileInput = document.querySelector('.AssetsUpload');
-//   const files = fileInput.files;
-//   for (let i = 0; i < files.length; i++) {
-//     const file = files[i];   
-//     const listItem = document.createElement('li', 'list-element');
-//     const box = document.createElement('div');
-//     box.classList.add('box', 'new-box');
-//     const imageElement = document.createElement('img');
-//     imageElement.src = URL.createObjectURL(file);
-//     imageElement.alt = 'Image';
-//     const textElement = document.createElement('p');
-//     textElement.classList.add('text');
-//     textElement.textContent = file.name;
-//     box.appendChild(imageElement);
-//     box.appendChild(textElement);
-//     listItem.appendChild(box);
-//     imagesUploaded.appendChild(listItem);
-//   }
-// });
-
-inputValue.addEventListener('change', () => {
-  const fileInput = document.querySelector('.AssetsUpload');
-  const uploadfiles = document.querySelector('.uploadedfiles');
-  const files = fileInput.files;
-  for (let i = 0; i < files.length; i++) {
-      const file = files[i];
-  const br = document.createElement('br');
-
-  const imageElement = document.createElement('img');
-  imageElement.src = URL.createObjectURL(file);
-  imageElement.alt = 'Image';
-  // imageElement.setAttribute("height","50");
-  // imageElement.setAttribute("width","50");
-  imageElement.setAttribute("class","uploadedimg");
-  // imageElement.style.cssFloat="left";
-  const textElement = document.createElement('p');
-  textElement.classList.add('text');
-  textElement.textContent = file.name;
-  // textElement.setAttribute("height","10px !important");
-  textElement.setAttribute("class","uploadedtext");
-  uploadfiles.appendChild(imageElement);
-  uploadfiles.appendChild(textElement);
-  // uploadfiles.appendChild(br);
-  // uploadfiles.style.cssFloat="none";
-  // imageElement.style.cssFloat="none";
+layoutContent.addEventListener("click", function(event) {
+  var clickedItem = event.target.closest("a");
+  if (clickedItem) {
+    event.preventDefault();
+    layoutTxt.textContent = clickedItem.querySelector(".layoutContentTxt").textContent;
+    layoutIcon.src = clickedItem.querySelector(".layoutContentIcon").src;
+    layout.removeAttribute("open");
   }
 });
 
+var expandIcon = document.getElementById("expandIcon");
+var removeIcon = document.getElementById("removeIcon");
+var monetizationTxt = document.getElementById("monetizationTxt");
+var monetizationIcon = document.getElementById("monetizationIcon");
+var monetizationContent = document.querySelector(".monetizationContent");
+monetization.addEventListener("click", function() {
+  expandIcon.style.display = "none";
+  removeIcon.style.display = "flex";
+})
+monetizationContent.addEventListener("click", function(event) {
+  var clickedItem = event.target.closest("a");
+  if (clickedItem) {
+    event.preventDefault();
+    monetizationTxt.textContent = clickedItem.querySelector(".monetizationContentTxt").textContent;
+    monetizationIcon.src = clickedItem.querySelector(".monetizationContentIcon").src;
+    monetization.removeAttribute("open");
+  }
+});
 
+const AssetsUploadBtn = document.querySelector(".AssetsUploadBtn");
+const inputValue = document.querySelector('.AssetsUpload');
+const preview = document.querySelector(".preview");
+const box = document.querySelector(".box");
+const previewTxt = document.querySelector(".previewTxt");
+const uploadfiles = document.querySelector('.uploadedfiles');
+
+inputValue.addEventListener('change', () => {
+  const fileInput = document.querySelector('.AssetsUpload');
+  const files = fileInput.files;
+
+  const existingBoxes = document.querySelectorAll('.box');
+  const topIncrement = 60;
+  const newTopValue = existingBoxes.length * topIncrement;
+
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    const boxElement = document.createElement('div');
+    boxElement.classList.add('box');
+    const imageElement = document.createElement('img');
+    imageElement.src = URL.createObjectURL(file);
+    imageElement.alt = 'Image';
+    imageElement.classList.add('uploadedimg');
+    const textElement = document.createElement('p');
+    textElement.classList.add('uploadedtext');
+    textElement.textContent = file.name; 
+    boxElement.appendChild(imageElement);
+    boxElement.appendChild(textElement);
+    boxElement.style.top = `${newTopValue}px`;
+
+    // Check if the image size exceeds the remaining storage
+    const totalCapacity = 5 * 1024 * 1024; // 5MB
+    const usedStorage = calculateUsedStorage();
+    const remainingStorage = totalCapacity - usedStorage;
+    const imageSize = file.size;
+    const usedStorageElement = document.querySelector(".informationBlockTxt");
+    usedStorageElement.textContent = `You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using ${usedStorage/(1024*1024)}MB in this project.`;
+    console.log(remainingStorage);
+    if (imageSize > remainingStorage) {
+      alert("Image size exceeds the available storage. Please upload a smaller image.");
+    } else {
+      uploadfiles.appendChild(boxElement);
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        localStorage.setItem(file.name, event.target.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+});
+const deleteContent = document.getElementById("deleteContent");
+deleteContent.addEventListener("click", function() {
+  // Remove the selected box from display and list
+  const selectedBoxes = document.querySelectorAll('.box.selected');
+  selectedBoxes.forEach(function(box) {
+    console.log("pressed")
+    box.remove();
+    const fileName = box.querySelector('.uploadedtext').textContent;
+    localStorage.removeItem(fileName);
+  });
+});
+
+// Add a button to remove all list items
+const removeAllButton = document.createElement('button');
+removeAllButton.textContent = 'Remove All';
+removeAllButton.addEventListener('click', function() {
+  // Remove all boxes from display and list
+  const allBoxes = document.querySelectorAll('.box');
+  allBoxes.forEach(function(box) {
+    box.remove();
+    const fileName = box.querySelector('.uploadedtext').textContent;
+    localStorage.removeItem(fileName);
+  });
+});
+
+// Append the remove all button to the page
+document.body.appendChild(removeAllButton);
+
+function calculateUsedStorage() {
+  let usedStorage = 0;
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const item = localStorage.getItem(key);
+    usedStorage += key.length + item.length * 2; // Approximate size calculation
+  }
+  return usedStorage;
+}
+
+uploadfiles.addEventListener('click', function(event) {
+  const clickedElement = event.target;
+  const boxElement = clickedElement.closest('.box');
+  if (boxElement) {
+    const clickedImgSrc = boxElement.querySelector('img');
+    if (clickedImgSrc) {
+      preview.src = clickedImgSrc.src;
+      previewTxt.style.display = "none";
+    }
+  }
+});
 const listItems = document.querySelectorAll("#draggableScreen a");
 const target = document.querySelector("#drop-target");
 for (const listItem of listItems) {
