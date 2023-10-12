@@ -3,15 +3,16 @@
   top: 0;
   left: 0;
   background-color: var(--color-blueviolet);
-  width: 42.94rem;
-  height: 52.25rem;
+  width: 50%;
+  height: 100%;
 }
 .signuppageinitial-item {
   position: absolute;
-  top: 11.5rem;
-  left: 6.69rem;
-  width: 27.63rem;
-  height: 26rem;
+
+  top: 27%;
+  left: 11%;
+  width: 35%;
+  height: 62%;
 }
 .signuppageinitial-inner {
   position: absolute;
@@ -58,10 +59,11 @@
   border-radius: var(--br-8xs);
   border: 1px solid var(--color-dimgray-200);
   box-sizing: border-box;
-  width: 27.94rem;
-  height: 3.63rem;
+  width: 37.3%;
+  height: 11%;
   background-color: var(--color-gray-1000);
 }
+.group-child1259
 input.signuppageinitial-child1 {
   outline: none;
   color: aliceblue;
@@ -80,11 +82,11 @@ input.signuppageinitial-child1 {
 .group-child1249 {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 59%;
   border-radius: var(--br-8xs);
   background-color: var(--color-blueviolet);
-  width: 11.56rem;
-  height: 3.13rem;
+  width: 37.3%;
+  height: 11%;
   border: none;
 }
 .sign-up3 {
@@ -340,10 +342,10 @@ input.group-child1251 {
   height: 1.06rem;
 }
 .signuppageinitial {
-  position: relative;
+  position: absolute;
   background-color: var(--color-gray-1000);
   width: 100%;
-  height: 45.94rem;
+  height: 100%;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-smi);
