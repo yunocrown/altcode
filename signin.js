@@ -57,7 +57,9 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
         update(ref(database, 'user/' + user.uid),{
           last_login:dt,
           
+          
         })
+        window.location.assign("./canvas.html")
         alert(user.email + " successfully logged in");
         // var groupContainer = document.getElementById("submitButton");
    
