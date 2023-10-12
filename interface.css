@@ -1178,7 +1178,7 @@
 .uploadingContent {
     display: none;
     position: absolute;
-    background-color: var(--color-gray-400);
+    background-color: var(--color-white);
     width: 50%;
     height: 40%;
     margin: 6% 25% 12% 25%;
@@ -1187,7 +1187,7 @@
 .assetsTxt {
     position: relative;
     font-family: var(--font-lexend-deca);
-    color: var(--color-blueviolet);
+    color: var(--color-darkslategray);
     margin: 4% 4%;
     font-size: var(--font-size-mini);
     width: fit-content;
@@ -1253,7 +1253,7 @@
     position: absolute;
     width: 43%;
     height: 7%;
-    left: 53%;
+    left: 55%;
     margin-top: 58%;
     color: blueviolet;
     border-color: blueviolet;
@@ -1340,11 +1340,11 @@
 } */
 .clearAll {
     position: absolute;
-    left: 70%;
+    left: 76.5%;
     top: 90%;
     width: 21%;
     height: 6%;
-    background: blue;
+    background: var(--color-gainsboro-100);
     color: blueviolet;
     display: flex;
     justify-content: center;
