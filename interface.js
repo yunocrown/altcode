@@ -1,71 +1,56 @@
-        const userinterfaceButton = document.querySelector(".userInterface");
-        const layout = document.querySelector(".layout");
-        const mediaButton = document.querySelector(".media");
-        const drawingButton = document.querySelector(".drawingAnimation");
-        const mapsButton = document.querySelector(".maps");
-        const sensorsButton = document.querySelector(".sensors");
-        const socialButton = document.querySelector(".social");
-        const utilitiesButton = document.querySelector(".utilities");
-        const dynamicButton = document.querySelector(".dynamic");
-        const connectivityButton = document.querySelector(".connectivity");
-        const googleButton = document.querySelector(".google");
-        const monetization = document.querySelector(".monetization");
-        const extensionButton = document.querySelector(".extensions");
+const userinterfaceButton = document.querySelector(".userInterface");
+const layout = document.querySelector(".layout");
+const mediaButton = document.querySelector(".media");
+const drawingButton = document.querySelector(".drawingAnimation");
+const mapsButton = document.querySelector(".maps");
+const sensorsButton = document.querySelector(".sensors");
+const socialButton = document.querySelector(".social");
+const utilitiesButton = document.querySelector(".utilities");
+const dynamicButton = document.querySelector(".dynamic");
+const connectivityButton = document.querySelector(".connectivity");
+const googleButton = document.querySelector(".google");
+const monetization = document.querySelector(".monetization");
+const extensionButton = document.querySelector(".extensions");
+const assets = document.querySelector(".assets");
+const closeIcon = document.querySelector(".close");
+const uploadingContent = document.querySelector(".uploadingContent");
+assets.addEventListener("click" , () => {
+  uploadingContent.style.display = "grid";
+});
+closeIcon.addEventListener("click", () => {
+  uploadingContent.style.display = "none";
+});
 
-        const assets = document.querySelector(".assets");
-        const closeIcon = document.querySelector(".close");
-        const uploadingContent = document.querySelector(".uploadingContent");
-        assets.addEventListener("click" , () => {
-          uploadingContent.style.display = "grid";
-        });
-        closeIcon.addEventListener("click", () => {
-          uploadingContent.style.display = "none";
-        })
-
-        var sideIcons = document.getElementById("stationaryIcons");
-        var dragScreen = document.getElementById("draggableScreen");
-        var buttonTxt = document.querySelectorAll(".buttonTxt");
-
-        sideIcons.addEventListener("mouseover", function() {
-          sideIcons.style.width = "14.81rem";
-          dragScreen.style.width = "3.69rem";
-          dragScreen.style.left = "14.6rem";
-          for (let i = 0; i < buttonTxt.length; i++) {
-            buttonTxt[i].style.display = 'none';
-          }
-        });
-        sideIcons.addEventListener("mouseout", function() {
-          sideIcons.style.width = "3.69rem";
-          dragScreen.style.width = "14.81rem";
-          dragScreen.style.left = "3.52rem";
-          for (let i = 0; i < buttonTxt.length; i++) {
-            buttonTxt[i].style.display = 'flex';
-          }
-        });
+var sideIcons = document.getElementById("stationaryIcons");
+var dragScreen = document.getElementById("draggableScreen");
+var buttonTxt = document.querySelectorAll(".buttonTxt");
+sideIcons.addEventListener("mouseover", function() {
+  sideIcons.style.width = "14.81rem";
+  dragScreen.style.width = "3.69rem";
+  dragScreen.style.left = "14.6rem";
+  for (let i = 0; i < buttonTxt.length; i++) {
+    buttonTxt[i].style.display = 'none';
+  }
+});
+sideIcons.addEventListener("mouseout", function() {
+  sideIcons.style.width = "3.69rem";
+  dragScreen.style.width = "14.81rem";
+  dragScreen.style.left = "3.52rem";
+  for (let i = 0; i < buttonTxt.length; i++) {
+    buttonTxt[i].style.display = 'flex';
+  }
+});
 
 assets.addEventListener("click", () => {
-
   uploadingContent.style.display = "grid";
 });
 closeIcon.addEventListener("click", () => {
   uploadingContent.style.display = "none";
 })
 
-
-
 var sideIcons = document.getElementById("stationaryIcons");
 var dragScreen = document.getElementById("draggableScreen");
-// var userinterfaceTxt = document.getElementById("userinterfaceTxt");
 var buttonTxt = document.querySelectorAll(".buttonTxt");
-// var userInterface = document.getElementById("userInterface");
-// var layout = document.getElementById("layoutIcon");
-
-// var expandIcon = document.getElementById("expandIcon");
-// var layoutContent = document.getElementById("layoutContent");
-// layout.addEventListener("click", function () {
-//     layoutContent.style.display = "initial";
-// });
-
 sideIcons.addEventListener("mouseover", function () {
   sideIcons.style.width = "14.81rem";
   dragScreen.style.width = "3.69rem";
@@ -120,7 +105,6 @@ screenContent.addEventListener("click", function (event) {
 var layoutTxt = document.getElementById("layoutTxt");
 var layoutIcon = document.getElementById("layoutIcon");
 var layoutContent = document.querySelector(".layoutContent");
-
 layoutContent.addEventListener("click", function(event) {
   var clickedItem = event.target.closest("a");
   if (clickedItem) {
@@ -156,7 +140,6 @@ const preview = document.querySelector(".preview");
 const box = document.querySelector(".box");
 const previewTxt = document.querySelector(".previewTxt");
 const uploadfiles = document.querySelector('.uploadedfiles');
-
 inputValue.addEventListener('change', () => {
   const fileInput = document.querySelector('.AssetsUpload');
   const files = fileInput.files;
@@ -180,13 +163,12 @@ inputValue.addEventListener('change', () => {
     boxElement.appendChild(textElement);
     boxElement.style.top = `${newTopValue}px`;
 
-    // Check if the image size exceeds the remaining storage
     const totalCapacity = 5 * 1024 * 1024; // 5MB
     const usedStorage = calculateUsedStorage();
     const remainingStorage = totalCapacity - usedStorage;
     const imageSize = file.size;
     const usedStorageElement = document.querySelector(".informationBlockTxt");
-    usedStorageElement.textContent = `You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using ${usedStorage/(1024*1024)}MB in this project.`;
+    usedStorageElement.textContent = `You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using ${(usedStorage / (1024 * 1024)).toFixed(2)}MB in this project.`;
     console.log(remainingStorage);
     if (imageSize > remainingStorage) {
       alert("Image size exceeds the available storage. Please upload a smaller image.");
@@ -200,40 +182,26 @@ inputValue.addEventListener('change', () => {
     }
   }
 });
-const deleteContent = document.getElementById("deleteContent");
-deleteContent.addEventListener("click", function() {
-  // Remove the selected box from display and list
-  const selectedBoxes = document.querySelectorAll('.box.selected');
-  selectedBoxes.forEach(function(box) {
-    console.log("pressed")
-    box.remove();
-    const fileName = box.querySelector('.uploadedtext').textContent;
-    localStorage.removeItem(fileName);
-  });
-});
 
-// Add a button to remove all list items
-const removeAllButton = document.createElement('button');
-removeAllButton.textContent = 'Remove All';
-removeAllButton.addEventListener('click', function() {
-  // Remove all boxes from display and list
-  const allBoxes = document.querySelectorAll('.box');
+const clearAll = document.querySelector(".clearAll");
+clearAll.addEventListener("click", (e) =>{
+  const allBoxes = document.querySelectorAll(".box");
   allBoxes.forEach(function(box) {
-    box.remove();
+    box.parentNode.removeChild(box);
     const fileName = box.querySelector('.uploadedtext').textContent;
     localStorage.removeItem(fileName);
-  });
+  });  
+  const usedStorageElement = document.querySelector(".informationBlockTxt");
+  usedStorageElement.textContent = "You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using 0MB in this project.";
+  preview.removeAttribute('src');
 });
-
-// Append the remove all button to the page
-document.body.appendChild(removeAllButton);
 
 function calculateUsedStorage() {
   let usedStorage = 0;
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     const item = localStorage.getItem(key);
-    usedStorage += key.length + item.length * 2; // Approximate size calculation
+    usedStorage += key.length + item.length * 2;
   }
   return usedStorage;
 }
@@ -265,7 +233,6 @@ centerButton.addEventListener("click", function () {
 const leftButton = document.querySelector("#left");
 leftButton.addEventListener("click", function () {
   Target.style.justifyItems = "flex-start";
-  console.log("lefted")
 });
 
 const rightButton = document.querySelector("#right");
@@ -280,7 +247,6 @@ function dragStart(event) {
   const copyElement = event.target.cloneNode(true);
   event.dataTransfer.setData("text/plain", copyElement.id);
   copyElement.classList.add("cloned-element");
-  console.log(copyElement.id)
 }
 
 function dragOver(event) {
@@ -297,8 +263,6 @@ function drop(event) {
     const ulElement = copyElement.closest("a");
     ulElement.style.backgroundColor = "red";
     ulElement.style.padding = "10px";
-
-    console.log('Element dropped');
   } else {
     console.error("Element with ID " + draggableElementId + " not found.");
   }
