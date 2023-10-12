@@ -30,32 +30,32 @@
   width: 46.75rem;
   height: 55.63rem;
 }
-.rectangle-icon {
+.setting_img {
   top: 0;
   left: 21.06rem;
   width: 10.19rem;
   height: 12.31rem;
 }
-.group-child1263,
-.group-child1264,
-.rectangle-icon {
+.docs_img,
+.blogs_img,
+.setting_img {
   position: absolute;
   border-radius: var(--br-7xs);
   object-fit: cover;
 }
-.group-child1263 {
+.docs_img {
   top: 0;
   left: 0;
   width: 10.19rem;
   height: 12.31rem;
 }
-.group-child1264 {
+.blogs_img {
   top: 1.88rem;
   left: 8.56rem;
   width: 14.06rem;
   height: 16.19rem;
 }
-.group-child1265 {
+.builder_img {
   display: contents;
 }
 .buildmyflow45,

@@ -186,7 +186,7 @@ inputValue.addEventListener('change', () => {
     const remainingStorage = totalCapacity - usedStorage;
     const imageSize = file.size;
     const usedStorageElement = document.querySelector(".informationBlockTxt");
-    usedStorageElement.textContent = `You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using ${usedStorage/(1024*1024).toFixed(2)}MB in this project.`;
+    usedStorageElement.textContent = `You are currently on the free plan. Upgrade to Premium to compile apps with more than 5MB in assets. You are currently using ${(usedStorage/(1024*1024)).toFixed(2)}MB in this project.`;
     console.log(remainingStorage);
     if (imageSize > remainingStorage) {
       alert("Image size exceeds the available storage. Please upload a smaller image.");
@@ -203,30 +203,14 @@ inputValue.addEventListener('change', () => {
 const deleteContent = document.getElementById("deleteContent");
 deleteContent.addEventListener("click", function() {
   // Remove the selected box from display and list
-  const selectedBoxes = document.querySelectorAll('.box.selected');
-  selectedBoxes.forEach(function(box) {
-    console.log("pressed")
-    box.remove();
+  const allboxes = document.querySelectorAll('.box');
+  allboxes.forEach(function(box) {
+    box.parentNode.removeChild(box);
     const fileName = box.querySelector('.uploadedtext').textContent;
     localStorage.removeItem(fileName);
   });
+  preview.removeAttribute('src');
 });
-
-// // Add a button to remove all list items
-// const removeAllButton = document.createElement('button');
-// removeAllButton.textContent = 'Remove All';
-// removeAllButton.addEventListener('click', function() {
-//   // Remove all boxes from display and list
-//   const allBoxes = document.querySelectorAll('.box');
-//   allBoxes.forEach(function(box) {
-//     box.remove();
-//     const fileName = box.querySelector('.uploadedtext').textContent;
-//     localStorage.removeItem(fileName);
-//   });
-// });
-
-// // Append the remove all button to the page
-// document.body.appendChild(removeAllButton);
 
 function calculateUsedStorage() {
   let usedStorage = 0;
