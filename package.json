@@ -17,6 +17,7 @@
   "dependencies": {
     "@angular/router": "^16.2.6",
     "axios": "^1.5.1",
+    "blockly": "^10.2.2",
     "firebase": "^10.4.0"
   }
 }
