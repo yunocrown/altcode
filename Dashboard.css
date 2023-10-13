@@ -239,12 +239,23 @@
   align-items: center;
 }
 .log-out {
+  display: flex;
   top: 50.75rem;
   left: 15.25rem;
   font-size: var(--font-size-sm);
-  font-weight: 500;
-  width: 4.19rem;
-  height: 1.25rem;
+  font-weight: 550;
+  width: 5%;
+  height: 3.3%;
+  border-radius: 2px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border: none;
+  outline: none;
+}
+.log-out:hover{
+  background-color: var(--color-blueviolet);
+  color: white;
 }
 .manage-your-projects,
 .projects1 {

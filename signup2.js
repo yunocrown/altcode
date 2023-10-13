@@ -27,14 +27,16 @@ document.getElementById("googleAuth").addEventListener('click', (e) => {
       // IdP data available using getAdditionalUserInfo(result)
       // ...
       alert(user.displayName + " logged in successfully ");
+      window.location.assign("./canvas.html")        
+
     }).catch((error) => {
       // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
+      //const errorCode = error.code;
+      //const errorMessage = error.message;
       // The email of the user's account used.
-      const email = error.customData.email;
+      //const email = error.customData.email;
       // The AuthCredential type that was used.
-      const credential = GoogleAuthProvider.credentialFromError(error);
+      //const credential = GoogleAuthProvider.credentialFromError(error);
       alert("Error : Window closed by user");
       // ...
     });
@@ -50,8 +52,10 @@ document.getElementById("submitButton").addEventListener("click", function() {
     .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-        window.location.assign("./canvas.html")        
-        alert("congratulation!! user created");
+        alert("congratulation!! user created");{
+          window.location.assign("./canvas.html")        
+        }
+        
          
     }).catch((error) => {
         const errorCode = error.code;

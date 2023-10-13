@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="built-in">Built in</div>
-      <div class="log-out">Log Out</div>
+      <button class="log-out" id="log-out">Log Out</button>
       <div class="projects1">Projects</div>
       <div class="manage-your-projects">Manage your projects below</div>
       <div class="rectangle-parent129">
@@ -88,28 +88,9 @@
       </div>
     </div>
 
-    <script>
-          function performSearch() {
-      // Get the search input element by its id
-      var searchInput = document.getElementById("searchInput");
-
-      // Get the user's search query from the input field
-      var searchQuery = searchInput.value;
-
-      // Perform your search logic here
-      // For this example, we'll simply alert the search query
-      alert("Searching for: " + searchQuery);
-    }
-
+    <script type="module" src="Dashboard.js"></script>
+  
     
-      var rectangleImage = document.getElementById("rectangleImage");
-      if (rectangleImage) {
-        rectangleImage.addEventListener("click", function (e) {
-          window.location.href = "./interface.html"
-        });
-      }
-
-
-      </script>
   </body>
+
 </html>

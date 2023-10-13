@@ -1,6 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js';
 import { getDatabase , ref , update } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js';
-import { getAuth, signInWithEmailAndPassword ,GoogleAuthProvider ,signInWithPopup} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword ,GoogleAuthProvider ,signInWithPopup , signOut} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
@@ -17,6 +17,9 @@ const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
 const database = getDatabase(app);
 const auth = getAuth();
+
+// Google auth starts here
+
 
 document.getElementById("google").addEventListener('click', (e) => {
   signInWithPopup(auth, provider)
@@ -42,6 +45,7 @@ document.getElementById("google").addEventListener('click', (e) => {
     });
   })
 
+  // Email and password 
 
 document.getElementById("signinbutton").addEventListener('click', (e)=> {
     var email = document.getElementById("emailInput").value;
@@ -64,9 +68,9 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
         // var groupContainer = document.getElementById("submitButton");
    
     }).catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorMessage);
         alert("Email or Password is incorrect");
     });
 });
+
