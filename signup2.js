@@ -1,11 +1,11 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js';
-import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js';
+//import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js';
 import { getAuth , createUserWithEmailAndPassword ,GoogleAuthProvider ,signInWithPopup } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
 
 const firebaseConfig = {
   apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
   authDomain: "altcode-35511.firebaseapp.com",
-  databaseURL: "https://altcode-35511-default-rtdb.firebaseio.com",
+  databaseURL: " https://altcode-86903-default-rtdb.firebaseio.com",
   projectId: "altcode-35511",
   storageBucket: "altcode-35511.appspot.com",
   messagingSenderId: "156061115585",
@@ -58,8 +58,8 @@ document.getElementById("submitButton").addEventListener("click", function() {
         
          
     }).catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        // const errorCode = error.code;
+        // const errorMessage = error.message;
         console.log(errorMessage);
         alert("error");
     });

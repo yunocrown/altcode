@@ -7,8 +7,7 @@
 
   <link rel="stylesheet" href="./global.css" />
   <link rel="stylesheet" href="./canvas.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Lexend Deca:wght@200;300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend Deca:wght@200;300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap" />
@@ -28,7 +27,7 @@
         <img class="builder_img" src="./public/rectangle-472@2x.png" alt="">
       </div>
     </div>
-    <div class="buildmyflow45">Altcode</div>
+    <div class="buildmyflow45" id="bmf">Altcode</div>
     <img class="canvas-alternate-design-inner" alt="setting" src="./public/group-205.svg" id="group" />
 
     <div class="canvas-alternate-design-child1"></div>
@@ -107,6 +106,14 @@
       }
     }
   </script>
+  <script>
+  var bmf = document.getElementById("bmf");
+   if (bmf) {
+        bmf.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      } 
+       </script>
 </body>
 
 </html>
