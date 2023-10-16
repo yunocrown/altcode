@@ -24,7 +24,8 @@
 .about,
 .blogs4,
 .pricing,
-.product {
+.product,
+.dashboard {
   position: absolute;
   top: 1%;
   left: 10%;
@@ -44,9 +45,15 @@
   left: 27%;
   width: 2.94%;
 }
-.blogs4 {
+.blogs4,
+.dashboard {
   left: 34%;
   width: 2.59%;
+}
+.dashboard {
+  width: fit-content;
+  height: fit-content;
+  left: 40%;
 }
 .group-child1274 {
   position: absolute;
@@ -69,6 +76,14 @@
 .singin {
   position: absolute;
   top: 4.13rem;
+  left: 85%;
+  width: 5.19rem;
+  height: 2.19rem;
+  cursor: pointer;
+}
+.showemail{
+  position: absolute;
+  top: 8rem;
   left: 85%;
   width: 5.19rem;
   height: 2.19rem;
@@ -163,6 +178,38 @@
   width: 25%;
   height: 31%;
   left: 16%;
+}
+.gettingIn {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 1%;
+  left: 81%;
+}
+.signIn,
+.signUp {
+  background-color: transparent;
+  width: 49%;
+  height: 2%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: var(--font-lexend-deca);
+  font-size: var(--font-size-base);
+  color: white;
+  padding: 9px 12px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.signUp {
+  left: 7%;
+  position: relative;
+  background: var(--color-blueviolet);
 }
 .landing-page-child3 {
   position: absolute;
@@ -2509,7 +2556,6 @@
   filter: blur(0);
   transform: translateX(0);
 }
-
 @media(prefers-reduced-motion) {
   .hidden {
     transition: none;

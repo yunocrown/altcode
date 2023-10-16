@@ -12,16 +12,15 @@ const firebaseConfig = {
   };
   
   const app = initializeApp(firebaseConfig);
-
-const auth = getAuth();
-document.getElementById("log-out").addEventListener('click', (e) => {
-    signOut(auth).then(() => {
-        window.location.href= "./index.html";
-        
-        
-    }).catch((error) => {
-      // An error happened.
-    });
+  const auth = getAuth();
+  const logout = document.getElementById("log-out")
+  logout.addEventListener('click', (e) => {
+  signOut(auth).then(() => {
+      localStorage.removeItem("email")
+      window.location.href ="./index.html";
+  }).catch((error) => {
+    // An error happened.
+  });
 
 })
 

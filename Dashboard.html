@@ -38,7 +38,7 @@
   <body>
     <div class="dashboard1">
       <div class="dashboard-child"></div>
-      <div class="bmf">BMF</div>
+      <div class="bmf" id="altcode">Altcode</div>
       <div class="rectangle-parent125">
         <div class="group-child1236"></div>
         <div class="projects">Projects</div>
@@ -96,6 +96,15 @@
       </div>
     </div>
 
+    <script>
+      var altcode = document.getElementById("altcode")
+      if(altcode){
+        altcode.addEventListener("click" ,function(e){
+          window.location.href = "./index.html"
+        })
+      }
+        
+    </script>
     <script type="module" src="Dashboard.js"></script>
   
     

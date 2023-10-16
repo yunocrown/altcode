@@ -57,13 +57,14 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
     .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-                
+
         const dt = new Date();
         update(ref(database, 'user/' + user.uid),{
           last_login:dt,          
           
         })
        window.location.assign("./canvas.html")
+       localStorage.setItem("email", email)
         alert(user.email + " successfully logged in");
         // var groupContainer = document.getElementById("submitButton");
    
@@ -73,22 +74,4 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
         alert("Email or Password is incorrect");
     });
 });
-
-const handleApi = () => {
-  console.log({ email, password }) 
-  axios.post('https://regres.in/api/login', { 
-  email: email,
-  password: password
-  .then(result => {
-  console.log(result.data)
-  alert('success') 
-  localStorage.setItem('token', result.data.token)
-  })
-  })
-  . catch(error => {
-  alert('service error')
-  console.log(error)
-  
-  })
-}
 

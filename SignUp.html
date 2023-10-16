@@ -53,15 +53,12 @@
             <div class="enter-your-email1">Enter your Email Id or username</div>
           </div>
         </input>
-      
-        <div class="rectangle-parent137">
-          <input id="passwordInput" class="group-child1251" type="password" placeholder=""></input>
+        <input id="passwordInput" class="group-child1251" type="password" placeholder="">
+          <img id="showPasswordIcon" class="vector-icon111" alt="" src="./public/vector12.svg" />
           <div class="rectangle-parent138" id="groupContainer2">
-            <div class="group-child1252"></div>
             <div class="enter-your-password1">Enter your password</div>
           </div>
-          <img id="showPasswordIcon" class="vector-icon111" alt="" src="./public/vector12.svg" />
-        </div>
+        </input>
         <!-- <div class="continue-with1">Continue with</div> -->
         <div class="group1" id="googleAuth">
           <span class="google5" id="google">Google</span>
@@ -91,7 +88,7 @@
       const rectangleParent1 = document.querySelector('.rectangle-parent138');
       const imageElement1 = document.querySelector('.signuppageinitial-item');
       rectangleParent4.addEventListener('click', function() {
-        rectangleParent1.style.top = '-0.6rem';
+        rectangleParent1.style.top = '46%';
         rectangleParent1.style.backgroundColor =  "var(--color-gray-1000)";
         rectangleParent1.style.transition = "all 1s";
         imageElement1.classList.toggle('updated-image');
