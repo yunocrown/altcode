@@ -1,6 +1,6 @@
 .canvas-alternate-design-child {
   position: absolute;
-  top: 3.06rem;
+  top: 7rem;
   left: 5.56rem;
   border-radius: var(--br-8xs);
   border: 2px solid var(--color-gray-600);
@@ -10,9 +10,9 @@
 }
 .canvas1 {
   position: absolute;
-  top: 8.88rem;
-  left: 35.69rem;
-  font-size: var(--font-size-31xl);
+  top: 12rem;
+  left: 43rem;
+  font-size: 180%;
   letter-spacing: 0.05em;
   line-height: 3.59rem;
   font-weight: 500;
@@ -23,16 +23,16 @@
 }
 .canvas-alternate-design-item {
   position: absolute;
-  top: -5.75rem;
-  left: -27.75rem;
+  top: -3rem;
+  left: -25rem;
   border-radius: 50%;
   background: linear-gradient(179.33deg, #291f94, #4052df);
   width: 46.75rem;
   height: 55.63rem;
 }
 .setting_img {
-  top: 0;
-  left: 21.06rem;
+  top: 5rem;
+  left: 29rem;
   width: 10.19rem;
   height: 12.31rem;
 }
@@ -42,21 +42,23 @@
   position: absolute;
   border-radius: var(--br-7xs);
   object-fit: cover;
+  
 }
 .docs_img {
-  top: 0;
-  left: 0;
+  top: 5rem;
+  left: 6rem;
   width: 10.19rem;
   height: 12.31rem;
 }
 .blogs_img {
-  top: 1.88rem;
-  left: 8.56rem;
+  top: 7rem;
+  left: 15.56rem;
   width: 14.06rem;
   height: 16.19rem;
 }
 .builder_img {
   display: contents;
+
 }
 .buildmyflow45,
 .rectangle-parent149 {
@@ -67,9 +69,10 @@
   height: 18.06rem;
 }
 .buildmyflow45 {
-  top: 4.31rem;
-  left: 8.13rem;
-  font-size: var(--font-size-xl);
+  top: 6rem;
+  left: 3rem;
+  font-size: 170%;
+  font-weight: 800;
   letter-spacing: 0.05em;
   line-height: 3.59rem;
   display: flex;
@@ -79,16 +82,16 @@
 }
 .canvas-alternate-design-inner {
   position: absolute;
-  top: 22.06rem;
-  left: 15.63rem;
+  top:25rem;
+  left: 15rem;
   width: 8.75rem;
   height: 1.69rem;
   cursor: pointer;
 }
 .canvas-alternate-design-child1 {
   position: absolute;
-  top: -4.94rem;
-  left: 64.63rem;
+  top: -3rem;
+  left: 75rem;
   border-radius: 50%;
   background: linear-gradient(179.74deg, #3a1e76, #ac02ec);
   width: 46.75rem;
@@ -96,8 +99,8 @@
 }
 .canvas-alternate-design-child2 {
   position: absolute;
-  top: 22.06rem;
-  left: 58.31rem;
+  top: 25rem;
+  left: 73rem;
   width: 8.75rem;
   height: 1.69rem;
   cursor: pointer;
@@ -113,9 +116,10 @@
   height: 3.38rem;
 }
 .settings {
-  top: 21.19rem;
+  top: 24rem;
   font-weight: 500;
   width: 6.94rem;
+  left: 83rem;
 }
 .edit-user-settings {
   top: 23.31rem;
@@ -123,7 +127,7 @@
   width: 12.81rem;
 }
 .docs {
-  top: 21.19rem;
+  top: 24rem;
   left: 7.93rem;
   font-weight: 500;
   text-align: right;
@@ -154,8 +158,8 @@
   justify-content: center;
 }
 .blogs {
-  top: 34.19rem;
-  left: 38.88rem;
+  top: 39rem;
+  left: 46rem;
   font-weight: 500;
   width: 5.38rem;
 }
@@ -172,7 +176,7 @@
   position: relative;
   background-color: var(--color-gray-1000);
   width: 100%;
-  height: 43.63rem;
+  height: 50rem;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-6xl);
