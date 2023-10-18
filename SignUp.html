@@ -48,17 +48,25 @@
           <div class="enter-your-email1 rectangle-parent136">Enter your Email Id or username</div>
         </div> -->
         
-        <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder="">
-          <div class="rectangle-parent136" id="groupContainer1">
-            <div class="enter-your-email1">Enter your Email Id or username</div>
+        <input id="usernameinput" class="usernameinput" type="username" placeholder="">
+          <div class="username" id="username">
+            <div class="enter-your-username">Enter your username</div>
           </div>
         </input>
-        <input id="passwordInput" class="group-child1251" type="password" placeholder="">
+
+        <input id="emailInput" class="emailInput" type="email" placeholder="">
+          <div class="rectangle-parent136" id="groupContainer1">
+            <div class="enter-your-email1">Enter your Email Id </div>
+          </div>
+        </input>
+
+        <input id="passwordInput" class="passwordInput" type="password" placeholder="">
           <img id="showPasswordIcon" class="vector-icon111" alt="" src="./public/vector12.svg" />
           <div class="rectangle-parent138" id="groupContainer2">
             <div class="enter-your-password1">Enter your password</div>
           </div>
         </input>
+
         <!-- <div class="continue-with1">Continue with</div> -->
         <div class="group1" id="googleAuth">
           <span class="google5" id="google">Google</span>
@@ -69,9 +77,38 @@
     </div> 
   </body>
   <script>
+      // const usernametext = document.querySelector('.username');
+      // const usernamerectangle = document.querySelector('.usernameInput');
+      // const image  = document.querySelector('.signuppageinitial-item');
+      // rectangleParent.addEventListener('click', function () {
+      //   text.style.top = '32.7%';
+      //   text.style.backgroundColor =  "var(--color-gray-1000)";
+      //   text.style.transition = "all 1s";
+      //   imageElement.classList.toggle('updated-image');
+      // });
+      // text.addEventListener("click", function() {
+      //   text.style.top = '32.7%';
+      //   text.style.backgroundColor =  "var(--color-gray-1000)";
+      //   text.style.transition = "all 1s";
+      // });
+        const imageElement = document.querySelector('.signuppageinitial-item');
+        const username = document.querySelector(".username");
+        const usernameinput = document.querySelector(".usernameinput");
+        usernameinput.addEventListener('click', (e) => {
+          username.style.top = "20.4%";
+          username.style.transition = "all 1s";
+          username.style.backgroundColor =  "var(--color-gray-1000)";
+          imageElement.classList.toggle('updated-image');
+        });
+        username.addEventListener("click", ()=> {
+          username.style.top = "20.4%";
+          username.style.transition = "all 1s";
+          username.style.backgroundColor =  "var(--color-gray-1000)";
+        })
+
       const text = document.querySelector('.rectangle-parent136');
-      const rectangleParent = document.querySelector('.signuppageinitial-child1');
-      const imageElement = document.querySelector('.signuppageinitial-item');
+      const rectangleParent = document.querySelector('.emailInput');
+
       rectangleParent.addEventListener('click', function () {
         text.style.top = '32.7%';
         text.style.backgroundColor =  "var(--color-gray-1000)";
@@ -84,7 +121,7 @@
         text.style.transition = "all 1s";
       });
 
-      const rectangleParent4 = document.querySelector('.group-child1251');
+      const rectangleParent4 = document.querySelector('.passwordInput');
       const rectangleParent1 = document.querySelector('.rectangle-parent138');
       const imageElement1 = document.querySelector('.signuppageinitial-item');
       rectangleParent4.addEventListener('click', function() {

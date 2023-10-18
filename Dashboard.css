@@ -123,15 +123,15 @@
   height: 3.24rem;
 }
 .jatin,
-.jatin2002sepgmailcom,
-.js {
+.useremail,
+.firstletter {
   position: absolute;
   letter-spacing: 0.05em;
   line-height: 3.59rem;
   display: flex;
   align-items: center;
 }
-.js {
+.firstletter {
   top: 1.35rem;
   left: 1.36rem;
   font-weight: 500;
@@ -139,7 +139,7 @@
   height: 1.89rem;
 }
 .jatin,
-.jatin2002sepgmailcom {
+.useremail {
   left: 4.61rem;
   height: 1.08rem;
 }
@@ -149,8 +149,8 @@
   font-weight: 500;
   width: 4rem;
 }
-.jatin2002sepgmailcom {
-  top: 2.65rem;
+.useremail {
+  top: .5rem;
   font-size: var(--font-size-base);
   width: 15.08rem;
 }

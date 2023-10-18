@@ -19,6 +19,7 @@ const firebaseConfig = {
       localStorage.removeItem("email")
       window.location.href ="./index.html";
   }).catch((error) => {
+    console.log(error)
     // An error happened.
   });
 
@@ -44,3 +45,19 @@ function performSearch() {
       });
     }
 
+    var altcode = document.getElementById("altcode")
+    if(altcode){
+      altcode.addEventListener("click" ,function(e){
+        window.location.href = "./index.html"
+      })
+    }
+    const para = document.createElement("p");
+    const node = document.createTextNode(localStorage.getItem("email"));
+    para.appendChild(node);
+    
+    const useremail = document.getElementById("useremail")
+    useremail.appendChild(para);
+    if (localStorage.getItem("email")) {
+      useremail.style.display = 'block'
+    }
+   
