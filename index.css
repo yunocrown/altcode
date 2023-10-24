@@ -81,12 +81,14 @@
   height: 2.19rem;
   cursor: pointer;
 }
-.showemail{
+.showusername{
   position: absolute;
-  top: 8rem;
+  top: 0.79%;
   left: 85%;
-  width: 5.19rem;
-  height: 2.19rem;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  width: fit-content;
+  height: 0.3%;
   cursor: pointer;
 }
 .singin {

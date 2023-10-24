@@ -1,9 +1,9 @@
 const para = document.createElement("p");
-const node = document.createTextNode(localStorage.getItem("email"));
+const node = document.createTextNode(getCookie("username"));
 para.appendChild(node);
 
-const showemail = document.getElementById("showemail")
-showemail.appendChild(para);
+const showusername = document.getElementById("showusername");
+showusername.appendChild(para);
 
 var gettingIn = document.getElementById("gettingIn")
 var dashboard = document.getElementById("dashboard")
@@ -13,8 +13,25 @@ if (localStorage.getItem("email")) {
 }
 else{
   dashboard.style.display = 'none'
-  showemail.removeChild(para)
+  showusername.removeChild(para)
 }
+
+function getCookie(name) {
+  var cookieArr = document.cookie.split(";");
+
+  for (var i = 0; i < cookieArr.length; i++) {
+    var cookiePair = cookieArr[i].split("=");
+    if (name === cookiePair[0].trim()) {
+      return decodeURIComponent(cookiePair[1]);
+    }
+  }
+
+  return null;
+}
+
+showusername.addEventListener("click", () => {
+  window.location.assign("./dashboard.html");
+})
 
 
 var signUp = document.getElementById("signUp");

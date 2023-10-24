@@ -25,19 +25,37 @@ const firebaseConfig = {
 
 })
 
-function performSearch() {
-    // Get the search input element by its id
-    var searchInput = document.getElementById("searchInput");
+// function performSearch() {
+//     // Get the search input element by its id
+//     var searchInput = document.getElementById("searchInput");
 
-    // Get the user's search query from the input field
-    var searchQuery = searchInput.value;
+//     // Get the user's search query from the input field
+//     var searchQuery = searchInput.value;
 
-    // Perform your search logic here
-    // For this example, we'll simply alert the search query
-    alert("Searching for: " + searchQuery);
+//     // Perform your search logic here
+//     // For this example, we'll simply alert the search query
+//     alert("Searching for: " + searchQuery);
+//   }
+
+  const username = getCookie("username");
+  const firstLetter = username ? username.charAt(0) : "";
+  document.getElementById("firstletter").textContent = firstLetter;
+  console.log(firstLetter);
+  function getCookie(name) {
+    var cookieArr = document.cookie.split(";");
+    for (var i = 0; i < cookieArr.length; i++) {
+      var cookiePair = cookieArr[i].split("=");
+      if (name === cookiePair[0].trim()) {
+        return decodeURIComponent(cookiePair[1]);
+      }
+    }
+    return null;
   }
 
-  
+    document.getElementById("username").textContent = username;
+
+
+
     var rectangleImage = document.getElementById("rectangleImage");
     if (rectangleImage) {
       rectangleImage.addEventListener("click", function (e) {
