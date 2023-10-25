@@ -151,9 +151,10 @@
   width: fit-content;
 }
 .useremail {
-  top: .5rem;
+  top: 55%;
   font-size: var(--font-size-base);
-  width: 15.08rem;
+  width: fit-content;
+  left: 23%;
 }
 .rectangle-parent126 {
   position: absolute;

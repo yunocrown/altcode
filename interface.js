@@ -1,18 +1,15 @@
 
-
-const userinterfaceButton = document.querySelector(".userInterface");
-const layout = document.querySelector(".layout");
-const mediaButton = document.querySelector(".media");
-const drawingButton = document.querySelector(".drawingAnimation");
-const mapsButton = document.querySelector(".maps");
-const sensorsButton = document.querySelector(".sensors");
-const socialButton = document.querySelector(".social");
-const utilitiesButton = document.querySelector(".utilities");
-const dynamicButton = document.querySelector(".dynamic");
-const connectivityButton = document.querySelector(".connectivity");
-const googleButton = document.querySelector(".google");
+// const mediaButton = document.querySelector(".media");
+// const drawingButton = document.querySelector(".drawingAnimation");
+// const mapsButton = document.querySelector(".maps");
+// const sensorsButton = document.querySelector(".sensors");
+// const socialButton = document.querySelector(".social");
+// const utilitiesButton = document.querySelector(".utilities");
+// const dynamicButton = document.querySelector(".dynamic");
+// const connectivityButton = document.querySelector(".connectivity");
+// const googleButton = document.querySelector(".google");
 const monetization = document.querySelector(".monetization");
-const extensionButton = document.querySelector(".extensions");
+// const extensionButton = document.querySelector(".extensions");
 const assets = document.querySelector(".assets");
 const closeIcon = document.querySelector(".close");
 const uploadingContent = document.querySelector(".uploadingContent");

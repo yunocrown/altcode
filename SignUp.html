@@ -38,16 +38,11 @@
         <div class="hey-there1">Hey there!</div>
         <!-- <div class="signuppageinitial-child1"></div> -->
         <div class="remember-me1">Remember Me</div>
-        <button class="rectangle-parent135" id="submitButton" onclick="saveUsername()">SignUp</button>
+        <button class="rectangle-parent135" id="submitButton" onclick="saveUsername(); saveUseremail();">SignUp</button>
         <div class="already-have-a1" id="alreadyHaveA">
           Already have a Account? SignIn
         </div>
-        <!-- <input id="emailInput" class="signuppageinitial-child1" type="email" placeholder=""></input>
-        <div class="rectangle-parent136" id="groupContainer1">
-          <div class="group-child1250"></div>
-          <div class="enter-your-email1 rectangle-parent136">Enter your Email Id or username</div>
-        </div> -->
-        
+
         <input id="usernameinput" class="usernameinput" type="username" placeholder="">
           <div class="username" id="username">
             <div class="enter-your-username">Enter your username</div>
@@ -57,8 +52,7 @@
         <input id="emailInput" class="emailInput" type="email" placeholder="">
         <div class="rectangle-parent136" id="groupContainer1">
           <div class="enter-your-email1">Enter your Email Id </div>
-          </div>
-        </input>
+        </div>
 
         <input id="passwordInput" class="passwordInput" type="password" placeholder="">
         <img id="showPasswordIcon" class="vector-icon111" alt="" src="./public/vector12.svg" />
@@ -81,20 +75,13 @@
         var username = document.getElementById("usernameinput").value;
         document.cookie = "username=" + username + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/";
       }
-      // const usernametext = document.querySelector('.username');
-      // const usernamerectangle = document.querySelector('.usernameInput');
-      // const image  = document.querySelector('.signuppageinitial-item');
-      // rectangleParent.addEventListener('click', function () {
-      //   text.style.top = '32.7%';
-      //   text.style.backgroundColor =  "var(--color-gray-1000)";
-      //   text.style.transition = "all 1s";
-      //   imageElement.classList.toggle('updated-image');
-      // });
-      // text.addEventListener("click", function() {
-      //   text.style.top = '32.7%';
-      //   text.style.backgroundColor =  "var(--color-gray-1000)";
-      //   text.style.transition = "all 1s";
-      // });
+
+      function saveUseremail() {
+  var useremail = document.getElementById("emailInput").value;
+  localStorage.setItem("useremail", useremail);
+}
+
+
         const imageElement = document.querySelector('.signuppageinitial-item');
         const username = document.querySelector(".username");
         const usernameinput = document.querySelector(".usernameinput");
