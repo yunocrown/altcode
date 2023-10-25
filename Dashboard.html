@@ -27,13 +27,13 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
     />
 
-    <script type = "text/javascript">
+    <!-- <script type = "text/javascript">
       function preventBack(){
         window.history.forward()
       };
       setTimeout("preventBack()" ,0);
       window.onunload=function(){null;}
-    </script>
+    </script> -->
   </head>
   <body>
     <div class="dashboard1">
@@ -55,9 +55,9 @@
       <div class="rectangle-parent126">
         <div class="group-child1237"></div>
         <div class="group-child1238"></div>
-        <div class="js">JS</div>
-        <div class="jatin">Jatin</div>
-        <div class="jatin2002sepgmailcom">altcode.jatinsaini@gmail.com</div>
+        <div class="firstletter" id="firstletter"></div>
+        <div class="username" id="username"></div>
+        <div class="useremail" id="useremail"></div>
       </div>
       <div class="rectangle-parent127">
         <div class="group-child1237"></div>
@@ -92,21 +92,15 @@
       </div>
       <div class="ellipse-parent">
         <div class="group-child1243"></div>
-        <div class="js1">JS</div>
+        <div class="js1" id="firstLetter"></div>
       </div>
     </div>
 
-    <script>
-      var altcode = document.getElementById("altcode")
-      if(altcode){
-        altcode.addEventListener("click" ,function(e){
-          window.location.href = "./index.html"
-        })
-      }
-        
-    </script>
     <script type="module" src="Dashboard.js"></script>
-  
+  <script>
+      const username = document.getElementById("useremail")
+      username.innerhtml = "f"
+     </script>
     
   </body>
 

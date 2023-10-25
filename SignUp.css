@@ -52,7 +52,7 @@
   font-weight: 500;
   width: 7.94rem;
 }
-.signuppageinitial-child1 {
+.emailInput {
   position: absolute;
   top: 34%;
   left: 59%;
@@ -65,7 +65,7 @@
   color: aliceblue;
 }
 .group-child1259
-input.signuppageinitial-child1 {
+input.emailInput {
   outline: none;
   color: aliceblue;
 }
@@ -168,7 +168,7 @@ input.signuppageinitial-child1 {
   position: absolute;
   top: 37.5%;
   left: 61%;
-  width: 14.81rem;
+  width: 10.5%;
   height: 1.13rem;
   cursor: pointer;
 }
@@ -178,7 +178,7 @@ input.signuppageinitial-child1 {
 .updated-image {
   content: url('./public/group-208.svg');
 }
-.group-child1251 {
+.passwordInput {
   position: absolute;
   top: 47%;
   left: 59%;
@@ -188,9 +188,34 @@ input.signuppageinitial-child1 {
   width: 34%;
   height: 10.5%;
   background-color: var(--color-gray-1000);
+  color: aliceblue;
 }
-input.group-child1251 {
+
+input.passwordInput {
   outline: none;
+}
+.username {
+  position: absolute;
+  top: 25%;
+  left: 61%;
+  width: 10.3%;
+  height: 1.13rem;
+  cursor: pointer;
+}
+input.username {
+  outline: none;
+}
+.usernameinput{
+  position: absolute;
+  top: 22%;
+  left: 59%;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--color-dimgray-200);
+  box-sizing: border-box;
+  width: 34%;
+  height: 10.5%;
+  background-color: var(--color-gray-1000);
+  color: aliceblue;
 }
 .group-child1252 {
   position: absolute;
@@ -216,7 +241,7 @@ input.group-child1251 {
   position: absolute;
   top: 50%;
   left: 61%;
-  width: 9.56rem;
+  width: 11%;
   height: 1.13rem;
   cursor: pointer;
 }

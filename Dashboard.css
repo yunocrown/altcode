@@ -122,35 +122,36 @@
   width: 3.29rem;
   height: 3.24rem;
 }
-.jatin,
-.jatin2002sepgmailcom,
-.js {
+.username,
+.useremail,
+.firstletter {
   position: absolute;
   letter-spacing: 0.05em;
   line-height: 3.59rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.js {
+.firstletter {
   top: 1.35rem;
   left: 1.36rem;
   font-weight: 500;
   width: 1.86rem;
   height: 1.89rem;
 }
-.jatin,
-.jatin2002sepgmailcom {
+.username,
+.useremail {
   left: 4.61rem;
   height: 1.08rem;
 }
-.jatin {
+.username {
   top: 0.86rem;
-  font-size: var(--font-size-3xl);
-  font-weight: 500;
-  width: 4rem;
+  font-size: smaller;
+  font-weight: 100;
+  width: fit-content;
 }
-.jatin2002sepgmailcom {
-  top: 2.65rem;
+.useremail {
+  top: .5rem;
   font-size: var(--font-size-base);
   width: 15.08rem;
 }
@@ -399,7 +400,6 @@ input.search-your-project {
 }
 .js1 {
   position: absolute;
-  top: 0.75rem;
   left: 0.75rem;
   letter-spacing: 0.05em;
   line-height: 3.59rem;
@@ -408,6 +408,8 @@ input.search-your-project {
   align-items: center;
   width: 1.86rem;
   height: 1.89rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .ellipse-parent {
   position: absolute;
