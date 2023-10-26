@@ -69,13 +69,13 @@ const firebaseConfig = {
         window.location.href = "./index.html"
       })
     }
-    const para = document.createElement("p");
-    const node = document.createTextNode(localStorage.getItem("email"));
-    para.appendChild(node);
+    // const para = document.createElement("p");
+    // const node = document.createTextNode(localStorage.getItem("email"));
+    // para.appendChild(node);
     
-    const useremail = document.getElementById("useremail")
-    useremail.appendChild(para);
-    if (localStorage.getItem("email")) {
-      useremail.style.display = 'block'
-    }
+    // const useremail = document.getElementById("useremail")
+    // useremail.appendChild(para);
+    // if (localStorage.getItem("email")) {
+    //   useremail.style.display = 'block'
+    // }
    
