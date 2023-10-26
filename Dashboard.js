@@ -36,11 +36,11 @@ const firebaseConfig = {
 //     // For this example, we'll simply alert the search query
 //     alert("Searching for: " + searchQuery);
 //   }
-
   const username = getCookie("username");
   const firstLetter = username ? username.charAt(0) : "";
   document.getElementById("firstletter").textContent = firstLetter;
   console.log(firstLetter);
+
   function getCookie(name) {
     var cookieArr = document.cookie.split(";");
     for (var i = 0; i < cookieArr.length; i++) {
@@ -52,9 +52,12 @@ const firebaseConfig = {
     return null;
   }
 
-    document.getElementById("username").textContent = username;
+  document.getElementById("username").textContent = username;
 
-
+  var useremail = localStorage.getItem("useremail");
+  if (useremail) {
+    document.getElementById("useremail").textContent = useremail;
+  }
 
     var rectangleImage = document.getElementById("rectangleImage");
     if (rectangleImage) {

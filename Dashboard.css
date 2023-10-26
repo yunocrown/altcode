@@ -151,9 +151,10 @@
   width: fit-content;
 }
 .useremail {
-  top: .5rem;
+  top: 55%;
   font-size: var(--font-size-base);
-  width: 15.08rem;
+  width: fit-content;
+  left: 23%;
 }
 .rectangle-parent126 {
   position: absolute;
@@ -245,7 +246,7 @@
   left: 15.25rem;
   font-size: var(--font-size-sm);
   font-weight: 550;
-  width: 5%;
+  width: 6%;
   height: 3.3%;
   border-radius: 2px;
   justify-content: center;
@@ -253,6 +254,7 @@
   flex-wrap: wrap;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .log-out:hover{
   background-color: var(--color-blueviolet);
