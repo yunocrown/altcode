@@ -61,10 +61,18 @@
   font-weight: 500;
   width: 9.94rem;
 }
-.signinpageinitial-child1 {
+.email {
   position: absolute;
   top: 15.19rem;
-  left: 48.31rem;
+  left: 51.6%;
+  width: 27.94rem;
+  height: 3.63rem;
+  background-color: transparent;
+}
+.signinpageinitial-child1 {
+  position: absolute;
+  /* top: 15.19rem;
+  left: 48.31rem; */
   border-radius: var(--br-8xs);
   border: 1px solid var(--color-dimgray-200);
   box-sizing: border-box;
@@ -99,19 +107,20 @@ input.group-child1259 {
   align-items: center;
   width: 14.5rem;
   height: 1rem;
+  background-color: transparent;
 }
 .rectangle-parent144 {
   position: absolute;
-  top: 16.44rem;
-  left: 49.38rem;
-  width: 14.81rem;
+  top: 1.13rem;
+  left: 1.38rem;
+  width: 9.56rem;
   height: 1.13rem;
   cursor: pointer;
 }
 .group-child1259 {
   position: absolute;
-  top: 43%;
-  left: 51.6%;
+  top: 0;
+  left: 0;
   border-radius: var(--br-8xs);
   border: 1px solid var(--color-dimgray-200);
   box-sizing: border-box;
@@ -162,7 +171,7 @@ input.group-child1259 {
 .rectangle-parent145 {
   position: absolute;
   top: 21.5rem;
-  left: 48.31rem;
+  left: 51.6%;
   width: 27.94rem;
   height: 3.63rem;
 }
