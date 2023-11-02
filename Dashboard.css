@@ -28,6 +28,45 @@
   width: 16.69rem;
   height: 3.31rem;
 }
+.marketplace {
+  display: flex;
+  position: absolute;
+  background-color: aqua;
+  flex-wrap: wrap;
+  width: 17.72%;
+  height: 6%;
+  border-radius: 19px;
+  left: 2.1%;
+  top: 40%;
+  align-items: center;
+  font-family: var(--font-lexend-deca);
+}
+.myorganization {
+  display: flex;
+  position: absolute;
+  background-color: aqua;
+  flex-wrap: wrap;
+  width: 17.72%;
+  height: 6%;
+  border-radius: 19px;
+  left: 2.1%;
+  top: 60%;
+  align-items: center;
+  font-family: var(--font-lexend-deca);
+}
+.resources{
+  display: flex;
+  position: absolute;
+  background-color: aqua;
+  flex-wrap: wrap;
+  width: 17.72%;
+  height: 6%;
+  border-radius: 19px;
+  left: 2.1%;
+  top: 80%;
+  align-items: center;
+  font-family: var(--font-lexend-deca);
+}
 .projects {
   position: absolute;
   top: 1.06rem;
@@ -122,6 +161,7 @@
   width: 3.29rem;
   height: 3.24rem;
 }
+
 .username,
 .useremail,
 .firstletter {
@@ -430,4 +470,14 @@ input.search-your-project {
   font-size: var(--font-size-mid);
   color: var(--color-white);
   font-family: var(--font-lexend-deca);
+}
+.createproject{
+  left: 89%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 4%;
+  width: fit-content;
 }

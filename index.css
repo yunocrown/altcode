@@ -2558,6 +2558,36 @@
   filter: blur(0);
   transform: translateX(0);
 }
+
+.group-child1238 {
+  top: 0.9%;
+  left: 85%;
+  border-radius: 50%;
+  background-color: var(--color-blueviolet);
+  border: 2px solid var(--color-white);
+  width: 3.29rem;
+  height: 3.24rem;
+}
+.group-child1238 {
+  position: absolute;
+  box-sizing: border-box;
+}
+.firstletter {
+  position: absolute;
+  letter-spacing: 0.05em;
+  line-height: 3.59rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firstletter {
+  top: 15%;
+  left: 20%;
+  font-weight: 600;
+  font-size: 20px;
+  width: 1.86rem;
+  height: 1.89rem;
+}
 @media(prefers-reduced-motion) {
   .hidden {
     transition: none;

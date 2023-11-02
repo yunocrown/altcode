@@ -66,7 +66,7 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
         })
        window.location.assign("./canvas.html")
        localStorage.setItem("email", email)
-       localStorage.setItem("isLoggedIn",true);
+       localStorage.setItem("username", username)
         alert(user.email + " successfully logged in");
         // var groupContainer = document.getElementById("submitButton");
    
