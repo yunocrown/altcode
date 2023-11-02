@@ -30,8 +30,8 @@ document.getElementById("googleAuth").addEventListener('click', (e) => {
     });
 });
 
-var submitbutton = document.getElementById("submitButton");
 
+var submitbutton = document.getElementById("submitButton");
 submitbutton.addEventListener("click", function() {
   var username = document.getElementById("usernameinput").value;
   var email = document.getElementById("emailInput").value;
@@ -47,18 +47,21 @@ submitbutton.addEventListener("click", function() {
       const user = userCredential.user;
       console.log(user);
       alert("Congratulations!! User created");
+      localStorage.setItem("email", email)
+      localStorage.setItem("username", username)
       window.location.assign("./canvas.html");
 
-      const usersRef = ref(database, 'users');
-      const newUserRef = update(usersRef);
-      set(newUserRef, {
-        username: username
-      }).then(() => {
-        console.log('Data written successfully');
-      }).catch((error) => {
-        console.log('Error writing data:', error);
-      });
+      // const usersRef = ref(database, 'users');
+      // const newUserRef = update(usersRef);
+      // set(newUserRef, {
+      //   username: username
+      // }).then(() => {
+      //   console.log('Data written successfully');
+      // }).catch((error) => {
+      //   console.log('Error writing data:', error);
+      // });
     }).catch((error) => {
       alert("Error: " + error.message);
     });
 });
+

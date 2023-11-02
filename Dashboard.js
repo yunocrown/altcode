@@ -17,6 +17,11 @@ const firebaseConfig = {
   logout.addEventListener('click', (e) => {
   signOut(auth).then(() => {
       localStorage.removeItem("email")
+      localStorage.removeItem("useremail")
+      localStorage.removeItem("username")
+      
+      // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      // deleteCookie("username");
       window.location.href ="./index.html";
   }).catch((error) => {
     console.log(error)
@@ -24,6 +29,10 @@ const firebaseConfig = {
   });
 
 })
+
+// function deleteCookie(name) {
+//   document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+// }
 
 // function performSearch() {
 //     // Get the search input element by its id
@@ -36,7 +45,7 @@ const firebaseConfig = {
 //     // For this example, we'll simply alert the search query
 //     alert("Searching for: " + searchQuery);
 //   }
-  const username = getCookie("username");
+  const username = localStorage.getItem("email");
   const firstLetter = username ? username.charAt(0) : "";
   document.getElementById("firstletter").textContent = firstLetter;
   console.log(firstLetter);
@@ -53,13 +62,20 @@ const firebaseConfig = {
   }
 
   document.getElementById("username").textContent = username;
+  
+    var useremail = localStorage.getItem("useremail");
+    if (useremail) {
+      document.getElementById("useremail").textContent = useremail;
+    }
+  
+  
+    var email = localStorage.getItem("email")
+    if (email) {
+      document.getElementById("useremail").textContent = email;
 
-  var useremail = localStorage.getItem("useremail");
-  if (useremail) {
-    document.getElementById("useremail").textContent = useremail;
-  }
-
-    var rectangleImage = document.getElementById("rectangleImage");
+    }
+  
+  var rectangleImage = document.getElementById("rectangleImage");
     if (rectangleImage) {
       rectangleImage.addEventListener("click", function (e) {
         window.location.href = "./interface.html"
@@ -72,13 +88,4 @@ const firebaseConfig = {
         window.location.href = "./index.html"
       })
     }
-    // const para = document.createElement("p");
-    // const node = document.createTextNode(localStorage.getItem("email"));
-    // para.appendChild(node);
     
-    // const useremail = document.getElementById("useremail")
-    // useremail.appendChild(para);
-    // if (localStorage.getItem("email")) {
-    //   useremail.style.display = 'block'
-    // }
-   
