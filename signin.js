@@ -30,6 +30,9 @@ document.getElementById("google").addEventListener('click', (e) => {
       const token = credential.accessToken;
       // The signed-in user info.
       const user = result.user;
+      localStorage.setItem(user ,"user")
+      window.location.href = "./canvas.html"
+
       // IdP data available using getAdditionalUserInfo(result)
       // ...
       alert(user.displayName + " logged in successfully ");
@@ -62,13 +65,11 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
         const dt = new Date();
         update(ref(database, 'user/' + user.uid),{
           last_login:dt,          
-          
-        })
-       window.location.assign("./canvas.html")
-       localStorage.setItem("email", email)
-       localStorage.setItem("username", username)
-        alert(user.email + " successfully logged in");
-        // var groupContainer = document.getElementById("submitButton");
+          })
+          localStorage.setItem("email", email)
+          localStorage.setItem("username", username)
+          alert(user.email + " successfully logged in");
+          window.location.assign("./canvas.html")
    
     }).catch((error) => {
         const errorMessage = error.message;

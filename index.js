@@ -70,7 +70,7 @@ if (dashboard) {
   });
 }
 
-const username = localStorage.getItem("email");
+const username = localStorage.getItem("username");
   const firstLetter = username ? username.charAt(0) : "";
   document.getElementById("firstletter").textContent = firstLetter;
   console.log(firstLetter);
