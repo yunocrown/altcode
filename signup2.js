@@ -47,6 +47,7 @@ submitbutton.addEventListener("click", function() {
       const user = userCredential.user;
       console.log(user);
       alert("Congratulations!! User created");
+      localStorage.setItem("isLoggedIn",true);
       window.location.assign("./canvas.html");
 
       const usersRef = ref(database, 'users');

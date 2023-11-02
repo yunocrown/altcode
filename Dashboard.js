@@ -10,14 +10,46 @@ const firebaseConfig = {
     appId: "1:156061115585:web:1bf3ea47a62613d917a040",
     measurementId: "G-00MRF3C9FN"
   };
+
+//   window.addEventListener('popstate', function(event) {
+//     history.pushState(null, null, window.location.href);
+//     this.alert("bhgfg")
+//     });
+//   history.forward();
+//   // window.history.go(0);
+
+// window.addEventListener('keydown', function(event) {
+//   if (event.key === 'Backspace') {
+//     window.history.go(0);
+//     event.preventDefault();
+//   }
+// });
+
+
   
   const app = initializeApp(firebaseConfig);
   const auth = getAuth();
   const logout = document.getElementById("log-out")
+
+
   logout.addEventListener('click', (e) => {
   signOut(auth).then(() => {
-      localStorage.removeItem("email")
-      window.location.href ="./index.html";
+    localStorage.setItem("isLoggedIn",false);
+    localStorage.removeItem("email")
+    document.getElementById("username").textContent = " ";
+    // location.reload();
+    window.location.href ="./index.html";
+      history.replaceState(null, null, "./index.html");
+      window.onpopstate = function () {
+        history.go(1);
+        alert("go")
+      };
+
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Backspace') {
+          event.preventDefault();
+        }
+      });
   }).catch((error) => {
     console.log(error)
     // An error happened.

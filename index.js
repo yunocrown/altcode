@@ -1,22 +1,67 @@
-const para = document.createElement("p");
-const node = document.createTextNode(getCookie("username"));
-para.appendChild(node);
+// history.pushState(null, null, window.location.href);
+//   history.replaceState(null, null, window.location.href);
+// alert("hy")
+// history.replaceState(null, null, "./index.html");
+// window.onpopstate = function () {
+//   history.go(1);
+//   alert("go")
+// };
+
+// document.addEventListener('keydown', function(event) {
+//   if (event.key === 'Backspace') {
+//     event.preventDefault();
+//   }
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  window.onload = function() {
+    // Code to be executed after the page has finished loading
+    alert("loaded");
+
+console.log("Page loaded!");
+
+history.pushState(null, null, window.location.href);
+window.addEventListener('popstate', function(event) {
+  history.pushState(null, null, window.location.href);
+});
+
+// Disable the backspace key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Backspace') {
+    window.history.go(0);
+    event.preventDefault();
+  }
+});
+};
+});
+
+// const node = document.createTextNode(getCookie("username"));
 
 const showusername = document.getElementById("showusername");
-showusername.appendChild(para);
 
 var gettingIn = document.getElementById("gettingIn")
 var dashboard = document.getElementById("dashboard")
-if (localStorage.getItem("email")) {
+var isLoggedIn = localStorage.getItem("isLoggedIn");
+
+if (isLoggedIn===true) {
+  alert("hi")
+  const para = document.createElement("p");
+  const node = document.createTextNode(getCookie("username"));
+  para.appendChild(node);
+  showusername.appendChild(para);
+  if (localStorage.getItem("email")) {
   gettingIn.style.display = 'none'
   dashboard.style.display = 'block'
 }
 else{
+  alert("none")
   dashboard.style.display = 'none'
   showusername.removeChild(para)
 }
+}
 
-function getCookie(name) {
+function getCookie(name="admin") {
   var cookieArr = document.cookie.split(";");
 
   for (var i = 0; i < cookieArr.length; i++) {
@@ -62,3 +107,5 @@ if (dashboard) {
     window.location.href = "./dashboard.html";
   });
 }
+
+
