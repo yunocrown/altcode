@@ -24,7 +24,7 @@ else{
   //   para.style.display = "none"
   // }
 }
-}
+
 
 function getCookie(name="admin") {
   var cookieArr = document.cookie.split(";");
