@@ -30,10 +30,7 @@ document.getElementById("google").addEventListener('click', (e) => {
       const token = credential.accessToken;
       // The signed-in user info.
       const user = result.user;
-      localStorage.setItem(user ,"user")
-      window.location.href = "./canvas.html"
-
-      // IdP data available using getAdditionalUserInfo(result)
+            // IdP data available using getAdditionalUserInfo(result)
       // ...
       alert(user.displayName + " logged in successfully ");
     }).catch((error) => {
