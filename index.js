@@ -7,7 +7,7 @@ if (localStorage.getItem("email")) {
   firstlettercircle.style.display='block'
 }
 else{
-  alert("none")
+  
   dashboard.style.display = 'none'
   firstlettercircle.style.display='none'
 }
