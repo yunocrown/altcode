@@ -10,10 +10,28 @@ const firebaseConfig = {
     appId: "1:156061115585:web:1bf3ea47a62613d917a040",
     measurementId: "G-00MRF3C9FN"
   };
+
+//   window.addEventListener('popstate', function(event) {
+//     history.pushState(null, null, window.location.href);
+//     this.alert("bhgfg")
+//     });
+//   history.forward();
+//   // window.history.go(0);
+
+// window.addEventListener('keydown', function(event) {
+//   if (event.key === 'Backspace') {
+//     window.history.go(0);
+//     event.preventDefault();
+//   }
+// });
+
+
   
   const app = initializeApp(firebaseConfig);
   const auth = getAuth();
   const logout = document.getElementById("log-out")
+
+
   logout.addEventListener('click', (e) => {
   signOut(auth).then(() => {
       localStorage.removeItem("email")
@@ -48,7 +66,7 @@ const firebaseConfig = {
   const username = localStorage.getItem("username");
   const firstLetter = username ? username.charAt(0) : "";
   document.getElementById("firstletter").textContent = firstLetter;
-  console.log(firstLetter);
+  // console.log(firstLetter);
 
   function getCookie(name) {
     var cookieArr = document.cookie.split(";");
@@ -88,4 +106,29 @@ const firebaseConfig = {
         window.location.href = "./index.html"
       })
     }
+
+
+    // create-new-project
+    const createProject=document.querySelector(".createproject")
+    const goforit=document.querySelector(".create")
+    const create_new_div=document.querySelector(".create_new_div")
+    const type=document.querySelector(".type")
+    const project_name=document.querySelector(".project-name")
+    const close=document.querySelector("#close")
     
+    createProject.addEventListener('click',()=>{
+      create_new_div.style.display='block';
+      // alert("dff")
+    })
+
+    close.addEventListener('click',()=>{
+      create_new_div.style.display='none';
+      // alert("dff")
+    })
+    
+    goforit.addEventListener('click',()=>{
+      console.log(project_name.value)
+      console.log(type.value)
+      create_new_div.style.display='none';
+      alert("project created successfully👍");
+  })

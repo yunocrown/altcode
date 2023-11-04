@@ -1,9 +1,3 @@
-// const para = document.createElement("p");
-// const node = document.createTextNode(getCookie("username"));
-// para.appendChild(node);
-// const showusername = document.getElementById("showusername");
-// showusername.appendChild(para);
-
 var gettingIn = document.getElementById("gettingIn")
 var dashboard = document.getElementById("dashboard")
 var firstlettercircle = document.getElementById("firstlettercircle")
@@ -11,20 +5,15 @@ if (localStorage.getItem("email")) {
   gettingIn.style.display = 'none'
   dashboard.style.display = 'block'
   firstlettercircle.style.display='block'
-  // if (para.textContent == "null") {
-  //   para.style.display = "none"
-  // }
 }
 else{
+  alert("none")
   dashboard.style.display = 'none'
   firstlettercircle.style.display='none'
-
-  // if (para.textContent == "null") {
-  //   para.style.display = "none"
-  // }
 }
 
-function getCookie(name) {
+
+function getCookie(name="admin") {
   var cookieArr = document.cookie.split(";");
 
   for (var i = 0; i < cookieArr.length; i++) {
@@ -35,11 +24,6 @@ function getCookie(name) {
   }
   return null;
 }
-
-// showusername.addEventListener("click", () => {
-//   window.location.assign("./dashboard.html");
-// })
-
 
 var signUp = document.getElementById("signUp");
 if (signUp) {
@@ -85,10 +69,6 @@ const username = localStorage.getItem("username");
     }
     return null;
   }
-
-  // setTimeout(() => {
-  //   document.getElementById("loader-wrapper").style.display = 'none'
-  // }, 1000);
 
   var myElement = document.getElementById('loader-wrapper');
   fadeOut(myElement, 1000);
