@@ -85,3 +85,26 @@ const username = localStorage.getItem("username");
     }
     return null;
   }
+
+  // setTimeout(() => {
+  //   document.getElementById("loader-wrapper").style.display = 'none'
+  // }, 1000);
+
+  var myElement = document.getElementById('loader-wrapper');
+  fadeOut(myElement, 1000);
+  function fadeOut(element, duration) {
+    var opacity = 2;
+    var interval = 50; // Time interval between opacity changes (in milliseconds)
+    var steps = duration / interval; // Number of steps to reach the desired duration
+  
+    var fadeOutTimer = setInterval(function() {
+      opacity -= 1 / steps;
+      element.style.opacity = opacity;
+  
+      if (opacity <= 0) {
+        clearInterval(fadeOutTimer);
+        element.style.display = 'none'; // Hide the element after fading out
+      }
+    }, interval);
+  }
+  
