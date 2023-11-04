@@ -66,7 +66,7 @@ const firebaseConfig = {
   const username = localStorage.getItem("email");
   const firstLetter = username ? username.charAt(0) : "";
   document.getElementById("firstletter").textContent = firstLetter;
-  console.log(firstLetter);
+  // console.log(firstLetter);
 
   function getCookie(name) {
     var cookieArr = document.cookie.split(";");
@@ -106,4 +106,29 @@ const firebaseConfig = {
         window.location.href = "./index.html"
       })
     }
+
+
+    // create-new-project
+    const createProject=document.querySelector(".createproject")
+    const goforit=document.querySelector(".create")
+    const create_new_div=document.querySelector(".create_new_div")
+    const type=document.querySelector(".type")
+    const project_name=document.querySelector(".project-name")
+    const close=document.querySelector("#close")
     
+    createProject.addEventListener('click',()=>{
+      create_new_div.style.display='block';
+      // alert("dff")
+    })
+
+    close.addEventListener('click',()=>{
+      create_new_div.style.display='none';
+      // alert("dff")
+    })
+    
+    goforit.addEventListener('click',()=>{
+      console.log(project_name.value)
+      console.log(type.value)
+      create_new_div.style.display='none';
+      alert("project created successfully👍");
+  })
