@@ -10,13 +10,36 @@ const firebaseConfig = {
     appId: "1:156061115585:web:1bf3ea47a62613d917a040",
     measurementId: "G-00MRF3C9FN"
   };
+
+//   window.addEventListener('popstate', function(event) {
+//     history.pushState(null, null, window.location.href);
+//     this.alert("bhgfg")
+//     });
+//   history.forward();
+//   // window.history.go(0);
+
+// window.addEventListener('keydown', function(event) {
+//   if (event.key === 'Backspace') {
+//     window.history.go(0);
+//     event.preventDefault();
+//   }
+// });
+
+
   
   const app = initializeApp(firebaseConfig);
   const auth = getAuth();
   const logout = document.getElementById("log-out")
+
+
   logout.addEventListener('click', (e) => {
   signOut(auth).then(() => {
       localStorage.removeItem("email")
+      localStorage.removeItem("useremail")
+      localStorage.removeItem("username")
+      
+      // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      // deleteCookie("username");
       window.location.href ="./index.html";
   }).catch((error) => {
     console.log(error)
@@ -24,6 +47,10 @@ const firebaseConfig = {
   });
 
 })
+
+// function deleteCookie(name) {
+//   document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+// }
 
 // function performSearch() {
 //     // Get the search input element by its id
@@ -36,10 +63,10 @@ const firebaseConfig = {
 //     // For this example, we'll simply alert the search query
 //     alert("Searching for: " + searchQuery);
 //   }
-  const username = getCookie("username");
+  const username = localStorage.getItem("username");
   const firstLetter = username ? username.charAt(0) : "";
   document.getElementById("firstletter").textContent = firstLetter;
-  console.log(firstLetter);
+  // console.log(firstLetter);
 
   function getCookie(name) {
     var cookieArr = document.cookie.split(";");
@@ -53,13 +80,20 @@ const firebaseConfig = {
   }
 
   document.getElementById("username").textContent = username;
+  
+    var useremail = localStorage.getItem("useremail");
+    if (useremail) {
+      document.getElementById("useremail").textContent = useremail;
+    }
+  
+  
+    var email = localStorage.getItem("email")
+    if (email) {
+      document.getElementById("useremail").textContent = email;
 
-  var useremail = localStorage.getItem("useremail");
-  if (useremail) {
-    document.getElementById("useremail").textContent = useremail;
-  }
-
-    var rectangleImage = document.getElementById("rectangleImage");
+    }
+  
+  var rectangleImage = document.getElementById("rectangleImage");
     if (rectangleImage) {
       rectangleImage.addEventListener("click", function (e) {
         window.location.href = "./interface.html"
@@ -72,13 +106,29 @@ const firebaseConfig = {
         window.location.href = "./index.html"
       })
     }
-    // const para = document.createElement("p");
-    // const node = document.createTextNode(localStorage.getItem("email"));
-    // para.appendChild(node);
+
+
+    // create-new-project
+    const createProject=document.querySelector(".createproject")
+    const goforit=document.querySelector(".create")
+    const create_new_div=document.querySelector(".create_new_div")
+    const type=document.querySelector(".type")
+    const project_name=document.querySelector(".project-name")
+    const close=document.querySelector("#close")
     
-    // const useremail = document.getElementById("useremail")
-    // useremail.appendChild(para);
-    // if (localStorage.getItem("email")) {
-    //   useremail.style.display = 'block'
-    // }
-   
+    createProject.addEventListener('click',()=>{
+      create_new_div.style.display='block';
+      // alert("dff")
+    })
+
+    close.addEventListener('click',()=>{
+      create_new_div.style.display='none';
+      // alert("dff")
+    })
+    
+    goforit.addEventListener('click',()=>{
+      console.log(project_name.value)
+      console.log(type.value)
+      create_new_div.style.display='none';
+      alert("project created successfully👍");
+  })

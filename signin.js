@@ -4,15 +4,15 @@ import { getAuth, signInWithEmailAndPassword ,sendPasswordResetEmail,GoogleAuthP
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
-  authDomain: "altcode-35511.firebaseapp.com",
-  databaseURL: "  https://altcode-86903-default-rtdb.firebaseio.com ",
-  projectId: "altcode-35511",
-  storageBucket: "altcode-35511.appspot.com",
-  messagingSenderId: "156061115585",
-  appId: "1:156061115585:web:1bf3ea47a62613d917a040",
-  measurementId: "G-00MRF3C9FN"
-};
+    apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
+    authDomain: "altcode-86903.firebaseapp.com",
+    databaseURL: "https://altcode-86903-default-rtdb.firebaseio.com",
+    projectId: "altcode-86903",
+    storageBucket: "altcode-86903.appspot.com",
+    messagingSenderId: "374955386378",
+    appId: "1:374955386378:web:a8f112f985eaa57f46e1f3",
+    measurementId: "G-RGTLGT3E40"
+  };
 
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
@@ -30,7 +30,7 @@ document.getElementById("google").addEventListener('click', (e) => {
       const token = credential.accessToken;
       // The signed-in user info.
       const user = result.user;
-      // IdP data available using getAdditionalUserInfo(result)
+            // IdP data available using getAdditionalUserInfo(result)
       // ...
       alert(user.displayName + " logged in successfully ");
     }).catch((error) => {
@@ -62,12 +62,11 @@ document.getElementById("signinbutton").addEventListener('click', (e)=> {
         const dt = new Date();
         update(ref(database, 'user/' + user.uid),{
           last_login:dt,          
-          
-        })
-       window.location.assign("./canvas.html")
-       localStorage.setItem("email", email)
-        alert(user.email + " successfully logged in");
-        // var groupContainer = document.getElementById("submitButton");
+          })
+          localStorage.setItem("email", email)
+          // localStorage.setItem("username", username)
+          alert(user.email + " successfully logged in");
+          window.location.assign("./canvas.html")
    
     }).catch((error) => {
         const errorMessage = error.message;

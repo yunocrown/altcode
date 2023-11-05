@@ -25,25 +25,28 @@
     <b class="sign-in2">Sign In</b>
     <div class="welcome-back1">Welcome Back</div>
 
-    <input id="emailInput" class="signinpageinitial-child1" type="email" placeholder=""></input>
-    <div class="rectangle-parent144" id="groupContainer">
-      <div class="group-child1258"></div>
-      <div class="enter-your-email3">Enter your Email Id or username</div>
+    <div class="email">
+      <input id="emailInput" class="signinpageinitial-child1" type="email" placeholder=""></input>
+      <div class="rectangle-parent144" id="groupContainer">
+        <div class="group-child1258"></div>
+        <div class="enter-your-email3">Enter your Email Id or username</div>
+      </div>
     </div>
 
-    <input id="passwordInput" class="group-child1259" type="password" placeholder=""></input>
-    <div class="rectangle-parent145">
-      <div class="rectangle-parent146" id="groupContainer1">
-        <div class="group-child1260"></div>
-        <div class="enter-your-password3">Enter your password</div>
+
+      <div class="rectangle-parent145">
+        <input id="passwordInput" class="group-child1259" type="password" placeholder=""></input>
+        <div class="rectangle-parent146" id="groupContainer1">
+          <div class="group-child1260"></div>
+          <div class="enter-your-password3">Enter your password</div>
+        </div>
+        <img id="showPasswordIcon" class="vector-icon117" alt="" src="./public/vector14.svg" />
       </div>
-      <img id="showPasswordIcon" class="vector-icon117" alt="" src="./public/vector14.svg" />
-    </div>
     <div class="group-parent73">
-      <div class="rectangle-parent147">
+      <!-- <div class="rectangle-parent147">
         <input class="group-child1261" type="checkbox" id=rememberme"></input>
         <div class="remember-me3">Remember Me</div>
-      </div>
+      </div> -->
       <button class="forgot-password1" id="forgot-password1"> Forgot Password? </button>
     </div>
     <div class="rectangle-parent148" id="groupContainer5">
@@ -61,21 +64,23 @@
   </div>
 
   <script>
-      const rectangleParent = document.querySelector('.signinpageinitial-child1');
-      const text = document.querySelector('.rectangle-parent144');
+    const rectangleParent = document.querySelector('.rectangle-parent144');
+      const emailinput = document.querySelector('.email');
       const imageElement = document.querySelector('.signinpageinitial-inner');
-      rectangleParent.addEventListener('click', function () {
-      text.style.top = '14.63rem';
-      imageElement.classList.toggle('updated-image');
-    });
-
-    const password_text = document.querySelector('.rectangle-parent146');
-    const rectangleParent1 = document.querySelector('.rectangle-parent145');
-    const imageElement1 = document.querySelector('.signinpageinitial-inner');
-    rectangleParent1.addEventListener('click', function () {
-      password_text.style.top = '-0.6rem';
-      imageElement1.classList.toggle('updated-image');
-    });
+      emailinput.addEventListener('click', function() {
+        rectangleParent.style.top = '-0.6rem';
+        rectangleParent.style.transition = "all 1s";
+        imageElement.classList.toggle('updated-image');
+      });
+      
+      const rectangleParent1 = document.querySelector('.rectangle-parent145');
+      const rectangleParent2 = document.querySelector('.rectangle-parent146');
+      const imageElement1 = document.querySelector('.signinpageinitial-inner');
+      rectangleParent1.addEventListener('click', function() {
+        rectangleParent2.style.top = '-0.6rem';
+        rectangleParent2.style.transition = "all 1s";
+        imageElement1.classList.toggle('updated-image');
+      });
 
     const forgotpassword = document.querySelector(".forgot-password1");
     forgotpassword.addEventListener("click", (e) => {
@@ -134,31 +139,31 @@
     // return " ";
     // }
 
-    const rmCheck = document.getElementById("rememberme"), 
-    passInput = document.getElementById("passwordInput"),
-    emailInput = document.getElementById("emailInput"); 
-    if (localStorage.checkbox && localStorage.checkbox !== "") { 
-      rmCheck.setAttribute("checked", "checked"); 
-      passInput.value- localStorage.password; 
-      emailInput.value- localStorage.email; 
-    }
-      //  else {
-    //   rmCheck.removeAttribute("checked"); 
-    //   passInput.value = "";
-    //   emailInput.value = "";
-    // }
-      function RememberMe() {
-        if (rmCheck.checked && emailInput.value !== "" && passInput.value !== "") {
-          localStorage.email= emailInput.value;
-          localStorage.passInput= passInput.value;
-          localStorage.checkbox= rmCheck.value;
-        } else {
-          localStorage.email = " ";
-          localStorage.passInput = " ";
-          localStorage.checkbox = " ";
-        }
-      }
-  </script>
+  //   const rmCheck = document.getElementById("rememberme"), 
+  //   passInput = document.getElementById("passwordInput"),
+  //   emailInput = document.getElementById("emailInput"); 
+  //   if (localStorage.checkbox && localStorage.checkbox !== "") { 
+  //     rmCheck.setAttribute("checked", "checked"); 
+  //     passInput.value- localStorage.password; 
+  //     emailInput.value- localStorage.email; 
+  //   }
+  //     //  else {
+  //   //   rmCheck.removeAttribute("checked"); 
+  //   //   passInput.value = "";
+  //   //   emailInput.value = "";
+  //   // }
+  //     function RememberMe() {
+  //       if (rmCheck.checked && emailInput.value !== "" && passInput.value !== "") {
+  //         localStorage.email= emailInput.value;
+  //         localStorage.passInput= passInput.value;
+  //         localStorage.checkbox= rmCheck.value;
+  //       } else {
+  //         localStorage.email = " ";
+  //         localStorage.passInput = " ";
+  //         localStorage.checkbox = " ";
+  //       }
+  //     }
+  // </script>
 
 </body>
 <script type="module" src="signin.js"></script>

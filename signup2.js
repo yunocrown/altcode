@@ -3,16 +3,16 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebas
 import { getAuth , createUserWithEmailAndPassword ,GoogleAuthProvider ,signInWithPopup } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
 import { getDatabase, ref , set , update } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
-  authDomain: "altcode-35511.firebaseapp.com",
-  databaseURL: " https://altcode-86903-default-rtdb.firebaseio.com",
-  projectId: "altcode-35511",
-  storageBucket: "altcode-35511.appspot.com",
-  messagingSenderId: "156061115585",
-  appId: "1:156061115585:web:1bf3ea47a62613d917a040",
-  measurementId: "G-00MRF3C9FN"
-};
+const firebaseConfig = {    
+    apiKey: "AIzaSyDkx9B9D0t4hPZRapPkdMpn1kARAuNeycs",
+    authDomain: "altcode-86903.firebaseapp.com",
+    databaseURL: "https://altcode-86903-default-rtdb.firebaseio.com",
+    projectId: "altcode-86903",
+    storageBucket: "altcode-86903.appspot.com",
+    messagingSenderId: "374955386378",
+    appId: "1:374955386378:web:a8f112f985eaa57f46e1f3",
+    measurementId: "G-RGTLGT3E40"
+  };
 
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
@@ -30,8 +30,8 @@ document.getElementById("googleAuth").addEventListener('click', (e) => {
     });
 });
 
-var submitbutton = document.getElementById("submitButton");
 
+var submitbutton = document.getElementById("submitButton");
 submitbutton.addEventListener("click", function() {
   var username = document.getElementById("usernameinput").value;
   var email = document.getElementById("emailInput").value;
@@ -47,18 +47,21 @@ submitbutton.addEventListener("click", function() {
       const user = userCredential.user;
       console.log(user);
       alert("Congratulations!! User created");
+      localStorage.setItem("email", email)
+      localStorage.setItem("username", username)
       window.location.assign("./canvas.html");
 
-      const usersRef = ref(database, 'users');
-      const newUserRef = update(usersRef);
-      set(newUserRef, {
-        username: username
-      }).then(() => {
-        console.log('Data written successfully');
-      }).catch((error) => {
-        console.log('Error writing data:', error);
-      });
+      // const usersRef = ref(database, 'users');
+      // const newUserRef = update(usersRef);
+      // set(newUserRef, {
+      //   username: username
+      // }).then(() => {
+      //   console.log('Data written successfully');
+      // }).catch((error) => {
+      //   console.log('Error writing data:', error);
+      // });
     }).catch((error) => {
       alert("Error: " + error.message);
     });
 });
+
