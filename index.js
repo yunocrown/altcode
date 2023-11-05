@@ -7,7 +7,7 @@ showusername.appendChild(para);
 
 var gettingIn = document.getElementById("gettingIn")
 var dashboard = document.getElementById("dashboard")
-if (localStorage.getItem("email")) {
+if (localStorage.getItem("useremail")) {
   gettingIn.style.display = 'none'
   dashboard.style.display = 'block'
 }
@@ -30,7 +30,8 @@ function getCookie(name) {
 }
 
 showusername.addEventListener("click", () => {
-  window.location.assign("./dashboard.html");
+  // window.location.assign("./Dashboard.html");
+  window.location.assign("./Dashboard.html");
 })
 
 
@@ -59,6 +60,6 @@ var dashboard = document.getElementById("dashboard");
 // dashboard.style.display = 'none'
 if (dashboard) {
   dashboard.addEventListener("click", function (e) {
-    window.location.href = "./dashboard.html";
+    window.location.assign = "./Dashboard.html";
   });
 }
