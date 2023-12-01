@@ -44,7 +44,7 @@ const firebaseConfig = {
   }).catch((error) => {
     console.log(error)
     // An error happened.
-  });
+  }); 
 
 })
 
@@ -131,4 +131,5 @@ const firebaseConfig = {
       console.log(type.value)
       create_new_div.style.display='none';
       alert("project created successfully👍");
+      
   })
