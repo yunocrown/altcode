@@ -1,9 +1,3 @@
-// const para = document.createElement("p");
-// const node = document.createTextNode(getCookie("username"));
-// para.appendChild(node);
-// const showusername = document.getElementById("showusername");
-// showusername.appendChild(para);
-
 var gettingIn = document.getElementById("gettingIn")
 var dashboard = document.getElementById("dashboard")
 var firstlettercircle = document.getElementById("firstlettercircle")
@@ -11,18 +5,11 @@ if (localStorage.getItem("email")) {
   gettingIn.style.display = 'none'
   dashboard.style.display = 'block'
   firstlettercircle.style.display='block'
-  // if (para.textContent == "null") {
-  //   para.style.display = "none"
-  // }
 }
 else{
-  alert("none")
+  
   dashboard.style.display = 'none'
   firstlettercircle.style.display='none'
-
-  // if (para.textContent == "null") {
-  //   para.style.display = "none"
-  // }
 }
 
 
@@ -37,11 +24,6 @@ function getCookie(name="admin") {
   }
   return null;
 }
-
-// showusername.addEventListener("click", () => {
-//   window.location.assign("./dashboard.html");
-// })
-
 
 var signUp = document.getElementById("signUp");
 if (signUp) {
@@ -87,3 +69,22 @@ const username = localStorage.getItem("username");
     }
     return null;
   }
+
+  var myElement = document.getElementById('loader-wrapper');
+  fadeOut(myElement, 1000);
+  function fadeOut(element, duration) {
+    var opacity = 2;
+    var interval = 50; // Time interval between opacity changes (in milliseconds)
+    var steps = duration / interval; // Number of steps to reach the desired duration
+  
+    var fadeOutTimer = setInterval(function() {
+      opacity -= 1 / steps;
+      element.style.opacity = opacity;
+  
+      if (opacity <= 0) {
+        clearInterval(fadeOutTimer);
+        element.style.display = 'none'; // Hide the element after fading out
+      }
+    }, interval);
+  }
+  
