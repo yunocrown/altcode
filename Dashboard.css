@@ -585,3 +585,24 @@ input.search-your-project {
   height: 66px;
 }
 
+.project_list{
+  position: relative;
+  top: 31%;
+  left:31%;
+  width: 41.125rem;
+  height: 7.6875rem;
+  flex-shrink: 0;
+  background: rgba(27, 29, 82, 0.41);
+display: none;
+}
+
+.project{
+  position: relative;
+  top: 11%;
+  left:3%;
+  margin-left: 4px;
+  width: 6.875rem;
+height: 6.25rem;
+flex-shrink: 0;
+background: rgba(246, 201, 233, 0.22);
+}
