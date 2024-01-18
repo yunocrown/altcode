@@ -41,22 +41,37 @@ const database = getDatabase(app)
 const projects = ref(database, 'item')
 
 
-  logout.addEventListener('click', (e) => {
-  signOut(auth).then(() => {
+//   logout.addEventListener('click', (e) => {
+//   signOut(auth).then(() => {
+//     alert("daf")
+//       localStorage.removeItem("email")
+//       localStorage.removeItem("useremail")
+//       localStorage.removeItem("username")
+      
+//       // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+//       // deleteCookie("username");
+//       window.location.href ="./index.html";
+//   }).catch((error) => {
+//     console.log(error)
+//     // An error happened.
+//   }); 
+
+// })
+
+
+logout.addEventListener('click', (e) => {
+ 
+    alert("daf")
       localStorage.removeItem("email")
       localStorage.removeItem("useremail")
       localStorage.removeItem("username")
       
       // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       // deleteCookie("username");
+      // history.replaceState(null, null, window.location.pathname);
       window.location.href ="./index.html";
-  }).catch((error) => {
-    console.log(error)
-    // An error happened.
-  }); 
-
+      
 })
-
 // function deleteCookie(name) {
 //   document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
 // }
